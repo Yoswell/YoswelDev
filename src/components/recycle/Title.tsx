@@ -1,8 +1,13 @@
-export function Title(props) {
+interface TitleProps {
+    title: string
+    subTitle: string
+}
+
+export function Title({title, subTitle}: TitleProps) {
     return (
         <section className='title-section'>
-            <h1 className='title'>{props.title}</h1>
-            <h4 className='subTitle'>{props.subTitle}</h4>
+            <h1 className='title'>{title}</h1>
+            <h4 className='subTitle'>{subTitle}</h4>
         </section>
     )
 }
