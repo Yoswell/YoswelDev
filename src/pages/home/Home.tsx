@@ -11,9 +11,8 @@ export function Home() {
         <main>
             <div className='container-home'>
                 <div className='blur1'></div>
-                <div className='blur3'></div>
 
-                <section id='about'></section>
+                <section id='home'></section>
                 <About />
 
                 <Title title='Experience' subTitle='Then I present my experience work' />

@@ -6,7 +6,7 @@
     height: 100vh;
     display: none;
     place-items: center;
-    backdrop-filter: blur(3px) brightness(0.4);
+    backdrop-filter: blur(3px) brightness(0.2);
     z-index: 1000;
 
     & .card-modal {
@@ -98,6 +98,8 @@
                 text-decoration: none;
                 background-color: var(--bg-mm-white);
                 border-color: var(--border-white);
+
+                & i { font-size: 15px; }
 
                 &:hover {
                     color: var(--bg-white);

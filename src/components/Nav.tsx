@@ -11,11 +11,11 @@ export function Nav() {
                         <i className="ri-mail-send-line"></i>
                         Contact
                     </button>
-                    <a>
+                    <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr">
                         <i className='ri-linkedin-fill'></i>
                         LinkedIn
                     </a>
-                    <a>
+                    <a href="https://github.com/Yoswell">
                         <i className='ri-github-fill'></i>
                         GitHub
                     </a>

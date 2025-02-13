@@ -107,7 +107,6 @@ export function ModalCV() {
                             className='btn'
                             href='/src/assets/CV_YoswelBCyber_En.pdf'
                             download='CV_YoswelBCyber_En.pdf'>
-                            <i className="ri-download-cloud-2-line"></i>
                             Download
                         </a>
                     )}
@@ -116,7 +115,6 @@ export function ModalCV() {
                             className='btn'
                             href='/src/assets/CV_YoswelBCyber_Es.pdf'
                             download='CV_YoswelBCyber_Es.pdf'>
-                            <i className="ri-download-cloud-2-line"></i>
                             Download
                         </a>
                     )}
@@ -125,7 +123,6 @@ export function ModalCV() {
                             className='btn'
                             href='/src/assets/CV_YoswelBDev_En.pdf'
                             download='CV_YoswelBDev_En.pdf'>
-                            <i className="ri-download-cloud-2-line"></i>
                             Download
                         </a>
                     )}
@@ -134,7 +131,6 @@ export function ModalCV() {
                             className='btn'
                             href='/src/assets/CV_YoswelBDev_Es.pdf'
                             download='CV_YoswelBDev_Es.pdf'>
-                            <i className="ri-download-cloud-2-line"></i>
                             Download
                         </a>
                     )}
