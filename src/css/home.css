@@ -16,16 +16,17 @@ nav {
         align-items: center;
         gap: 10px;
 
-        & i { color: var(--bg-green); font-size: 28px; }
-
         & h1 {
             font-size: 25px;
             font-weight: 700;
             color: var(--font-black);
         }
-    }
 
-    & i { color: var(--font-black); font-size: 22px; }
+        & svg {
+            width: 35px;
+            color: var(--font-black);
+        }
+    }
 
     & ul {
         display: flex;
@@ -33,8 +34,8 @@ nav {
 
         & a, button {
             display: flex;
-            text-decoration: none;
             align-items: center;
+            text-decoration: none;
             gap: 8px;
             color: var(--font-black);
             border: none;
@@ -43,14 +44,17 @@ nav {
             font-weight: 500;
             background-color: var(--bg-white);
 
-            & i { color: var(--font-black); font-size: 18px; }
+            & svg {
+                color: var(--font-black);
+                width: 19px;
+            }
 
             &:hover {
                 color: var(--bg-white);
                 background-color: var(--font-black);
                 border-color: var(--font-black);
 
-                & i { color: var(--bg-white); }
+                & svg { color: var(--bg-white); }
             }
         }
     }
@@ -68,18 +72,23 @@ header {
     & .status {
         font-weight: 500;
         font-size: 15px;
-        padding: 8px 15px;
+        padding: 2px;
         border-radius: 20px;
-        outline: 1px solid var(--border-sm-white);
-        background: linear-gradient(30deg, var(--bg-sm-white), var(--bg-white));
-
+        background: linear-gradient(30deg, #000, var(--bg-purple), #000);
+        
         & h3 {
+            padding: 8px 15px;
             display: flex;
             align-items: center;
             gap: 5px;
             color: var(--font-black);
+            background: linear-gradient(30deg, var(--bg-sm-white), var(--bg-white));
+            border-radius: 20px;
 
-            & i { color: var(--bg-green); font-size: 20px; }
+            & svg {
+                width: 20px;
+                color: var(--font-black);
+            }
         }
     }
 
@@ -116,7 +125,9 @@ header {
             font-weight: 500;
             cursor: pointer;
 
-            & i { font-size: 18px; }
+            & svg {
+                width: 22px;
+            }
             
             &:hover {
                 border-color: var(--font-black);
@@ -179,7 +190,7 @@ header {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        background: linear-gradient(90deg, var(--bg-white), var(--bg-green), var(--bg-white));
+        background: linear-gradient(90deg, var(--bg-white), var(--font-black), var(--bg-white));
     }
 
     &::after {
@@ -190,8 +201,8 @@ header {
         bottom: -2px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: var(--bg-green);
-        box-shadow: 0 0 10px var(--bg-green);
+        background-color: var(--font-black);
+        box-shadow: 0 0 10px var(--font-black);
         border-radius: 50%;
     }
 
@@ -231,7 +242,7 @@ header {
     align-items: flex-start;
     flex-direction: column;
     gap: 15px;
-    background: linear-gradient(160deg, var(--bg-sm-white) 0%, var(--bg-white) 30%);
+    background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%);
     position: relative;
     flex: 1 !important;
     border-radius: var(--radius-card);
@@ -245,16 +256,20 @@ header {
         text-transform: uppercase;
         font-family: "Chakra Petch", serif;
 
-        & i { 
-            font-size: 20px; 
-            width: 40px;
-            height: 40px;
+        & .raimbow {
             display: grid;
             place-items: center;
+            padding: 2px;
             border-radius: 8px;
-            color: var(--font-black);
-            background-color: var(--bg-white);
-            outline: 1px solid var(--border-sm-white);
+            background: linear-gradient(30deg, #000, var(--bg-purple), #000);
+
+            & svg { 
+                width: 30px;
+                padding: 6px;
+                border-radius: 6px;
+                color: var(--font-black);
+                background-color: var(--bg-white);  
+            }
         }
     }
 
@@ -304,15 +319,20 @@ header {
                 text-transform: uppercase;
                 font-family: "Chakra Petch", serif;
 
-                & i { 
-                    width: 33px;
-                    height: 30px;
+                & .raimbow {
                     display: grid;
                     place-items: center;
+                    padding: 2px;
                     border-radius: 8px;
-                    font-size: 16px;
-                    color: var(--bg-white);
-                    background-color: var(--font-black);
+                    background: linear-gradient(30deg, #000, var(--font-black), #000);
+        
+                    & svg { 
+                        width: 30px;
+                        padding: 6px;
+                        border-radius: 6px;
+                        color: var(--font);
+                        background-color: var(--bg-white);  
+                    }
                 }
             }
 

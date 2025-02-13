@@ -1,3 +1,5 @@
+import { Collection } from '@/components/icons/HeroIcons'
+
 interface CardTextProps {
     title: string
     text: string
@@ -8,7 +10,9 @@ export function CardText({title, text}: CardTextProps) {
         <article className='cont-card'>
             <div className='card'>
                 <h3 className='title'>
-                    <i className='ri-mickey-fill'></i>
+                    <div className='raimbow'>
+                        <Collection/>
+                    </div>
                     {title}
                 </h3>
                 <p>{text}</p>

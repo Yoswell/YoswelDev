@@ -10,7 +10,9 @@ export function Home() {
     return (
         <main>
             <div className='container-home'>
-                <div className='blur1'></div>
+                <div className='blur1'>
+                    <img src='/Back.jpg' alt='Circle white image background'></img>
+                </div>
 
                 <section id='home'></section>
                 <About />

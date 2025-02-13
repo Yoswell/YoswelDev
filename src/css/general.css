@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "Inter", serif;
-    scroll-behavior: smooth;
-}
-
 :root {
     --bg-white: #000;
     --bg-sm-white: #070707;
@@ -23,13 +13,21 @@
     --font-sm-black: #7f7f85;
     --font-mm-black: #20242b;
 
-    --bg-green: #fffffffb;
-    --bg-blue: #496aee;
-    --bg-mm-blue: #5473ee66;
-    --bg-yellow: #ff3042;
-    --bg-mm-yellow: #ee547566;
+    --bg-purple: #7a5cbc;
 
     --radius-card: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Inter", serif;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-white) transparent !important;
 }
 
 body {
@@ -60,11 +58,11 @@ p { line-height: 24px; }
     top: -650px;
     right: -700px;
     width: 100%;
-    height: 100vh;
-    background-image: url('/Back.jpg');
-    background-repeat: no-repeat;
-    background-size: 1900px;
     z-index: -1;
+
+    & img {
+        width: 1900px;
+    }
 }
 
 footer {
