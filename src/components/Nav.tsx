@@ -1,22 +1,24 @@
+import { Contact, Link, Volt } from '@/components/icons/HeroIcons'
+
 export function Nav() {
     return (
         <nav>
             <div className='row'>
-                <i className='anchor ri-bard-fill'></i>
+                <Volt/>
                 <h1>Vishok</h1>
             </div>
             <div>
                 <ul>
                     <button>
-                        <i className="ri-mail-send-line"></i>
+                        <Contact/>
                         Contact
                     </button>
                     <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr">
-                        <i className='ri-linkedin-fill'></i>
+                        <Link/>
                         LinkedIn
                     </a>
                     <a href="https://github.com/Yoswell">
-                        <i className='ri-github-fill'></i>
+                        <Link/>
                         GitHub
                     </a>
                 </ul>

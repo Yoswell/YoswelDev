@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react'
-import { ModalCV } from './ModalCV';
-import { Nav } from './Nav';
+import { ModalCV } from '@/components/ModalCV'
+import { Nav } from '@/components/Nav'
+import { Download, Info } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
     isOpenModal: false,
@@ -19,7 +20,7 @@ export function About() {
             <Nav/>
             <div className='status'>
                 <h3>
-                    <i className="ri-quill-pen-fill"></i>
+                    <Info/>
                     Available to work immediately
                 </h3>
             </div>
@@ -31,7 +32,7 @@ export function About() {
                 <button
                     className='link active'
                     onClick={() => handleOpenModal()}>
-                    <i className="ri-download-cloud-2-line"></i>
+                    <Download />
                     Download Resume
                 </button>
             </div>

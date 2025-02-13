@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { Idea } from '@/components/icons/HeroIcons'
 
 interface CardProjectProps {
     url: string
@@ -16,7 +17,9 @@ export function CardProject({url, title, text, children}: CardProjectProps) {
                 </picture>
                 <div className='cont-text'>
                     <h3 className='title'>
-                        <i className='ri-hammer-fill'></i>
+                        <div className='raimbow'>
+                            <Idea/>
+                        </div>
                         {title}
                     </h3>
                     <p>{text}</p>
