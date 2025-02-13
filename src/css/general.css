@@ -67,19 +67,6 @@ p { line-height: 24px; }
     z-index: -1;
 }
 
-.blur3 {
-    position: absolute;
-    top: 3500px;
-    left: 0;
-    width: 100%;
-    height: 700px;
-    background-image: url('/Starts2.svg');
-    background-size: 100%;
-    z-index: -10;
-    opacity: 0.5;
-    display: none;
-}
-
 footer {
     position: relative;
     display: grid;
