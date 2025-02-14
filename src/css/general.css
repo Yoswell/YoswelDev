@@ -41,7 +41,6 @@ p { line-height: 24px; }
 
 .container-home {
     padding: 20px 20px;
-    padding-bottom: 0;
     overflow: hidden;
 }
 
@@ -60,9 +59,7 @@ p { line-height: 24px; }
     z-index: -1;
     filter: blur(30px);
 
-    & img {
-        width: 1900px;
-    }
+    & img { width: 1900px; }
 }
 
 .blur2 {
@@ -73,32 +70,57 @@ p { line-height: 24px; }
     z-index: -1;
     filter: blur(30px);
 
-    & img {
-        width: 800px;
-    }
+    & img { width: 800px; }
 }
 
 footer {
     position: relative;
     display: grid;
     place-items: center;
-    padding: 30px 0 50px 0;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
 
-    & h3 {
+    & .cont-image-palette {
         display: flex;
         align-items: center;
-        gap: 5px;
-        color: var(--font-black);
-        padding: 8px 15px;
-        border-radius: 20px;
-        font-size: 15px;
-        outline: 1px solid var(--border-sm-white);
-        background: linear-gradient(30deg, var(--bg-sm-white), var(--bg-white));
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
 
-        & span {
-            color: var(--font-black);
-            font-size: 15px;
+        & img {
+            max-width: 150px;
+            border: 1px solid var(--border-sm-white);
+            border-radius: 20px;
+            background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 30%, var(--border-white) 100%);
+            
+            &:nth-child(1) { transform: rotate(-10deg); }
+            &:nth-child(2) { z-index: 10; }
+            &:nth-child(3) { transform: rotate(10deg); }
         }
+    }
+
+    & .cont-line {
+        & div {
+            background: linear-gradient(To bottom, transparent, var(--border-sm-white), transparent);
+        }
+    }
+
+    & .letter {  
+        & span { font-size: clamp(100px, 50vw, 200px); }
+    }
+
+    & .blur1 {
+        top: -750px;
+        right: -900px;
+        width: 100%;
+    }
+
+    & .blur2 {
+        bottom: -330px;
+        left: -400px;
     }
 }
 
@@ -144,18 +166,89 @@ footer {
     }
 }
 
-@media (max-width: 1200px) {
-    .blur1 {
-        right: -300px;
+.cont-line {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+
+    & div {
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(To bottom, transparent, var(--border-sm-white), transparent);
+        position: relative;
+        
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            width: 1px;
+            height: 40px;
+            border-radius: 0 0 10px 10px;
+            background: linear-gradient(To bottom, transparent, var(--font-black));
+        }
+
+        &:nth-child(1) {
+            &::before { top: 20%; }
+        }
+
+        &:nth-child(3) {
+            &::before { top: 30%; }
+        }
     }
 }
 
-@media (max-width: 900px) {
-    .blur1 {
-        right: -100px;
+.letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    
+    & span {
+        font-size: clamp(100px, 50vw, 600px);
+        color: #ffffff24;
+        z-index: -1;
+        font-family: "Chakra Petch", serif;
+        -webkit-text-stroke: 3px;
+        font-weight: 900;
+        -webkit-text-stroke-color: var(--font-black);
+        user-select: none;
+
+        &:nth-child(1) {
+            opacity: 0.2;
+            &::first-letter { opacity: 0.3; }
+        }
+
+        &:nth-child(2) {
+            opacity: 0.2;
+            &::first-letter { opacity: 0.3; }
+        }
+
+        &:nth-child(3) {
+            opacity: 0.2;
+            &::first-letter { opacity: 0.3; }
+        }
     }
 
-    .column-2 {
-        grid-template-columns: 1fr;
-    }
+    &::first-letter { opacity: 0.1; }
+}
+
+@media (max-width: 1200px) {
+    .blur1 { right: -300px; }
+}
+
+@media (max-width: 900px) {
+    .blur1 { right: -100px; }
+    .column-2 { grid-template-columns: 1fr; }
 }

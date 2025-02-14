@@ -4,20 +4,6 @@
     align-items: center;
     gap: 20px;
     padding: 50px 0;
-
-    & picture {
-        width: 100%;
-        display: grid;
-        place-items: center;
-
-        & img {
-            width: 190px;
-            border-radius: 50%;
-            border: 5px solid var(--border-white);
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-        }
-    }
 }
 
 .cont1 {
@@ -28,7 +14,6 @@
     gap: 10px;
     position: relative;
     max-width: 1200px;
-    margin-top: -70px;
 }
 
 .skill-box {
@@ -39,8 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--border-white);
-    background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 70%, var(--border-white) 100%);
+    border: 1px solid var(--border-sm-white);
+    background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 30%, var(--border-white) 100%);
     position: relative;
     cursor: pointer;
 }
@@ -60,5 +45,5 @@
     border-radius: 10px;
     text-transform: uppercase;
     font-family: "Chakra Petch", serif;
-    font-size: 16px;
+    font-size: 15px;
 }

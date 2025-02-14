@@ -11,9 +11,6 @@ export function Skills() {
     return (
         <div className="cont-squares">
             <span className='float-word'>Movies lover</span>
-            <picture>
-                <img src="/Brand.png" alt="Image me profile" />
-            </picture>
             <div className="cont1">
                 {skills.map((skill, index) => (
                     <SkillBox key={index} name={skill} />
