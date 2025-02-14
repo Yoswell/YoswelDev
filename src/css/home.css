@@ -62,7 +62,7 @@ header {
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    min-height: 800px;
+    min-height: 600px;
     border: 1px solid var(--border-white);
 
     & .status {
@@ -71,15 +71,17 @@ header {
         padding: 2px;
         
         & h3 {
-            padding: 8px 20px;
+            padding: 8px 15px;
             display: flex;
             align-items: center;
             gap: 5px;
-            color: var(--font-black);
+            color: var(--bg-purple);
             border-radius: 20px;
-            background-color: var(--border-sm-white);
+            background-color: var(--bg-purple-dark);
+            border: 2px solid var(--bg-purple);
+            outline: 3px solid var(--bg-purple-dark);
 
-            & svg { width: 20px; color: var(--font-black); }
+            & svg { width: 20px; color: var(--bg-purple); }
         }
     }
 
@@ -106,7 +108,7 @@ header {
         gap: 15px;
 
         & .link {
-            padding: 10px 20px;
+            padding: 8px 15px;
             border-radius: 20px;
             background-color: var(--border-white);
             color: var(--font-black);
@@ -221,7 +223,7 @@ header {
 
 .title-section {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     gap: 5px;
     display: grid;
     position: relative;
@@ -230,7 +232,7 @@ header {
         position: absolute;
         content: '';
         width: 100%;
-        max-width: 900px;
+        max-width: 600px;
         height: 1px;
         bottom: 0;
         left: 50%;

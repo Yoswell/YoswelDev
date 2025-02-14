@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react'
 import { ModalContext } from '@/components/About'
+import { Check, Download } from '@/components/icons/HeroIcons'
 
 export function ModalCV() {
     const { isOpenModal, setIsOpenModal } = useContext(ModalContext)
@@ -24,7 +25,7 @@ export function ModalCV() {
         <section className={`modal ${isOpenModal && "modal-open"}`}>
             <div className='card-modal'>
                 <h5>
-                    <i className="ri-survey-line"></i>
+                    <Download/>
                     Download my resume
                 </h5>
                 <div className='modal-question'>
@@ -40,7 +41,7 @@ export function ModalCV() {
                             </input>
                             <div className="row">
                                 <label htmlFor='cyber_cv' className='select'>
-                                    {areaResumen === 1 && <i className="ri-check-line"></i>}
+                                    {areaResumen === 1 && <Check/>}
                                 </label>
                             </div>
                             <label>Cibersecurity</label>
@@ -55,7 +56,7 @@ export function ModalCV() {
                             </input>
                             <div className="row">
                                 <label htmlFor='dev_cv' className='select'>
-                                    {areaResumen === 2 && <i className="ri-check-line"></i>}
+                                    {areaResumen === 2 && <Check/>}
                                 </label>
                             </div>
                             <label>Develop</label>
@@ -77,7 +78,7 @@ export function ModalCV() {
                                 </input>
                                 <div className="row">
                                     <label htmlFor='cv_english' className='select'>
-                                        {idiomResume === 1 && <i className="ri-check-line"></i>}
+                                        {idiomResume === 1 && <Check/>}
                                     </label>
                                 </div>
                                 <label>English</label>
@@ -92,7 +93,7 @@ export function ModalCV() {
                                 </input>
                                 <div className="row">
                                     <label htmlFor='cv_spanish' className='select'>
-                                        {idiomResume === 2 && <i className="ri-check-line"></i>}
+                                        {idiomResume === 2 && <Check/>}
                                     </label>
                                 </div>
                                 <label>Spanish</label>
@@ -105,32 +106,32 @@ export function ModalCV() {
                     {areaResumen === 1 && idiomResume === 1 && (
                         <a 
                             className='btn'
-                            href='/src/assets/CV_YoswelBCyber_En.pdf'
-                            download='CV_YoswelBCyber_En.pdf'>
+                            href='/src/assets/CV_YoswelCyber_En.pdf'
+                            download='CV_YoswelCyber_En.pdf'>
                             Download
                         </a>
                     )}
                     {areaResumen === 1 && idiomResume === 2 && (
                         <a 
                             className='btn'
-                            href='/src/assets/CV_YoswelBCyber_Es.pdf'
-                            download='CV_YoswelBCyber_Es.pdf'>
+                            href='/src/assets/CV_YoswelCyber_Es.pdf'
+                            download='CV_YoswelCyber_Es.pdf'>
                             Download
                         </a>
                     )}
                     {areaResumen === 2 && idiomResume === 1 && (
                         <a 
                             className='btn'
-                            href='/src/assets/CV_YoswelBDev_En.pdf'
-                            download='CV_YoswelBDev_En.pdf'>
+                            href='/src/assets/CV_YoswelDev_En.pdf'
+                            download='CV_YoswelDev_En.pdf'>
                             Download
                         </a>
                     )}
                     {areaResumen === 2 && idiomResume === 2 && (
                         <a 
                             className='btn'
-                            href='/src/assets/CV_YoswelBDev_Es.pdf'
-                            download='CV_YoswelBDev_Es.pdf'>
+                            href='/src/assets/CV_YoswelDev_Es.pdf'
+                            download='CV_YoswelDev_Es.pdf'>
                             Download
                         </a>
                     )}
