@@ -107,7 +107,9 @@ header {
             z-index: -1;
             font-family: "Chakra Petch", serif;
             -webkit-text-stroke: 3px;
+            font-weight: 900;
             -webkit-text-stroke-color: var(--font-black);
+            user-select: none;
 
             &:nth-child(1) {
                 opacity: 0.2;
@@ -145,9 +147,9 @@ header {
         & .link {
             padding: 10px 20px;
             border-radius: 20px;
-            background-color: var(--border-sm-white);
+            background-color: var(--border-white);
             color: var(--font-black);
-            border: none;
+            border: 1px solid var(--border-sm-white);
             display: flex;
             align-items: center;
             gap: 8px;
@@ -155,11 +157,18 @@ header {
             cursor: pointer;
 
             & svg { width: 22px; }
+
+            &:hover {
+                background-color: var(--font-black);
+                color: var(--bg-white);
+                border-color: var(--font-black);
+            }
         }
 
         & .link.active {
             background-color: var(--font-black);
             color: var(--bg-white);
+            border: none;
         }
     }
 
@@ -333,6 +342,7 @@ header {
         text-transform: uppercase;
         font-family: "Chakra Petch", serif;
         opacity: 0.2;
+        user-select: none;
     }
 }
 

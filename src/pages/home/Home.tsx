@@ -84,7 +84,7 @@ export function Home() {
                             title='GrizzlySpark (web app)'
                             text='Grizzlyspark is an online web platform specially designed for the creation, accommodation and management of CTF challenges (capture the flag) focused on cybersecurity and ethical hacking. The platform allows users both to create their own personalized challenges and participate in existing challenges, facilitating practical learning and skills improvement In key areas of computer security.'
                             children={
-                                <a className='skill' href='#'>View more</a>
+                                <a className='skill' href='#'>In process</a>
                             }>
                         </CardProject>
                         <CardProject 
@@ -93,7 +93,7 @@ export function Home() {
                             text='Devhouse is a non -profit initiative designed to help young developers and apprentices to acquire experience in the real world through The collaboration in practical projects that simulate a professional work environment. Participants perform tasks, attend meetings and use tools Industry standard, everything while receiving mentors guidance and improves their skills in a collaborative and support environment.'
                             children={
                                 <>
-                                <a className='skill' href='#'>View more</a>
+                                <a className='skill' href='#'>Finished</a>
                                 <a className='skill' href='https://github.com/Yoswell/Custom_Timer' target='_black'>Repo</a>
                                 <a className='skill' href='https://yoswell.github.io/Custom_Timer/' target='_black'>Demo</a>
                                 </>
@@ -105,7 +105,7 @@ export function Home() {
                             text='This project, as shown in the image, is an almost exact replica of a specific page of the Microsoft Learn platform. Its purpose is to serve as a visual and structural clone of the user interface of that page. It is designed only for the border, which means that it is limited to the graphic representation and the visual structure of the original page, not including the functionality or dynamic interaction that characterizes the real version of the platform.'
                             children={
                                 <>
-                                <a className='skill' href='#'>View more</a>
+                                <a className='skill' href='#'>Finished</a>
                                 <a className='skill' href='https://github.com/Yoswell/Clone_Microsoft_Learn' target='_black'>Repo</a>
                                 </>
                             }>
@@ -115,7 +115,7 @@ export function Home() {
                             title='Devhouse (web app)'
                             text='Devhouse is a non -profit initiative designed to help young developers and apprentices to acquire experience in the real world through The collaboration in practical projects that simulate a professional work environment. Participants perform tasks, attend meetings and use tools Industry standard, everything while receiving mentors guidance and improves their skills in a collaborative and support environment.'
                             children={
-                                <a className='skill' href='#'>View more</a>
+                                <a className='skill' href='#'>In process</a>
                             }>
                         </CardProject>
                         <CardProject 
@@ -124,7 +124,7 @@ export function Home() {
                             text='Dragon Tech is a platform that simulates an eCommerce specialized in PC components, offering a fluid and intuitive shopping experience. It features a shopping cart system, as well as well-organized sections for different types of hardware, allowing users to easily browse and select the products they need.'
                             children={
                                 <>
-                                <a className='skill' href='#'>View more</a>
+                                <a className='skill' href='#'>Finished</a>
                                 <a className='skill' href='https://github.com/Yoswell/Ecommerce' target='_black'>Repo</a>
                                 <a className='skill' href='https://yoswell.github.io/Ecommerce/dmlzaG9rQ1RGezVoMHJ0M24zZF9sMW5rNV80cjNfaDB3X3QwX240djFnNHQzX2JsMW5kbDR9.html' target='_black'>Demo</a>
                                 </>
@@ -135,7 +135,7 @@ export function Home() {
                             title='Dragon Tech (web page)'
                             text='MedPoint is a web application designed to meet the needs of a clinic, offering a comprehensive and easy-to-use system. Its functionalities include login for patients, employees and administrators, patient and doctor management, consultation visualization, interactive dashboards and billing of services. In addition, it has a modern and user-friendly design for a better user experience.'
                             children={
-                                <a className='skill' href='#'>View more</a>
+                                <a className='skill' href='#'>In process</a>
                             }>
                         </CardProject>
                     </div>
