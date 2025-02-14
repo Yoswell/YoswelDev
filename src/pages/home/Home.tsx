@@ -5,20 +5,45 @@ import { Skills } from '@/components/skills'
 import { Title } from '@/components/recycle/Title'
 import { FloatButtons } from '@/components/recycle/FloatButtons'
 import { Footer } from '@/components/recycle/Footer'
+import { CardAudio } from '@/components/CardAudio'
 
 export function Home() {
     return (
         <main>
             <div className='container-home'>
-                <div className='blur1'>
-                    <img src='/Back.jpg' alt='Circle white image background'></img>
-                </div>
-
                 <section id='home'></section>
                 <About />
 
+                <section className='audio-cont'>
+                    <CardAudio 
+                        music='/src/assets/Arms.m4a'
+                        title='Arms around you'
+                        author='XXXTentationXXX'
+                        type={1}>
+                    </CardAudio>
+                    <CardAudio
+                        music='/src/assets/Write.m4a'
+                        title='Write This Down'
+                        author='50 cent, Drake'
+                        type={2}>
+                    </CardAudio>
+                    <CardAudio
+                        music='/src/assets/Maqui.m4a'
+                        title='Maquiavelico'
+                        author='Cancerbero'
+                        type={3}>
+                    </CardAudio>
+                    <CardAudio
+                        music='/src/assets/Sunflower.m4a'
+                        title='Sunflower'
+                        author='Post Malone'
+                        type={1}>
+                    </CardAudio>
+                </section>
+
                 <Title title='Experience' subTitle='Then I present my experience work' />
                 <div className='experience'>
+                    <span className='float-word'>Technology lover</span>
                     <div className='column-2'>
                         <CardText 
                             title='Volunteer Nicasecurity (Oct 2024 - Present)'
@@ -31,8 +56,9 @@ export function Home() {
                     </div>
                 </div>
 
-                <Title title='Freelance Services' subTitle='Here are some of the services that I offer' />
+                <Title title='Services' subTitle='Here are some of the services that I offer' />
                 <div className='service'>
+                    <span className='float-word'>Futbool lover</span>
                     <div className='column-2'>
                         <CardText 
                             title='University Works'
@@ -55,6 +81,7 @@ export function Home() {
 
                 <Title title='Projects' subTitle='Here are a few projects, not all (only I considered most relevant)' />
                 <div className='projects'>
+                    <span className='float-word'>Game lover</span>
                     <div className='column-2'>
                         <CardProject 
                             url='/GSpark.png'
@@ -123,6 +150,7 @@ export function Home() {
                 
                 <Title title='Extras' subTitle='Here there are more projects, in this case, projects related to Cibersecurity' />
                 <div className='extras'>
+                    <span className='float-word'>Music lover</span>
                     <div className='column-2'>
                         <CardProject 
                             url='/MLearn.png'

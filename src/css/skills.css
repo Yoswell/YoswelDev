@@ -1,13 +1,9 @@
 .cont-squares {
-    width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    gap: 20px;
     padding: 50px 0;
-    position: relative;
-    overflow: hidden;
-    gap: 10px;
 
     & picture {
         width: 100%;
@@ -22,224 +18,47 @@
             mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
         }
     }
-    
-    & .cont1, .cont2, .cont3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-top: -50px;
-
-        & div {
-            width: 70px;
-            height: 70px;
-            border-radius: 15px;
-            transition: cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
-            display: grid;
-            place-items: center;
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border-white);
-            
-            &:hover {
-                transform: rotate(0);
-                z-index: 10;
-
-                & span {
-                    scale: 1;
-                    background-color: var(--font-black);
-                    color: var(--bg-white);
-                }
-            }
-
-            & span {
-                scale: 0;
-                position: absolute;
-                top: -40px;
-                font-weight: 500;
-                white-space: nowrap;
-                padding: 3px 20px;
-                text-align: center;
-                background-color: var(--bg-white);
-                border-radius: 6px;
-                transition: 150ms;
-            }
-        }
-    }
-
-    .cont2 {
-        margin-top: 0;
-        transform: translateX(240px);
-    }
-
-    .cont3 {
-        margin-top: 0;
-        transform: translateX(-320px);
-    }
 }
 
-.js, .dotnet, .cs, .git, .react, .html,
-.java, .discord, .linux, .py, .ts, .debian,
-.vscode, .kali, .visualStudio, .vite, .postman,
-.css {
+.cont1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     position: relative;
-
-    &::before {
-        position: absolute;
-        content: '';
-        width: 45px;
-        height: 45px;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-radius: 10px;
-    }
+    max-width: 1200px;
+    margin-top: -70px;
 }
 
-.js {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('/js.svg');
-        filter: drop-shadow(0 0 10px #d9e56a);
-    }
+.skill-box {
+    width: auto;
+    height: 40px;
+    padding: 8px 20px !important;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-white);
+    background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 70%, var(--border-white) 100%);
+    position: relative;
+    cursor: pointer;
 }
 
-.dotnet {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('https://skillicons.dev/icons?i=dotnet');
-        box-shadow: 0 0 30px #6642ba;
-    }
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    background-color: var(--font-black);
 }
 
-.cs {
-    &::before {
-        animation: shadow infinite linear 2s;
-        background-image: url('https://skillicons.dev/icons?i=cs');
-        box-shadow: 0 0 30px #895595;
-    }
-}
-
-.git {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('https://skillicons.dev/icons?i=git');
-        box-shadow: 0 0 30px #bb5757;
-    }
-}
-
-.react {
-    &::before {
-        animation: shadow infinite linear 2s;
-        background-image: url('/react.svg');
-        filter: drop-shadow(0 0 10px #6ac2e5);
-    }
-}
-
-.html {
-    &::before {
-        animation: shadow infinite linear 4s;
-        background-image: url('/html.svg');
-        filter: drop-shadow(0 0 10px #d36544);
-    }
-}
-
-.java {
-    &::before {
-        animation: shadow infinite linear 4s;
-        background-image: url('/java.png');
-        filter: drop-shadow(0 0 10px #d37144);
-    }
-}
-
-.linux {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('/linux.svg');
-        filter: drop-shadow(0 0 10px #7573ee);
-    }
-}
-
-.py {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('/py.png');
-        filter: drop-shadow(0 0 10px #4b7fb7);
-    }
-}
-
-.ts {
-    &::before {
-        animation: shadow infinite linear 2s;
-        background-image: url('https://skillicons.dev/icons?i=ts');
-        box-shadow: 0 0 30px #576ebb;
-    }
-}
-
-.debian {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('/debian.png');
-        filter: drop-shadow(0 0 10px #fd5c69);
-    }
-}
-
-.kali {
-    &::before {
-        animation: shadow infinite linear 4s;
-        background-image: url('https://skillicons.dev/icons?i=kali');
-        filter: drop-shadow(0 0 10px #434a5997);
-    }
-}
-
-.vscode {
-    &::before {
-        animation: shadow infinite linear 4s;
-        background-image: url('https://skillicons.dev/icons?i=vscode');
-        filter: drop-shadow(0 0 10px #434a5997);
-    }
-}
-
-.vite {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('https://skillicons.dev/icons?i=vite');
-        filter: drop-shadow(0 0 10px #434a5997);
-    }
-}
-
-
-.visualStudio {
-    &::before {
-        animation: shadow infinite linear 3s;
-        background-image: url('https://skillicons.dev/icons?i=visualstudio');
-        filter: drop-shadow(0 0 10px #434a5997);
-    }
-}
-
-.postman {
-    &::before {
-        animation: shadow infinite linear 2s;
-        background-image: url('https://skillicons.dev/icons?i=postman');
-        filter: drop-shadow(0 0 10px #d36544);
-    }
-}
-
-.css {
-    &::before {
-        animation: shadow infinite linear 4s;
-        background-image: url('https://skillicons.dev/icons?i=css');
-        filter: drop-shadow(0 0 10px #4484d3);
-    }
-}
-
-@keyframes shadow {
-    0% {
-        opacity: 1;
-    } 50% {
-        opacity: 0.5;
-    } 100% {
-        opacity: 1;
-    }
+.skill-text {
+    color: var(--font-black);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "Chakra Petch", serif;
 }

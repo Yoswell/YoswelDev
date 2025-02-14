@@ -40,10 +40,9 @@ body {
 p { line-height: 24px; }
 
 .container-home {
-    padding: 70px 20px;
+    padding: 20px 20px;
     padding-bottom: 0;
     overflow: hidden;
-    padding-top: 10px;
 }
 
 .column-2 {
@@ -59,9 +58,23 @@ p { line-height: 24px; }
     right: -700px;
     width: 100%;
     z-index: -1;
+    filter: blur(30px);
 
     & img {
         width: 1900px;
+    }
+}
+
+.blur2 {
+    position: absolute;
+    bottom: -330px;
+    left: -400px;
+    width: 100%;
+    z-index: -1;
+    filter: blur(30px);
+
+    & img {
+        width: 800px;
     }
 }
 

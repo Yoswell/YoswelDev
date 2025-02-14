@@ -1,366 +1,48 @@
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+
 export function Skills() {
+    const skills = [
+        "JavaScript", ".NET", "Git", "Linux", "Debian", "Java",
+        "TypeScript", "C#", "Python", "HTML", "React", "VS Code",
+        "Vite", "Kali", "Visual Studio", "Postman", "CSS"
+    ]
+
     return (
         <div className="cont-squares">
+            <span className='float-word'>Movies lover</span>
             <picture>
-                <img src="/Brand.png" alt="Image me profile"></img>
+                <img src="/Brand.png" alt="Image me profile" />
             </picture>
             <div className="cont1">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div className="js">
-                    <span>JavaScript</span>
-                </div>
-                <div></div>
-                <div className="dotnet">
-                    <span>.NET</span>
-                </div>
-                <div></div>
-                <div className="git">
-                    <span>Git</span>
-                </div>
-                <div></div>
-                <div className="linux">
-                    <span>Linux</span>
-                </div>
-                <div></div>
-                <div className="debian">
-                    <span>Debian</span>
-                </div>
-                <div></div>
-                <div className="java">
-                    <span>Java</span>
-                </div>
-                <div></div>
-                <div className="ts">
-                    <span>TypeScript</span>
-                </div>
-                <div></div>
-                <div className="cs">
-                    <span>C#</span>
-                </div>
-                <div></div>
-                <div className="py">
-                    <span>Python</span>
-                </div>
-                <div></div>
-                <div className="html">
-                    <span>HTML</span>
-                </div>
-                <div></div>
-                <div className="react">
-                    <span>React</span>
-                </div>
-                <div></div>
-                <div className="vscode">
-                    <span>VS Code</span>
-                </div>
-                <div></div>
-                <div className="vite">
-                    <span>Vite</span>
-                </div>
-                <div></div>
-                <div className="kali">
-                    <span>Kali</span>
-                </div>
-                <div></div>
-                <div className="visualStudio">
-                    <span>Visual Studio</span>
-                </div>
-                <div></div>
-                <div className="postman">
-                    <span>Postman</span>
-                </div>
-                <div></div>
-                <div className="css">
-                    <span>CSS</span>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div className="cont2">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div className="js">
-                    <span>JavaScript</span>
-                </div>
-                <div></div>
-                <div className="dotnet">
-                    <span>.NET</span>
-                </div>
-                <div></div>
-                <div className="git">
-                    <span>Git</span>
-                </div>
-                <div></div>
-                <div className="linux">
-                    <span>Linux</span>
-                </div>
-                <div></div>
-                <div className="debian">
-                    <span>Debian</span>
-                </div>
-                <div></div>
-                <div className="java">
-                    <span>Java</span>
-                </div>
-                <div></div>
-                <div className="ts">
-                    <span>TypeScript</span>
-                </div>
-                <div></div>
-                <div className="cs">
-                    <span>C#</span>
-                </div>
-                <div></div>
-                <div className="py">
-                    <span>Python</span>
-                </div>
-                <div></div>
-                <div className="html">
-                    <span>HTML</span>
-                </div>
-                <div></div>
-                <div className="react">
-                    <span>React</span>
-                </div>
-                <div></div>
-                <div className="vscode">
-                    <span>VS Code</span>
-                </div>
-                <div></div>
-                <div className="vite">
-                    <span>Vite</span>
-                </div>
-                <div></div>
-                <div className="kali">
-                    <span>Kali</span>
-                </div>
-                <div></div>
-                <div className="visualStudio">
-                    <span>Visual Studio</span>
-                </div>
-                <div></div>
-                <div className="postman">
-                    <span>Postman</span>
-                </div>
-                <div></div>
-                <div className="css">
-                    <span>CSS</span>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div className="cont3">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div className="js">
-                    <span>JavaScript</span>
-                </div>
-                <div></div>
-                <div className="dotnet">
-                    <span>.NET</span>
-                </div>
-                <div></div>
-                <div className="git">
-                    <span>Git</span>
-                </div>
-                <div></div>
-                <div className="linux">
-                    <span>Linux</span>
-                </div>
-                <div></div>
-                <div className="debian">
-                    <span>Debian</span>
-                </div>
-                <div></div>
-                <div className="java">
-                    <span>Java</span>
-                </div>
-                <div></div>
-                <div className="ts">
-                    <span>TypeScript</span>
-                </div>
-                <div></div>
-                <div className="cs">
-                    <span>C#</span>
-                </div>
-                <div></div>
-                <div className="py">
-                    <span>Python</span>
-                </div>
-                <div></div>
-                <div className="html">
-                    <span>HTML</span>
-                </div>
-                <div></div>
-                <div className="react">
-                    <span>React</span>
-                </div>
-                <div></div>
-                <div className="vscode">
-                    <span>VS Code</span>
-                </div>
-                <div></div>
-                <div className="vite">
-                    <span>Vite</span>
-                </div>
-                <div></div>
-                <div className="kali">
-                    <span>Kali</span>
-                </div>
-                <div></div>
-                <div className="visualStudio">
-                    <span>Visual Studio</span>
-                </div>
-                <div></div>
-                <div className="postman">
-                    <span>Postman</span>
-                </div>
-                <div></div>
-                <div className="css">
-                    <span>CSS</span>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                {skills.map((skill, index) => (
+                    <SkillBox key={index} name={skill} />
+                ))}
             </div>
         </div>
+    )
+}
+
+interface SkillBoxProps {
+    name: string
+}
+function SkillBox({name}: SkillBoxProps) {
+    const [rotation, setRotation] = useState(0)
+
+    return (
+        <motion.div
+            className="skill-box"
+            onHoverStart={() => setRotation(Math.random() * 30 - 10)}
+            whileHover={{ scale: 1.2, rotate: rotation }}
+            transition={{ duration: 0.3, ease: [0.95, 0.05, 0.795, 0.035] }}>
+            <motion.span
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                transition={{ duration: 0.2 }}
+                className="tooltip">
+                {name}
+            </motion.span>
+            <span className="skill-text">{name}</span>
+        </motion.div>
     )
 }
