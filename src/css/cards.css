@@ -1,0 +1,245 @@
+.cont-card { display: flex; }
+
+.card {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%, var(--bg-white) 100%);
+    border-radius: 20px;
+    outline: 1px solid var(--border-white);
+
+    & .title {
+        font-size: 18px;
+        color: var(--font-black);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-transform: uppercase;
+        font-family: "Chakra Petch", serif;
+
+        & .raimbow {
+            display: grid;
+            place-items: center;
+            padding: 2px;
+            border-radius: 8px;
+            background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 50%);
+
+            & svg { 
+                width: 30px;
+                padding: 6px;
+                border-radius: 6px;
+                color: var(--font-black);
+                background-color: var(--bg-white);  
+            }
+        }
+    }
+
+    & p { 
+        color: var(--font-sm-black);
+        -webkit-mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+.audio-cont {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.cardAudio {
+    width: 100%;
+    background-color: var(--bg-mm-white);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    padding-right: 15px;
+    border: 1px solid var(--border-white);
+    background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 70%, var(--border-white) 100%);
+
+    & img { 
+        width: 120px;
+        -webkit-mask-image: linear-gradient(To right, var(--bg-white), transparent);
+        mask-image: linear-gradient(To right, var(--bg-white), transparent);
+    }
+
+    & .row {
+        display: grid;
+        gap: 5px;
+
+        & h4 {
+            color: var(--font-black);
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        & h6 { color: var(--font-sm-black); font-size: 13px; }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 5px;
+            background: var(--border-sm-white);
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            margin-top: 10px;
+        } 
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            background: var(--bg-white);
+            cursor: pointer;
+            border: 2px solid var(--bg-purple);
+        }
+          
+        input[type="range"]::-moz-range-thumb {
+            -webkit-appearance: none;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            background: var(--bg-purple);
+            cursor: pointer;
+            border: 2px solid var(--font-black);
+        }
+          
+        input[type="range"]::-ms-thumb {
+            -webkit-appearance: none;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            background: var(--bg-purple);
+            cursor: pointer;
+            border: 2px solid var(--font-black);
+        }
+    }
+
+    & .play {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: grid;
+        place-items: center;
+        background-color: var(--border-white);
+        border-radius: 13px;
+        padding: 6px;
+        background:var(--border-white);
+        border: 1px solid var(--border-sm-white);
+
+        & svg { width: 20px; color: var(--font-black); }
+    }
+}
+
+.projects, .extras {
+    & .cardProject {
+        width: 100%;
+        background-color: var(--bg-white);
+        position: relative;
+        border-radius: var(--radius-card);
+        overflow: hidden; 
+        border-radius: 20px;
+        outline: 1px solid var(--border-white);
+    
+        & picture {
+            padding: 0;
+            margin: 0;
+            background-color: var(--bg-white);
+        }
+        
+        & img { 
+            max-width: 100%;
+            -webkit-mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+            mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        & .cont-text {
+            padding: 20px;
+            display: grid;
+            gap: 15px; 
+            background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 70%, var(--border-white) 100%);
+
+            & .title {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                color: var(--font-black);
+                font-size: 18px;
+                text-transform: uppercase;
+                font-family: "Chakra Petch", serif;
+
+                & .raimbow {
+                    display: grid;
+                    place-items: center;
+                    padding: 2px;
+                    border-radius: 8px;
+                    background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 50%);
+        
+                    & svg { 
+                        width: 30px;
+                        padding: 6px;
+                        border-radius: 6px;
+                        color: var(--font-black);
+                        background-color: var(--bg-white);  
+                    }
+                }
+            }
+
+            & p {
+                color: var(--font-sm-black);
+                max-width: 70ch;
+                -webkit-mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+                mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+            }
+        }
+
+        & .cont-skill {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            top: 0;
+
+            & .skill {
+                padding: 6px 16px;
+                font-size: 13px;
+                border-radius: 10px;
+                text-decoration: none;
+                font-weight: 600;
+                color: var(--font-black);
+                background-color: var(--border-white);
+                border: 1px solid var(--border-sm-white);
+
+                &:hover {
+                    background-color: var(--font-black);
+                    color: var(--bg-white);
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.extras {
+    & .cardProject {
+        & picture { display: none; }
+    }
+
+    & .cont-text { background: linear-gradient(160deg, var(--bg-sm-white) 0%, var(--bg-white) 30%); }
+    & .cont-skill { right: 0; }
+}

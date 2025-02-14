@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react'
 import { ModalCV } from '@/components/ModalCV'
 import { Nav } from '@/components/Nav'
-import { Download, Info } from '@/components/icons/HeroIcons'
+import { Download, Info, Contact, Arrow } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
     isOpenModal: false,
@@ -17,6 +17,10 @@ export function About() {
 
     return (
         <header>
+            <div className='blur1'>
+                <img src='/Back.jpg' alt='Circle white image background'></img>
+            </div>
+
             <Nav/>
             <div className='status'>
                 <h3>
@@ -26,9 +30,19 @@ export function About() {
             </div>
             <div>
                 <h1>Hey, I'm Yoswel Badilla</h1>
+                <div className='letter'>
+                    <span>VI</span>
+                    <span>SH</span>
+                    <span>OK</span>
+                </div>
                 <p>Full-Stack Developer and Cybersecurity Analyst, my passion for technological innovation has led me to specialize in the development of applications that not only solve complex problems in a timely manner. efficient, but also designed with a robust and secure architecture</p>
             </div>
             <div className='social-media'>
+                <button
+                    className='link'>
+                    <Contact />
+                    Contact me
+                </button>
                 <button
                     className='link active'
                     onClick={() => handleOpenModal()}>
@@ -36,21 +50,35 @@ export function About() {
                     Download Resume
                 </button>
             </div>
-            <picture className='image-about'>
-                <div className='cont-image'>
-                    <img src='GSpark.png'></img>
-                </div>
-                <div className='cont-image'>
-                    <img src='DHouse.png'></img>
-                </div>
-                <div className='cont-image'>
-                    <img src='CTimer.jpg'></img>
-                </div>
-            </picture>
+            <div className='cont-line'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
             <ModalContext value={{isOpenModal, setIsOpenModal}}>
                 <ModalCV/>
             </ModalContext>
+
+            <div className='float-left-bottom'>
+                <Arrow/>
+                <h4>Scroll dowm</h4>
+            </div>
+
+            <div className='float-right-bottom'>
+                <h4>Available sections</h4>
+                <div className='row'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div className='blur2'>
+                <img src='/Back.jpg' alt='Circle white image background'></img>
+            </div>
         </header>
     )
 }
