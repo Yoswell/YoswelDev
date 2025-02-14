@@ -18,7 +18,7 @@ export function About() {
     return (
         <header>
             <div className='blur1'>
-                <img src='/Back.jpg' alt='Circle white image background'></img>
+                <img src='/Back.webp' alt='Circle white image background'></img>
             </div>
 
             <Nav/>
@@ -64,20 +64,20 @@ export function About() {
                 <Arrow/>
                 <h4>Scroll dowm</h4>
             </div>
-
             <div className='float-right-bottom'>
                 <h4>Available sections</h4>
                 <div className='row'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <a href='#home'><span>About</span></a>
+                    <a href='#experience'><span>Experience</span></a>
+                    <a href='#service'><span>Service</span></a>
+                    <a href='#projects'><span>Projects</span></a>
+                    <a href='#stack'><span>My Stack</span></a>
+                    <a href='#extras'><span>Extras</span></a>
                 </div>
             </div>
 
             <div className='blur2'>
-                <img src='/Back.jpg' alt='Circle white image background'></img>
+                <img src='/Back.webp' alt='Circle white image background'></img>
             </div>
         </header>
     )

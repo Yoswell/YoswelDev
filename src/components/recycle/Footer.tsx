@@ -1,7 +1,17 @@
 export function Footer() {
     return (
         <footer>
-            <h3>Develop with much love by <span>Vishok</span></h3>
+            <div className='cont-line'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div className="cont-image-palette">
+                <img src="/Grizzly.webp" alt="Image card palette"></img>
+                <img src="/OIG4.webp" alt="Image card palette"></img>
+                <img src="/Vishok.webp" alt="Image card palette"></img>
+            </div>
         </footer>
     )
 }
