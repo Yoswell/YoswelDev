@@ -6,6 +6,7 @@ import { Title } from '@/components/recycle/Title'
 import { FloatButtons } from '@/components/recycle/FloatButtons'
 import { Footer } from '@/components/recycle/Footer'
 import { CardAudio } from '@/components/CardAudio'
+import { Potion, Rocket, Service } from '@/components/icons/HeroIcons'
 
 export function Home() {
     return (
@@ -42,6 +43,9 @@ export function Home() {
                 <div className='experience'>
                     <span className='float-word'>Technology lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-right'>
+                            <Potion/>
+                        </div>
                         <CardText 
                             title='Volunteer Nicasecurity (Oct 2024 - Present)'
                             text='I am part of the community contributing to the development of web tools and the creation of CTF challenges, with the aim of supporting learning and cybersecurity. Teamwork to design interactive content that fosters a collaborative space, where participants can improve their technical skills and face challenging challenges.'>
@@ -58,6 +62,9 @@ export function Home() {
                 <div className='service'>
                     <span className='float-word'>Futbool lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-left'>
+                            <Service/>
+                        </div>
                         <CardText 
                             title='University Works'
                             text='I offer assistance and support in carrying out university works related to computer science. From the investigation to the writing, I can Help you achieve your academic goals with quality and precision.'>
@@ -82,6 +89,9 @@ export function Home() {
                 <div className='projects'>
                     <span className='float-word'>Game lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-right'>
+                            <Rocket/>
+                        </div>
                         <CardProject 
                             url='/GSpark.png'
                             title='GrizzlySpark (web app)'
@@ -153,13 +163,16 @@ export function Home() {
                 <div className='extras'>
                     <span className='float-word'>Music lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-right'>
+                            <Rocket/>
+                        </div>
                         <CardProject 
                             url='/MLearn.png'
                             title='GrizzlySpark Tool'
                             text='A powerful tool written in Python designed to assist CTF (Capture The Flag) participants in solving cybersecurity challenges. This tool provides several useful functionalities that facilitate data analysis and manipulation, allowing users to focus on solving the challenges.'
                             children={
                                 <>
-                                <a className='skill' href='https://github.com/Yoswell/GrizzlySpark'>Repo</a>
+                                <a className='skill' target='_blanck' href='https://github.com/Yoswell/GrizzlySpark'>Repo</a>
                                 </>
                             }>
                         </CardProject>
@@ -169,7 +182,7 @@ export function Home() {
                             text='Welcome to the Lets Defend Alerts Reviews Repository, your one-stop destination for detailed, insightful, and practical guides on how to address various alerts within the Lets Defend platform. It is currently under development but I hope to have more resolutions soon.'
                             children={
                                 <>
-                                <a className='skill' href='https://github.com/Yoswell/LetsDefend-Alerts'>Repo</a>
+                                <a className='skill' target='_blanck' href='https://github.com/Yoswell/LetsDefend-Alerts'>Repo</a>
                                 </>
                             }>
                         </CardProject>

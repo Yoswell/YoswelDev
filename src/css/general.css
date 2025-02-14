@@ -13,7 +13,8 @@
     --font-sm-black: #7f7f85;
     --font-mm-black: #20242b;
 
-    --bg-purple: #7a5cbc;
+    --bg-purple: #afffe4;
+    --bg-purple-dark: #afffe412;
 
     --radius-card: 10px;
 }
@@ -49,6 +50,7 @@ p { line-height: 24px; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    position: relative;
 }
 
 .blur1 {
@@ -215,6 +217,7 @@ footer {
     justify-content: center;
     z-index: -1;
     
+    display: none;
     & span {
         font-size: clamp(100px, 50vw, 600px);
         color: #ffffff24;
@@ -242,6 +245,93 @@ footer {
     }
 
     &::first-letter { opacity: 0.1; }
+}
+
+.float-icon-left, .float-icon-right {
+    position: absolute;
+    top: -20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-sm-white);
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(160deg, var(--bg-purple-dark) 0%, var(--bg-white) 50%);
+    z-index: 100;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: -20px;
+        border-radius: 10px;
+        border: 1px solid var(--border-sm-white);
+        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
+        box-shadow: 10px 10px 10px var(--bg-white);
+        animation: floatOne infinite linear 3s;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        top: -30px;
+        right: -20px;
+        border-radius: 10px;
+        border: 1px solid var(--border-sm-white);
+        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
+        animation: floatTwo infinite linear 2s;
+    }
+    
+    & svg {
+        width: 50px;
+        color: var(--bg-purple);
+    }
+}
+
+.float-icon-left {
+    top: -30px;
+    left: -30px;
+    transform: rotate(-5deg);
+}
+
+.float-icon-right {
+    top: -30px;
+    right: -30px;
+    transform: rotate(5deg);
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: -20px;
+        border-radius: 10px;
+        border: 1px solid var(--border-sm-white);
+        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
+        box-shadow: 10px 10px 10px var(--bg-white);
+        animation: floatOne infinite linear 3s;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        top: -30px;
+        right: -20px;
+        border-radius: 10px;
+        border: 1px solid var(--border-sm-white);
+        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
+        animation: floatTwo infinite linear 2s;
+    }
+    
+    & svg {
+        width: 50px;
+        color: var(--bg-purple);
+    }
 }
 
 @media (max-width: 1200px) {

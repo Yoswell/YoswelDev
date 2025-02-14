@@ -24,7 +24,7 @@
             place-items: center;
             padding: 2px;
             border-radius: 8px;
-            background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 50%);
+            background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 100%);
 
             & svg { 
                 width: 30px;
@@ -98,9 +98,9 @@
             height: 13px;
             width: 13px;
             border-radius: 50%;
-            background: var(--bg-white);
-            cursor: pointer;
+            background-color: var(--bg-purple-dark);
             border: 2px solid var(--bg-purple);
+            backdrop-filter: blur(10px);
         }
           
         input[type="range"]::-moz-range-thumb {
@@ -108,9 +108,9 @@
             height: 13px;
             width: 13px;
             border-radius: 50%;
-            background: var(--bg-purple);
-            cursor: pointer;
-            border: 2px solid var(--font-black);
+            background-color: var(--bg-purple-dark);
+            border: 2px solid var(--bg-purple);
+            backdrop-filter: blur(10px);
         }
           
         input[type="range"]::-ms-thumb {
@@ -118,9 +118,9 @@
             height: 13px;
             width: 13px;
             border-radius: 50%;
-            background: var(--bg-purple);
-            cursor: pointer;
-            border: 2px solid var(--font-black);
+            background-color: var(--bg-purple-dark);
+            border: 2px solid var(--bg-purple);
+            backdrop-filter: blur(10px);
         }
     }
 
@@ -162,7 +162,7 @@
             padding: 20px;
             display: grid;
             gap: 15px; 
-            background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 70%, var(--border-white) 100%);
+            background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%, var(--bg-white) 100%);
 
             & .title {
                 display: flex;
@@ -178,7 +178,7 @@
                     place-items: center;
                     padding: 2px;
                     border-radius: 8px;
-                    background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 50%);
+                    background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 100%);
         
                     & svg { 
                         width: 30px;
@@ -208,21 +208,16 @@
             align-items: center;
             gap: 8px;
             position: absolute;
-            top: 0;
 
             & .skill {
-                padding: 4px 8px;
-                font-size: 11px;
+                padding: 5px 10px;
+                font-size: 12px;
                 border-radius: 6px;
                 text-decoration: none;
                 color: var(--font-black);
                 background-color: var(--border-white);
                 outline: 1px solid var(--border-sm-white);
                 font-weight: 600;
-
-                &:nth-child(1) {
-                    background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 50%);
-                }
             }
         }
     }
@@ -231,7 +226,7 @@
 .projects {
     .cardProject {
         padding: 20px;
-        background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 20%, var(--bg-white) 85%, var(--border-white) 100%);
+        background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 15%, var(--bg-white) 90%, var(--border-white) 100%);
 
         & img {
             border: 1px solid var(--bg-mm-white);
@@ -253,5 +248,30 @@
     }
 
     & .cont-text { background: linear-gradient(160deg, var(--bg-sm-white) 0%, var(--bg-white) 30%); }
-    & .cont-skill { right: 0; }
+    
+    & .cont-skill { 
+        z-index: 101; 
+        right: 0;
+        bottom: 0 !important;
+    }
+}
+
+@keyframes floatOne {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    } 50% {
+        transform: translateX(-3px) translateY(-10px);
+    } 100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+@keyframes floatTwo {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    } 50% {
+        transform: translateX(-2px) translateY(-5px);
+    } 100% {
+        transform: translateX(0%) translateY(0%);
+    }
 }

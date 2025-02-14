@@ -6,7 +6,7 @@
     height: 100vh;
     display: none;
     place-items: center;
-    backdrop-filter: blur(3px) brightness(0.2);
+    backdrop-filter: blur(5px) brightness(0.1);
     z-index: 1000;
 
     & .card-modal {
@@ -36,16 +36,29 @@
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                background: linear-gradient(90deg, var(--bg-white), var(--bg-green), var(--bg-white));
+                background: linear-gradient(90deg, var(--bg-white), var(--font-black), var(--bg-white));
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 5px;
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: var(--font-black);
+                box-shadow: 0 0 15px var(--font-black);
+                border-radius: 6px;
             }
             
-            & i {
-                width: 30px;
+            & svg {
+                width: 35px;
                 height: 30px;
                 display: grid;
                 place-items: center;
-                border-radius: 4px;
-                font-size: 16px;
+                border-radius: 8px;
+                padding: 5px;
                 color: var(--bg-white);
                 background-color: var(--font-black);
             }
@@ -62,9 +75,9 @@
             display: grid;
             gap: 10px;
             padding: 15px;
-            border-radius: var(--radius-card);
-            background-color: var(--bg-mm-white);
+            border-radius: 20px;
             border: 1px solid var(--border-sm-white);
+            background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%, var(--bg-white) 100%);
 
             & .row {
                 display: flex;
@@ -96,10 +109,10 @@
                 align-items: center;
                 gap: 8px;
                 text-decoration: none;
-                background-color: var(--bg-mm-white);
-                border-color: var(--border-white);
-
-                & i { font-size: 15px; }
+                background-color: var(--border-white);
+                border-color: var(--border-sm-white);
+                padding: 8px 15px;
+                border-radius: 15px;
 
                 &:hover {
                     color: var(--bg-white);
@@ -116,12 +129,16 @@
 .select {
     width: 18px;
     height: 18px;
-    background-color: var(--font-black);
+    background-color: var(--border-white);
+    outline: 1px solid var(--border-sm-white);
     border-radius: 4px;   
     display: grid;
     place-content: center;
 
-    & i { color: var(--bg-white); }
+    & svg {
+        width: 16px;
+        color: var(--font-black);
+    }
 }
 
 @media (max-width: 600px) {
