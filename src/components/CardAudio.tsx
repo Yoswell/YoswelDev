@@ -5,27 +5,28 @@ interface CardAudioProps {
     music: string
     title: string
     author: string
-    type: number
 }
 
-export function CardAudio({music, title, author, type}: CardAudioProps) {
-    const audioRef = useRef(null)
+export function CardAudio({ music, title, author }: CardAudioProps) {
+    const audioRef = useRef<HTMLAudioElement | null>(null)
     const [isPlaying, setIsPlaying] = useState(false)
     const [progress, setProgress] = useState(0)
 
     const togglePlay = () => {
+        if (!audioRef.current) return
         if (audioRef.current.paused) {
-            audioRef.current.play();
-            setIsPlaying(true);
+            audioRef.current.play()
+            setIsPlaying(true)
         } else {
-            audioRef.current.pause();
-            setIsPlaying(false);
+            audioRef.current.pause()
+            setIsPlaying(false)
         }
     }
 
     const updateProgress = () => {
-        const percent = (audioRef.current.currentTime / audioRef.current.duration) * 100;
-        setProgress(percent);
+        if (!audioRef.current) return
+        const percent = (audioRef.current.currentTime / audioRef.current.duration) * 100
+        setProgress(percent)
     }
 
     return (
@@ -35,9 +36,7 @@ export function CardAudio({music, title, author, type}: CardAudioProps) {
                 src={music}
                 onTimeUpdate={updateProgress}>
             </audio>
-            {type === 1 && <img src="/src/assets/Icon1.gif" alt="Image to audio"></img>}
-            {type === 2 && <img src="/src/assets/Icon2.gif" alt="Image to audio"></img>}
-            {type === 3 && <img src="/src/assets/Icon3.gif" alt="Image to audio"></img>}
+            <img src="/darkIcons.webp" alt="Image to audio"></img>
             <div className='row'>
                 <h4>{title}</h4>
                 <h6>{author}</h6>
@@ -47,17 +46,15 @@ export function CardAudio({music, title, author, type}: CardAudioProps) {
                     max="100"
                     value={progress}
                     onChange={(e) => {
-                        const newTime = (audioRef.current.duration * e.target.value) / 100;
+                        if (!audioRef.current) return;
+                        const newTime = (audioRef.current.duration * +e.target.value) / 100;
                         audioRef.current.currentTime = newTime;
-                        setProgress(e.target.value);
+                        setProgress(+e.target.value);
                     }}>
                 </input>
             </div>
             <button className='play' onClick={togglePlay}>
-                {isPlaying 
-                    ? ( <Pause/> )
-                    : ( <Play/> )
-                }
+                {isPlaying ? <Pause /> : <Play />}
             </button>
         </div>
     );

@@ -18,26 +18,22 @@ export function Home() {
                     <CardAudio 
                         music='/src/assets/Arms.m4a'
                         title='Arms around you'
-                        author='XXXTentationXXX'
-                        type={1}>
+                        author='XXXTentationXXX'>
                     </CardAudio>
                     <CardAudio
                         music='/src/assets/Write.m4a'
                         title='Write This Down'
-                        author='50 cent, Drake'
-                        type={2}>
+                        author='50 cent, Drake'>
                     </CardAudio>
                     <CardAudio
                         music='/src/assets/Maqui.m4a'
                         title='Maquiavelico'
-                        author='Cancerbero'
-                        type={3}>
+                        author='Cancerbero'>
                     </CardAudio>
                     <CardAudio
                         music='/src/assets/Sunflower.m4a'
                         title='Sunflower'
-                        author='Post Malone'
-                        type={1}>
+                        author='Post Malone'>
                     </CardAudio>
                 </section>
 
