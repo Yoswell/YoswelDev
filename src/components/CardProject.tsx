@@ -5,10 +5,11 @@ interface CardProjectProps {
     url: string
     title: string
     text: string
-    children: ReactNode
+    children1: ReactNode
+    children2: ReactNode
 }
 
-export function CardProject({url, title, text, children}: CardProjectProps) {
+export function CardProject({url, title, text, children1, children2}: CardProjectProps) {
     return (
         <article className='cont-card'>
             <div className='cardProject'>
@@ -24,8 +25,11 @@ export function CardProject({url, title, text, children}: CardProjectProps) {
                     </h3>
                     <p>{text}</p>
                 </div>
-                <article className='cont-skill'>
-                    {children}
+                <article className='cont-links'>
+                    {children1}
+                </article>
+                <article className='cont-skills'>
+                    {children2}
                 </article>
             </div>
         </article>
