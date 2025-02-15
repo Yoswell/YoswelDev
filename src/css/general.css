@@ -94,7 +94,7 @@ footer {
 
         & img {
             max-width: 150px;
-            border: 1px solid var(--border-sm-white);
+            border: 2px solid var(--border-white);
             border-radius: 20px;
             background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 30%, var(--border-white) 100%);
             
@@ -105,9 +105,7 @@ footer {
     }
 
     & .cont-line {
-        & div {
-            background: linear-gradient(To bottom, transparent, var(--border-sm-white), transparent);
-        }
+        & div { background: linear-gradient(To bottom, transparent, var(--border-sm-white), transparent); }
     }
 
     & .letter {  
@@ -152,20 +150,17 @@ footer {
 }
 
 .btn-float {
-    width: 50px;
-    height: 50px;
-    background-color: var(--bg-white);
-    border: 2px solid var(--border-white);
-    border-radius: 50%;
+    padding: 8px 15px;
+    border: 1px solid var(--border-white);
+    border-radius: 10px;
     display: grid;
     place-content: center;
-    background: linear-gradient(30deg, var(--bg-sm-white), var(--bg-white));
+    background: linear-gradient(150deg, var(--border-sm-white) 0%, var(--bg-white) 40%);
     text-decoration: none;
-
-    & i {
-        color: var(--font-black);
-        font-size: 18px;
-    }
+    color: var(--font-black);
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 500;
 }
 
 .cont-line {
@@ -251,7 +246,8 @@ footer {
     position: absolute;
     top: -20px;
     backdrop-filter: blur(10px);
-    border: 1px solid var(--border-sm-white);
+    border: 2px solid var(--bg-purple);
+    outline: 3px solid var(--bg-purple-dark);
     padding: 10px;
     border-radius: 20px;
     background: linear-gradient(160deg, var(--bg-purple-dark) 0%, var(--bg-white) 50%);
@@ -264,9 +260,10 @@ footer {
         height: 30px;
         top: 10px;
         left: -20px;
-        border-radius: 10px;
-        border: 1px solid var(--border-sm-white);
-        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
+        border-radius: 8px;
+        border: 2px solid var(--border-white);
+        background-color: #000000a0;
+        backdrop-filter: blur(5px);
         box-shadow: 10px 10px 10px var(--bg-white);
         animation: floatOne infinite linear 3s;
     }
@@ -279,8 +276,9 @@ footer {
         top: -30px;
         right: -20px;
         border-radius: 10px;
-        border: 1px solid var(--border-sm-white);
-        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
+        border: 2px solid var(--border-white);
+        background-color: #000000a0;
+        backdrop-filter: blur(5px);
         animation: floatTwo infinite linear 2s;
     }
     
@@ -302,30 +300,13 @@ footer {
     transform: rotate(5deg);
 
     &::before {
-        position: absolute;
-        content: '';
-        width: 30px;
-        height: 30px;
         top: 10px;
         left: -20px;
-        border-radius: 10px;
-        border: 1px solid var(--border-sm-white);
-        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
-        box-shadow: 10px 10px 10px var(--bg-white);
-        animation: floatOne infinite linear 3s;
     }
 
     &::after {
-        position: absolute;
-        content: '';
-        width: 40px;
-        height: 40px;
         top: -30px;
         right: -20px;
-        border-radius: 10px;
-        border: 1px solid var(--border-sm-white);
-        background: linear-gradient(160deg, var(--border-sm-white) 0%, var(--bg-white) 50%);
-        animation: floatTwo infinite linear 2s;
     }
     
     & svg {

@@ -23,13 +23,13 @@
             display: grid;
             place-items: center;
             padding: 2px;
-            border-radius: 8px;
-            background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 100%);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            background-color: var(--font-sm-black);
 
             & svg { 
                 width: 30px;
                 padding: 6px;
-                border-radius: 6px;
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
                 color: var(--font-black);
                 background-color: var(--bg-white);  
             }
@@ -177,13 +177,13 @@
                     display: grid;
                     place-items: center;
                     padding: 2px;
-                    border-radius: 8px;
-                    background: linear-gradient(140deg, var(--bg-purple) 0%, var(--bg-white) 100%);
+                    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                    background-color: var(--bg-purple);
         
                     & svg { 
                         width: 30px;
                         padding: 6px;
-                        border-radius: 6px;
+                        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
                         color: var(--font-black);
                         background-color: var(--bg-white);  
                     }
@@ -202,14 +202,14 @@
             }
         }
 
-        & .cont-skill {
+        & .cont-links {
             padding: 15px;
             display: flex;
             align-items: center;
             gap: 8px;
             position: absolute;
 
-            & .skill {
+            & .link {
                 padding: 5px 10px;
                 font-size: 12px;
                 border-radius: 6px;
@@ -220,6 +220,21 @@
                 font-weight: 600;
             }
         }
+
+        & .cont-skills {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+
+            & img {
+                width: 30px;
+                -webkit-mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
+                mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                border: 2px solid var(--border-sm-white);
+                filter: saturate(0) brightness(0.5);
+            }   
+        }
     }
 }
 
@@ -229,7 +244,7 @@
         background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 15%, var(--bg-white) 90%, var(--border-white) 100%);
 
         & img {
-            border: 1px solid var(--bg-mm-white);
+            border: 2px solid var(--bg-mm-white);
             border-radius: 20px;
         }
 
@@ -238,7 +253,7 @@
             padding: 15px 0;
         }
 
-        .cont-skill { top: 20px; }
+        .cont-links { top: 20px; }
     }
 }
 

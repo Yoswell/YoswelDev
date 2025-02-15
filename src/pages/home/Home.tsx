@@ -96,19 +96,35 @@ export function Home() {
                             url='/GSpark.png'
                             title='GrizzlySpark (web app)'
                             text='Grizzlyspark is an online web platform specially designed for the creation, accommodation and management of CTF challenges (capture the flag) focused on cybersecurity and ethical hacking. The platform allows users both to create their own personalized challenges and participate in existing challenges, facilitating practical learning and skills improvement In key areas of computer security.'
-                            children={
-                                <a className='skill'>In process</a>
+                            children1={
+                                <a className='link'>In process</a>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
+                                </>
                             }>
                         </CardProject>
                         <CardProject 
                             url='/CTimer.jpg'
                             title='Custom Timer (web page)'
                             text='Devhouse is a non -profit initiative designed to help young developers and apprentices to acquire experience in the real world through The collaboration in practical projects that simulate a professional work environment. Participants perform tasks, attend meetings and use tools Industry standard, everything while receiving mentors guidance and improves their skills in a collaborative and support environment.'
-                            children={
+                            children1={
                                 <>
-                                <a className='skill'>Finished</a>
-                                <a className='skill' href='https://github.com/Yoswell/Custom_Timer' target='_black'>Repo</a>
-                                <a className='skill' href='https://yoswell.github.io/Custom_Timer/' target='_black'>Demo</a>
+                                <a className='link'>Finished</a>
+                                <a className='link' href='https://github.com/Yoswell/Custom_Timer' target='_black'>Repo</a>
+                                <a className='link' href='https://yoswell.github.io/Custom_Timer/' target='_black'>Demo</a>
+                                </>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
                                 </>
                             }>
                         </CardProject>
@@ -116,10 +132,18 @@ export function Home() {
                             url='/MLearn.jpg'
                             title='Clon Microsoft Learn (web app)'
                             text='This project, as shown in the image, is an almost exact replica of a specific page of the Microsoft Learn platform. Its purpose is to serve as a visual and structural clone of the user interface of that page. It is designed only for the border, which means that it is limited to the graphic representation and the visual structure of the original page, not including the functionality or dynamic interaction that characterizes the real version of the platform.'
-                            children={
+                            children1={
                                 <>
-                                <a className='skill'>Finished</a>
-                                <a className='skill' href='https://github.com/Yoswell/Clone_Microsoft_Learn' target='_black'>Repo</a>
+                                <a className='link'>Finished</a>
+                                <a className='link' href='https://github.com/Yoswell/Clone_Microsoft_Learn' target='_black'>Repo</a>
+                                </>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
                                 </>
                             }>
                         </CardProject>
@@ -127,19 +151,35 @@ export function Home() {
                             url='/DHouse.png'
                             title='Devhouse (web app)'
                             text='Devhouse is a non -profit initiative designed to help young developers and apprentices to acquire experience in the real world through The collaboration in practical projects that simulate a professional work environment. Participants perform tasks, attend meetings and use tools Industry standard, everything while receiving mentors guidance and improves their skills in a collaborative and support environment.'
-                            children={
-                                <a className='skill'>In process</a>
+                            children1={
+                                <a className='link'>In process</a>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
+                                </>
                             }>
                         </CardProject>
                         <CardProject 
                             url='/DTech.jpg'
                             title='Dragon Tech (web page)'
                             text='Dragon Tech is a platform that simulates an eCommerce specialized in PC components, offering a fluid and intuitive shopping experience. It features a shopping cart system, as well as well-organized sections for different types of hardware, allowing users to easily browse and select the products they need.'
-                            children={
+                            children1={
                                 <>
-                                <a className='skill'>Finished</a>
-                                <a className='skill' href='https://github.com/Yoswell/Ecommerce' target='_black'>Repo</a>
-                                <a className='skill' href='https://yoswell.github.io/Ecommerce/dmlzaG9rQ1RGezVoMHJ0M24zZF9sMW5rNV80cjNfaDB3X3QwX240djFnNHQzX2JsMW5kbDR9.html' target='_black'>Demo</a>
+                                <a className='link'>Finished</a>
+                                <a className='link' href='https://github.com/Yoswell/Ecommerce' target='_black'>Repo</a>
+                                <a className='link' href='https://yoswell.github.io/Ecommerce/dmlzaG9rQ1RGezVoMHJ0M24zZF9sMW5rNV80cjNfaDB3X3QwX240djFnNHQzX2JsMW5kbDR9.html' target='_black'>Demo</a>
+                                </>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
                                 </>
                             }>
                         </CardProject>
@@ -147,8 +187,18 @@ export function Home() {
                             url='/MPoint.png'
                             title='Dragon Tech (web page)'
                             text='MedPoint is a web application designed to meet the needs of a clinic, offering a comprehensive and easy-to-use system. Its functionalities include login for patients, employees and administrators, patient and doctor management, consultation visualization, interactive dashboards and billing of services. In addition, it has a modern and user-friendly design for a better user experience.'
-                            children={
-                                <a className='skill'>In process</a>
+                            children1={
+                                <a className='link'>In process</a>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=java' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=git' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
+                                </>
                             }>
                         </CardProject>
                     </div>
@@ -170,20 +220,26 @@ export function Home() {
                             url='/MLearn.png'
                             title='GrizzlySpark Tool'
                             text='A powerful tool written in Python designed to assist CTF (Capture The Flag) participants in solving cybersecurity challenges. This tool provides several useful functionalities that facilitate data analysis and manipulation, allowing users to focus on solving the challenges.'
-                            children={
+                            children1={
                                 <>
-                                <a className='skill' target='_blanck' href='https://github.com/Yoswell/GrizzlySpark'>Repo</a>
+                                <a className='link' target='_blanck' href='https://github.com/Yoswell/GrizzlySpark'>Repo</a>
                                 </>
+                            }
+                            children2={
+                                <></>
                             }>
                         </CardProject>
                         <CardProject 
                             url='/MLearn.png'
                             title='Lets Defend Alert Writeups'
                             text='Welcome to the Lets Defend Alerts Reviews Repository, your one-stop destination for detailed, insightful, and practical guides on how to address various alerts within the Lets Defend platform. It is currently under development but I hope to have more resolutions soon.'
-                            children={
+                            children1={
                                 <>
-                                <a className='skill' target='_blanck' href='https://github.com/Yoswell/LetsDefend-Alerts'>Repo</a>
+                                <a className='link' target='_blanck' href='https://github.com/Yoswell/LetsDefend-Alerts'>Repo</a>
                                 </>
+                            }
+                            children2={
+                                <></>
                             }>
                         </CardProject>
                     </div>
