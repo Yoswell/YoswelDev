@@ -137,6 +137,7 @@ export function Home() {
                                 <>
                                 <a className='link'>Finished</a>
                                 <a className='link' href='https://github.com/Yoswell/Clone_Microsoft_Learn' target='_black'>Repo</a>
+                                <a className='link' href='https://clone-microsoft-learn.vercel.app' target='_blanck'>Demo</a>
                                 </>
                             }
                             children2={
@@ -196,6 +197,26 @@ export function Home() {
                                 <img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=java' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=git' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
+                                </>
+                            }>
+                        </CardProject>
+                        <CardProject 
+                            url='/RDev.webp'
+                            title='Clon React Dev (web app)'
+                            text='This project, as shown in the image, is an almost exact replica of a specific page on the React Dev platform. Its purpose is to serve as a visual and structural clone of the said page is user interface. It is designed solely for the frontend, meaning that it is limited to the graphical representation and visual structure of the original page, without including the functionality or dynamic interaction that characterizes the real version of the platform.'
+                            children1={
+                                <>
+                                <a className='link'>Finished</a>
+                                <a className='link' href='https://github.com/Yoswell/Clone_ReactDev' target='_black'>Repo</a>
+                                <a className='link' href='https://clone-react-dev.vercel.app' target='_blanck'>Demo</a>
+                                </>
+                            }
+                            children2={
+                                <>
+                                <img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
