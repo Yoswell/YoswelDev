@@ -93,7 +93,7 @@ export function Home() {
                             <Rocket/>
                         </div>
                         <CardProject 
-                            url='/GSpark.png'
+                            url='/NewSpark.webp'
                             title='GrizzlySpark (web app)'
                             text='Grizzlyspark is an online web platform specially designed for the creation, accommodation and management of CTF challenges (capture the flag) focused on cybersecurity and ethical hacking. The platform allows users both to create their own personalized challenges and participate in existing challenges, facilitating practical learning and skills improvement In key areas of computer security.'
                             children1={
@@ -103,6 +103,7 @@ export function Home() {
                                 <>
                                 <img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
+                                <img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
                                 <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
