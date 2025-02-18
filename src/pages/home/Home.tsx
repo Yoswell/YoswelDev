@@ -93,11 +93,14 @@ export function Home() {
                             <Rocket/>
                         </div>
                         <CardProject 
-                            url='/NewSpark.webp'
+                            url='/GSpark2.jpg'
                             title='GrizzlySpark (web app)'
                             text='Grizzlyspark is an online web platform specially designed for the creation, accommodation and management of CTF challenges (capture the flag) focused on cybersecurity and ethical hacking. The platform allows users both to create their own personalized challenges and participate in existing challenges, facilitating practical learning and skills improvement In key areas of computer security.'
                             children1={
+                                <>
                                 <a className='link'>In process</a>
+                                <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a>
+                                </>
                             }
                             children2={
                                 <>
