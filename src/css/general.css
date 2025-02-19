@@ -152,7 +152,7 @@ footer {
 .btn-float {
     padding: 8px 15px;
     border: 1px solid var(--border-white);
-    border-radius: 10px;
+    border-radius: 15px;
     display: grid;
     place-content: center;
     background: linear-gradient(150deg, var(--border-sm-white) 0%, var(--bg-white) 40%);
@@ -202,52 +202,11 @@ footer {
     }
 }
 
-.letter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    
-    display: none;
-    & span {
-        font-size: clamp(100px, 50vw, 600px);
-        color: #ffffff24;
-        z-index: -1;
-        font-family: "Chakra Petch", serif;
-        -webkit-text-stroke: 3px;
-        font-weight: 900;
-        -webkit-text-stroke-color: var(--font-black);
-        user-select: none;
-
-        &:nth-child(1) {
-            opacity: 0.2;
-            &::first-letter { opacity: 0.3; }
-        }
-
-        &:nth-child(2) {
-            opacity: 0.2;
-            &::first-letter { opacity: 0.3; }
-        }
-
-        &:nth-child(3) {
-            opacity: 0.2;
-            &::first-letter { opacity: 0.3; }
-        }
-    }
-
-    &::first-letter { opacity: 0.1; }
-}
-
 .float-icon-left, .float-icon-right {
     position: absolute;
     top: -20px;
     backdrop-filter: blur(10px);
     border: 2px solid var(--bg-purple);
-    outline: 3px solid var(--bg-purple-dark);
     padding: 10px;
     border-radius: 20px;
     background: linear-gradient(160deg, var(--bg-purple-dark) 0%, var(--bg-white) 50%);
