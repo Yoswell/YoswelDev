@@ -327,7 +327,6 @@ header {
 
 
 .projects {
-    overflow: visible;
     & span {
         transform: translateY(-100px);
         left: 50px;

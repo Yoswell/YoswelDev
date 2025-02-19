@@ -30,7 +30,7 @@ export function CardAudio({ music, title, author }: CardAudioProps) {
     }
 
     return (
-        <div className='cardAudio'>
+        <div className={`cardAudio ${isPlaying ? 'bubble' : ''}`}>
             <audio
                 ref={audioRef}
                 src={music}

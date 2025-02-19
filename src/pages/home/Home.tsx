@@ -17,22 +17,22 @@ export function Home() {
 
                 <section className='audio-cont'>
                     <CardAudio 
-                        music='/src/assets/Arms.m4a'
+                        music='/src/assets/Arms.mp3'
                         title='Arms around you'
                         author='XXXTentationXXX'>
                     </CardAudio>
                     <CardAudio
-                        music='/src/assets/Write.m4a'
+                        music='/src/assets/Write.mp3'
                         title='Write This Down'
                         author='50 cent, Drake'>
                     </CardAudio>
                     <CardAudio
-                        music='/src/assets/Maqui.m4a'
+                        music='/src/assets/Maqui.mp3'
                         title='Maquiavelico'
                         author='Cancerbero'>
                     </CardAudio>
                     <CardAudio
-                        music='/src/assets/Sunflower.m4a'
+                        music='/src/assets/Sunflower.mp3'
                         title='Sunflower'
                         author='Post Malone'>
                     </CardAudio>
@@ -188,7 +188,7 @@ export function Home() {
                                 </>
                             }>
                         </CardProject>
-                        <CardProject 
+                        {/*<CardProject 
                             url='/MPoint.png'
                             title='Dragon Tech (web page)'
                             text='MedPoint is a web application designed to meet the needs of a clinic, offering a comprehensive and easy-to-use system. Its functionalities include login for patients, employees and administrators, patient and doctor management, consultation visualization, interactive dashboards and billing of services. In addition, it has a modern and user-friendly design for a better user experience.'
@@ -205,7 +205,7 @@ export function Home() {
                                 <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
                                 </>
                             }>
-                        </CardProject>
+                        </CardProject>*/}
                         <CardProject 
                             url='/RDev.webp'
                             title='Clon React Dev (web app)'

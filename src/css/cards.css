@@ -140,6 +140,10 @@
     }
 }
 
+.bubble {
+    animation: morph 4s infinite ease-in-out;
+}
+
 .projects, .extras {
     & .cardProject {
         width: 100%;
@@ -246,6 +250,7 @@
         & img {
             border: 2px solid var(--bg-mm-white);
             border-radius: 20px;
+            filter: saturate(0) brightness(0.5);
         }
 
         & .cont-text {
