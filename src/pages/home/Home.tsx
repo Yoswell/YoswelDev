@@ -3,10 +3,9 @@ import { CardProject } from '@/components/CardProject'
 import { CardText } from '@/components/recycle/CardText'
 import { Skills } from '@/components/skills'
 import { Title } from '@/components/recycle/Title'
-import { FloatButtons } from '@/components/recycle/FloatButtons'
 import { Footer } from '@/components/recycle/Footer'
 import { CardAudio } from '@/components/CardAudio'
-import { Contact, Copy, Download, Potion, Rocket, Service } from '@/components/icons/HeroIcons'
+import { Potion, Rocket, Service } from '@/components/icons/HeroIcons'
 
 export function Home() {
     return (
