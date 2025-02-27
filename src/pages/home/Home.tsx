@@ -5,7 +5,6 @@ import { Skills } from '@/components/skills'
 import { Title } from '@/components/recycle/Title'
 import { FloatButtons } from '@/components/recycle/FloatButtons'
 import { Footer } from '@/components/recycle/Footer'
-import { CardAudio } from '@/components/CardAudio'
 import { Potion, Rocket, Service } from '@/components/icons/HeroIcons'
 
 export function Home() {
@@ -15,34 +14,13 @@ export function Home() {
                 <section id='home'></section>
                 <About />
 
-                <section className='audio-cont'>
-                    <CardAudio 
-                        music='/src/assets/Arms.mp3'
-                        title='Arms around you'
-                        author='XXXTentationXXX'>
-                    </CardAudio>
-                    <CardAudio
-                        music='/src/assets/Write.mp3'
-                        title='Write This Down'
-                        author='50 cent, Drake'>
-                    </CardAudio>
-                    <CardAudio
-                        music='/src/assets/Maqui.mp3'
-                        title='Maquiavelico'
-                        author='Cancerbero'>
-                    </CardAudio>
-                    <CardAudio
-                        music='/src/assets/Sunflower.mp3'
-                        title='Sunflower'
-                        author='Post Malone'>
-                    </CardAudio>
-                </section>
-
                 <section className='navigate' id="experience"></section>
                 <Title title='Experience' subTitle='Then I present my experience work' />
                 <div className='experience'>
-                    <span className='float-word'>Technology lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-left'>
+                            <Potion/>
+                        </div>
                         <div className='float-icon-right'>
                             <Potion/>
                         </div>
@@ -60,9 +38,11 @@ export function Home() {
                 <section className='navigate' id="service"></section>
                 <Title title='Services' subTitle='Here are some of the services that I offer' />
                 <div className='service'>
-                    <span className='float-word'>Futbool lover</span>
                     <div className='column-2'>
                         <div className='float-icon-left'>
+                            <Service/>
+                        </div>
+                        <div className='float-icon-right'>
                             <Service/>
                         </div>
                         <CardText 
@@ -87,8 +67,10 @@ export function Home() {
                 <section className='navigate' id="projects"></section>
                 <Title title='Projects' subTitle='Here are a few projects, not all (only I considered most relevant)' />
                 <div className='projects'>
-                    <span className='float-word'>Game lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-left'>
+                            <Rocket/>
+                        </div>
                         <div className='float-icon-right'>
                             <Rocket/>
                         </div>
@@ -236,8 +218,10 @@ export function Home() {
                 <section className='navigate' id="extras"></section>
                 <Title title='Extras' subTitle='Here there are more projects, in this case, projects related to Cibersecurity' />
                 <div className='extras'>
-                    <span className='float-word'>Music lover</span>
                     <div className='column-2'>
+                        <div className='float-icon-left'>
+                            <Rocket/>
+                        </div>
                         <div className='float-icon-right'>
                             <Rocket/>
                         </div>
@@ -246,26 +230,18 @@ export function Home() {
                             title='GrizzlySpark Tool'
                             text='A powerful tool written in Python designed to assist CTF (Capture The Flag) participants in solving cybersecurity challenges. This tool provides several useful functionalities that facilitate data analysis and manipulation, allowing users to focus on solving the challenges.'
                             children1={
-                                <>
                                 <a className='link' target='_blanck' href='https://github.com/Yoswell/GrizzlySpark'>Repo</a>
-                                </>
                             }
-                            children2={
-                                <></>
-                            }>
+                            children2={ <></> }>
                         </CardProject>
                         <CardProject 
                             url='/MLearn.png'
                             title='Lets Defend Alert Writeups'
                             text='Welcome to the Lets Defend Alerts Reviews Repository, your one-stop destination for detailed, insightful, and practical guides on how to address various alerts within the Lets Defend platform. It is currently under development but I hope to have more resolutions soon.'
                             children1={
-                                <>
                                 <a className='link' target='_blanck' href='https://github.com/Yoswell/LetsDefend-Alerts'>Repo</a>
-                                </>
                             }
-                            children2={
-                                <></>
-                            }>
+                            children2={ <></> }>
                         </CardProject>
                     </div>
                 </div>

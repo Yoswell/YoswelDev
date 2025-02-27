@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react'
 import { ModalCV } from '@/components/ModalCV'
 import { Nav } from '@/components/Nav'
-import { Download, Info, Contact, Arrow } from '@/components/icons/HeroIcons'
+import { Download, Contact, Arrow } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
     isOpenModal: false,
@@ -17,24 +17,17 @@ export function About() {
 
     return (
         <header>
-            <div className='blur1'>
-                <img src='/Back.webp' alt='Circle white image background'></img>
-            </div>
-
             <Nav/>
-            <div className='status'>
-                <h3>
-                    <Info/>
-                    Available to work immediately
-                </h3>
-            </div>
-            <div>
-                <h1>Hey, I'm Yoswel Badilla</h1>
-                <div className='letter'>
-                    <span>VI</span>
-                    <span>SH</span>
-                    <span>OK</span>
+            <article className='cardAds'>
+                <img src='/OIG4.webp' alt='Grizzly image' />
+                <div>
+                    <h3>Grizzly Spark Tool</h3>
+                    <h5>A powerful tool written in Python designed to assist in CTFs</h5>
                 </div>
+                <Arrow/>
+            </article>
+            <div>
+                <h1 className='title'>Hey I'm Yoswel Badilla</h1>
                 <p>Full-Stack Developer and Cybersecurity Analyst, my passion for technological innovation has led me to specialize in the development of applications that not only solve complex problems in a timely manner. efficient, but also designed with a robust and secure architecture</p>
             </div>
             <div className='social-media'>
@@ -50,6 +43,7 @@ export function About() {
                     Download Resume
                 </button>
             </div>
+
             <div className='cont-line'>
                 <div></div>
                 <div></div>
@@ -60,24 +54,22 @@ export function About() {
                 <ModalCV/>
             </ModalContext>
 
-            <div className='float-left-bottom'>
-                <Arrow/>
-                <h4>Scroll dowm</h4>
-            </div>
-            <div className='float-right-bottom'>
-                <h4>Available sections</h4>
-                <div className='row'>
-                    <a href='#home'><span>About</span></a>
-                    <a href='#experience'><span>Experience</span></a>
-                    <a href='#service'><span>Service</span></a>
-                    <a href='#projects'><span>Projects</span></a>
-                    <a href='#stack'><span>My Stack</span></a>
-                    <a href='#extras'><span>Extras</span></a>
-                </div>
+            <div className='left-float-cards'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
 
-            <div className='blur2'>
-                <img src='/Back.webp' alt='Circle white image background'></img>
+            <div className='right-float-cards'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </header>
     )
