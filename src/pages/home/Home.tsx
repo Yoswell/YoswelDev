@@ -6,7 +6,7 @@ import { Title } from '@/components/recycle/Title'
 import { FloatButtons } from '@/components/recycle/FloatButtons'
 import { Footer } from '@/components/recycle/Footer'
 import { CardAudio } from '@/components/CardAudio'
-import { Potion, Rocket, Service } from '@/components/icons/HeroIcons'
+import { Contact, Copy, Download, Potion, Rocket, Service } from '@/components/icons/HeroIcons'
 
 export function Home() {
     return (
@@ -39,7 +39,7 @@ export function Home() {
                 </section>
 
                 <section className='navigate' id="experience"></section>
-                <Title title='Experience' subTitle='Then I present my experience work' />
+                <Title title='Experience' subTitle='A showcase of my professional journey, highlighting key achievements and expertise in cybersecurity, CTF challenges, and offensive security' />
                 <div className='experience'>
                     <span className='float-word'>Technology lover</span>
                     <div className='column-2'>
@@ -58,7 +58,7 @@ export function Home() {
                 </div>
 
                 <section className='navigate' id="service"></section>
-                <Title title='Services' subTitle='Here are some of the services that I offer' />
+                <Title title='Services' subTitle='My journey in cybersecurity and web development-building secure, high-performance applications while tackling complex security challenges' />
                 <div className='service'>
                     <span className='float-word'>Futbool lover</span>
                     <div className='column-2'>
@@ -67,25 +67,25 @@ export function Home() {
                         </div>
                         <CardText 
                             title='University Works'
-                            text='I offer assistance and support in carrying out university works related to computer science. From the investigation to the writing, I can Help you achieve your academic goals with quality and precision.'>
+                            text='I offer assistance and support in carrying out university projects related to computer science. From in-depth research to structured writing, I can help you achieve your academic goals with quality, precision, and a well-organized approach that ensures clarity and professionalism.'>
                         </CardText>
                         <CardText 
                             title='Web Development'
-                            text='High quality web development adapted to your specifications. From The creation of static websites to dynamic web applications, I can help you Build a robust and scalable online presence that drives your success on the web.'>
+                            text='High-quality web development tailored to your specific needs. From the creation of static websites to dynamic web applications, I can help you build a robust, scalable, and visually appealing online presence that enhances engagement and drives your success.'>
                         </CardText>
                         <CardText 
                             title='Training and Virtual Sessions'
-                            text='I offer personalized classes in computer science and cybersecurity. Take yourself from the Fundamentals even advanced techniques for students, professionals and corporate teams that seek to improve their skills and knowledge.'>
+                            text='I offer personalized classes in computer science and cybersecurity. From fundamental concepts to advanced techniques, I help students, professionals, and corporate teams enhance their skills and deepen their knowledge with practical, hands-on learning.'>
                         </CardText>
                         <CardText 
                             title='Software Development'
-                            text='Custom software development to meet your needs Business From desktop applications to business solutions complex, I am here to offer you innovative solutions that promote the Growth of your business.'>
+                            text='Custom software development tailored to your business needs. From desktop applications to complex enterprise solutions, I provide innovative, scalable, and efficient technologies that enhance productivity, streamline operations, and drive long-term growth.'>
                         </CardText>
                     </div>
                 </div>
 
                 <section className='navigate' id="projects"></section>
-                <Title title='Projects' subTitle='Here are a few projects, not all (only I considered most relevant)' />
+                <Title title='Projects' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant)' />
                 <div className='projects'>
                     <span className='float-word'>Game lover</span>
                     <div className='column-2'>
@@ -188,24 +188,6 @@ export function Home() {
                                 </>
                             }>
                         </CardProject>
-                        {/*<CardProject 
-                            url='/MPoint.png'
-                            title='Dragon Tech (web page)'
-                            text='MedPoint is a web application designed to meet the needs of a clinic, offering a comprehensive and easy-to-use system. Its functionalities include login for patients, employees and administrators, patient and doctor management, consultation visualization, interactive dashboards and billing of services. In addition, it has a modern and user-friendly design for a better user experience.'
-                            children1={
-                                <a className='link'>In process</a>
-                            }
-                            children2={
-                                <>
-                                <img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=java' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=git' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img>
-                                </>
-                            }>
-                        </CardProject>*/}
                         <CardProject 
                             url='/RDev.webp'
                             title='Clon React Dev (web app)'
@@ -232,48 +214,9 @@ export function Home() {
                 <section className='navigate' id="stack"></section>
                 <Title title='My tech stack' subTitle='Here are some of the technologies that I now' />
                 <Skills />
-                
-                <section className='navigate' id="extras"></section>
-                <Title title='Extras' subTitle='Here there are more projects, in this case, projects related to Cibersecurity' />
-                <div className='extras'>
-                    <span className='float-word'>Music lover</span>
-                    <div className='column-2'>
-                        <div className='float-icon-right'>
-                            <Rocket/>
-                        </div>
-                        <CardProject 
-                            url='/MLearn.png'
-                            title='GrizzlySpark Tool'
-                            text='A powerful tool written in Python designed to assist CTF (Capture The Flag) participants in solving cybersecurity challenges. This tool provides several useful functionalities that facilitate data analysis and manipulation, allowing users to focus on solving the challenges.'
-                            children1={
-                                <>
-                                <a className='link' target='_blanck' href='https://github.com/Yoswell/GrizzlySpark'>Repo</a>
-                                </>
-                            }
-                            children2={
-                                <></>
-                            }>
-                        </CardProject>
-                        <CardProject 
-                            url='/MLearn.png'
-                            title='Lets Defend Alert Writeups'
-                            text='Welcome to the Lets Defend Alerts Reviews Repository, your one-stop destination for detailed, insightful, and practical guides on how to address various alerts within the Lets Defend platform. It is currently under development but I hope to have more resolutions soon.'
-                            children1={
-                                <>
-                                <a className='link' target='_blanck' href='https://github.com/Yoswell/LetsDefend-Alerts'>Repo</a>
-                                </>
-                            }
-                            children2={
-                                <></>
-                            }>
-                        </CardProject>
-                    </div>
-                </div>
-                
-                <Footer/>
             </div>
 
-            <FloatButtons/>
+            <Footer/>
         </main>
     )
 }

@@ -23,13 +23,13 @@
             display: grid;
             place-items: center;
             padding: 2px;
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
             background-color: var(--font-sm-black);
 
             & svg { 
                 width: 30px;
                 padding: 6px;
-                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
                 color: var(--font-black);
                 background-color: var(--bg-white);  
             }
@@ -76,10 +76,11 @@
         & h4 {
             color: var(--font-black);
             font-weight: 500;
-            font-size: 14px;
+            font-size: 17px;
+            font-family: "Chakra Petch", serif;
         }
         
-        & h6 { color: var(--font-sm-black); font-size: 13px; }
+        & h6 { color: var(--font-sm-black); font-size: 13px; font-weight: 600; }
 
         input[type="range"] {
             -webkit-appearance: none;
@@ -136,13 +137,11 @@
         background:var(--border-white);
         border: 1px solid var(--border-sm-white);
 
-        & svg { width: 20px; color: var(--font-black); }
+        & svg { width: 20px; color: var(--font-black); stroke-width: 2px; }
     }
 }
 
-.bubble {
-    animation: morph 4s infinite ease-in-out;
-}
+.bubble { animation: morph 4s infinite ease-in-out; }
 
 .projects, .extras {
     & .cardProject {
@@ -181,13 +180,13 @@
                     display: grid;
                     place-items: center;
                     padding: 2px;
-                    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                    border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
                     background-color: var(--bg-purple);
         
                     & svg { 
                         width: 30px;
                         padding: 6px;
-                        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                        border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
                         color: var(--font-black);
                         background-color: var(--bg-white);  
                     }

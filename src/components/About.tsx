@@ -28,16 +28,9 @@ export function About() {
                     Available to work immediately
                 </h3>
             </div>
-            <div>
-                <h1>Hey, I'm Yoswel Badilla</h1>
-                <div className='letter'>
-                    <span>VI</span>
-                    <span>SH</span>
-                    <span>OK</span>
-                </div>
-                <p>Full-Stack Developer and Cybersecurity Analyst, my passion for technological innovation has led me to specialize in the development of applications that not only solve complex problems in a timely manner. efficient, but also designed with a robust and secure architecture</p>
-            </div>
-            <div className='social-media'>
+            <h1>Hey crack, what happen?</h1>
+            <p>I'm Yoswel Badilla a Full-Stack Developer and Cybersecurity Analyst, my passion for technological innovation has led me to specialize in the development of applications that not only solve complex problems in a timely manner. efficient, but also designed with a robust and secure architecture</p>
+            <div className='cont-big-button'>
                 <button
                     className='link'>
                     <Contact />

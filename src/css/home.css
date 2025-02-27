@@ -8,12 +8,12 @@ nav {
     padding: 0 12px;
     width: 100%;
 
-    & .row {
+    .row {
         display: flex;
         align-items: center;
         gap: 10px;
 
-        & h1 {
+        h1 {
             font-size: 25px;
             font-weight: 700;
             color: var(--font-black);
@@ -22,11 +22,11 @@ nav {
         & svg { width: 35px; color: var(--font-black); }
     }
 
-    & ul {
+    ul {
         display: flex;
         gap: 8px;
 
-        & a, button {
+        a, button {
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -34,19 +34,11 @@ nav {
             color: var(--font-black);
             border: none;
             padding: 8px 15px;
-            border-radius: 15px;
+            border-radius: var(--radius-card);
             font-weight: 500;
             background-color: var(--bg-white);
 
             & svg { color: var(--font-black); width: 19px; }
-
-            &:hover {
-                color: var(--bg-white);
-                background-color: var(--font-black);
-                border-color: var(--font-black);
-
-                & svg { color: var(--bg-white); }
-            }
         }
     }
 }
@@ -57,7 +49,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 15px;
     overflow: hidden;
     position: relative;
@@ -65,19 +57,14 @@ header {
     min-height: 600px;
     border: 1px solid var(--border-white);
 
-    & .status {
-        font-weight: 500;
-        font-size: 15px;
-        padding: 2px;
-        
-        & h3 {
+    .status {
+        h3 {
             padding: 8px 15px;
             display: flex;
             align-items: center;
             gap: 5px;
             color: var(--bg-purple);
-            border-radius: 20px;
-            background-color: var(--bg-purple-dark);
+            border-radius: var(--radius-card);
             border: 2px solid var(--bg-purple);
             outline: 3px solid var(--bg-purple-dark);
 
@@ -85,7 +72,7 @@ header {
         }
     }
 
-    & h1 {
+    h1 {
         text-align: center;
         font-size: clamp(50px, 5vw, 80px);
         color: var(--font-black);
@@ -93,49 +80,16 @@ header {
         font-family: "Chakra Petch", serif;
     }
 
-    & p {
+    p {
         text-align: center;
         font-size: clamp(16px, 5vw, 20px);
         color: var(--font-sm-black);
         line-height: 30px;
         max-width: 80ch;
         font-family: "Chakra Petch", serif;
-        backdrop-filter: blur(10px);
     }
 
-    & .social-media {
-        display: flex;
-        gap: 15px;
-
-        & .link {
-            padding: 8px 15px;
-            border-radius: 20px;
-            background-color: var(--border-white);
-            color: var(--font-black);
-            border: 1px solid var(--border-sm-white);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 600;
-            cursor: pointer;
-
-            & svg { width: 22px; }
-
-            &:hover {
-                background-color: var(--font-black);
-                color: var(--bg-white);
-                border-color: var(--font-black);
-            }
-        }
-
-        & .link.active {
-            background-color: var(--font-black);
-            color: var(--bg-white);
-            border: none;
-        }
-    }
-
-    & .float-left-bottom {
+    .float-left-bottom {
         position: absolute;
         bottom: 20px;
         left: 20px;
@@ -170,10 +124,7 @@ header {
         display: grid;
         gap: 10px;
 
-        & h4 {
-            color: var(--font-black);
-            font-weight: 500;
-        }
+        & h4 { color: var(--font-black); font-weight: 500; }
 
         & .row {
             display: flex;
@@ -223,9 +174,12 @@ header {
 
 .title-section {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding-bottom: 15px;
     gap: 5px;
     display: grid;
+    place-items: center;
     position: relative;
     
     &::before {
@@ -266,10 +220,12 @@ header {
         font-size: clamp(18px, 3vw, 18px);
         text-align: center;
         color: var(--font-sm-black);
+        max-width: 70ch;
+        line-height: 28px;
     }
 }
 
-.experience, .service, .projects, .extras {
+.experience, .service, .projects {
     max-width: 1200px;
     padding: 50px 0;
     margin: 0 auto;
@@ -281,7 +237,7 @@ header {
         font-weight: 600;
         text-transform: uppercase;
         font-family: "Chakra Petch", serif;
-        opacity: 0.2;
+        opacity: 0.1;
         user-select: none;
     }
 }
@@ -289,7 +245,7 @@ header {
 .experience {
     & span {
         transform: translateY(-100px);
-        left: 50px;
+        left: -50px;
         z-index: -1;
     }
 }
@@ -297,7 +253,7 @@ header {
 .service {
     & span {
         transform: translateY(-100px);
-        right: 50px;
+        right: -50px;
         z-index: -1;
     }
 }
@@ -310,26 +266,17 @@ header {
         font-weight: 600;
         text-transform: uppercase;
         font-family: "Chakra Petch", serif;
-        opacity: 0.2;
+        opacity: 0.1;
         transform: translateY(-100px);
-        right: 50px;
+        right: -50px;
         z-index: -1;
     }
 }
-
-.extras {
-    & span {
-        transform: translateY(-100px);
-        left: 50px;
-        z-index: -1;
-    }
-}
-
 
 .projects {
     & span {
         transform: translateY(-100px);
-        left: 50px;
+        left: -50px;
         z-index: -1;
     }
 }
