@@ -5,8 +5,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: calc(100%);
     padding: 0 12px;
-    width: 100%;
+    border-radius: var(--radius-card);
 
     .row {
         display: flex;
@@ -36,7 +37,8 @@ nav {
             padding: 8px 15px;
             border-radius: var(--radius-card);
             font-weight: 500;
-            background-color: var(--bg-white);
+            background-color: var(--border-white);
+            font-family: "Chakra Petch", serif;
 
             & svg { color: var(--font-black); width: 19px; }
         }
@@ -57,18 +59,55 @@ header {
     min-height: 600px;
     border: 1px solid var(--border-white);
 
-    .status {
-        h3 {
-            padding: 8px 15px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: var(--bg-purple);
-            border-radius: var(--radius-card);
-            border: 2px solid var(--bg-purple);
-            outline: 3px solid var(--bg-purple-dark);
+    .brand {
+        & img {
+            width: 110px;
+            border-radius: 20px;
+            border: 2px solid var(--border-sm-white);
 
-            & svg { width: 20px; color: var(--bg-purple); }
+            &:nth-child(1) { 
+                width: 230px;
+                position: absolute; 
+                left: -30px;
+                transform: rotate(-10deg);
+                filter: saturate(0) brightness(0.5);
+                -webkit-mask-image: linear-gradient(To right, var(--bg-white) 80%, transparent 100%);
+                mask-image: linear-gradient(To right, var(--bg-white) 80%, transparent 100%);
+            }
+
+            &:nth-child(2) { 
+                width: 200px;
+                position: absolute;
+                top: 270px; 
+                left: -50px;
+                transform: rotate(-10deg);
+                filter: saturate(0) brightness(0.5);
+                -webkit-mask-image: linear-gradient(To right, var(--bg-white) 80%, transparent 100%);
+                mask-image: linear-gradient(To right, var(--bg-white) 80%, transparent 100%);
+            }
+
+            &:nth-child(3) { border: 2px solid var(--border-white); }
+
+            &:nth-child(4) { 
+                width: 230px;
+                position: absolute; 
+                right: -30px;
+                transform: rotate(10deg);
+                filter: saturate(0) brightness(0.5);
+                -webkit-mask-image: linear-gradient(To left, var(--bg-white) 80%, transparent 100%);
+                mask-image: linear-gradient(To left, var(--bg-white) 80%, transparent 100%);
+            }
+
+            &:nth-child(5) { 
+                width: 200px;
+                position: absolute;
+                top: 270px; 
+                right: -50px;
+                transform: rotate(10deg);
+                filter: saturate(0) brightness(0.5);
+                -webkit-mask-image: linear-gradient(To left, var(--bg-white) 80%, transparent 100%);
+                mask-image: linear-gradient(To left, var(--bg-white) 80%, transparent 100%);
+            }
         }
     }
 
@@ -82,9 +121,9 @@ header {
 
     p {
         text-align: center;
-        font-size: clamp(16px, 5vw, 20px);
+        font-size: clamp(18px, 5vw, 20px);
         color: var(--font-sm-black);
-        line-height: 30px;
+        line-height: 26px;
         max-width: 80ch;
         font-family: "Chakra Petch", serif;
     }
@@ -98,11 +137,12 @@ header {
         gap: 5px;
 
         & svg {
-            border-radius: 50%;
+            border-radius: var(--radius-card);
             background-color: var(--font-black);
             width: 30px;
             height: 30px;
             padding: 5px;
+            stroke-width: 2px;
         }
 
         & h4 {
@@ -110,10 +150,10 @@ header {
             height: 30px;
             display: grid;
             place-content: center;
-            color: var(--font-black);
-            background-color: #ffffff1e;
-            border-radius: 20px;
-            font-weight: 500;
+            color: var(--bg-white);
+            background-color: var(--font-black);
+            font-weight: 600;
+            border-radius: var(--radius-card);
         }
     }
 
@@ -124,8 +164,6 @@ header {
         display: grid;
         gap: 10px;
 
-        & h4 { color: var(--font-black); font-weight: 500; }
-
         & .row {
             display: flex;
             align-items: center;
@@ -134,8 +172,8 @@ header {
             & a {
                 background-color: var(--border-sm-white);
                 border-radius: var(--radius-card);
-                width: 30px;
-                height: 8px;
+                width: 35px;
+                height: 10px;
                 position: relative;
                 cursor: pointer;
 
@@ -154,11 +192,11 @@ header {
                     padding: 5px 15px;
                     background-color: var(--bg-white);
                     border: 1px solid var(--border-white);
-                    border-radius: 20px;
+                    border-radius: var(--radius-card);
                     white-space: nowrap;
                     scale: 0;
                     transition: 150ms;
-                    box-shadow: 0 0 10px var(--bg-white);
+                    font-weight: 500;
                 }
                 
                 &:nth-child(1) {
@@ -177,7 +215,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 15px;
-    gap: 5px;
+    gap: 10px;
     display: grid;
     place-items: center;
     position: relative;
@@ -217,11 +255,12 @@ header {
     }
 
     & .subTitle {
-        font-size: clamp(18px, 3vw, 18px);
+        font-size: 16px;
         text-align: center;
         color: var(--font-sm-black);
         max-width: 70ch;
-        line-height: 28px;
+        line-height: 22px;
+        font-weight: 500;
     }
 }
 
@@ -229,56 +268,6 @@ header {
     max-width: 1200px;
     padding: 50px 0;
     margin: 0 auto;
-
-    & .float-word {
-        position: absolute;
-        font-size: clamp(35px, 5vw, 70px);
-        color: var(--font-sm-black);
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: "Chakra Petch", serif;
-        opacity: 0.1;
-        user-select: none;
-    }
-}
-
-.experience {
-    & span {
-        transform: translateY(-100px);
-        left: -50px;
-        z-index: -1;
-    }
-}
-
-.service {
-    & span {
-        transform: translateY(-100px);
-        right: -50px;
-        z-index: -1;
-    }
-}
-
-.cont-squares {
-    & .float-word {
-        position: absolute;
-        font-size: clamp(35px, 5vw, 70px);
-        color: var(--font-sm-black);
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: "Chakra Petch", serif;
-        opacity: 0.1;
-        transform: translateY(-100px);
-        right: -50px;
-        z-index: -1;
-    }
-}
-
-.projects {
-    & span {
-        transform: translateY(-100px);
-        left: -50px;
-        z-index: -1;
-    }
 }
 
 .contact {

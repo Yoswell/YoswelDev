@@ -4,8 +4,9 @@ import { CardText } from '@/components/recycle/CardText'
 import { Skills } from '@/components/skills'
 import { Title } from '@/components/recycle/Title'
 import { Footer } from '@/components/recycle/Footer'
-import { CardAudio } from '@/components/CardAudio'
+import { CardSkills } from '@/components/CardSkills'
 import { Potion, Rocket, Service } from '@/components/icons/HeroIcons'
+import { Hexagon } from '@/components/recycle/Hexagon'
 
 export function Home() {
     return (
@@ -14,83 +15,82 @@ export function Home() {
                 <section id='home'></section>
                 <About />
 
-                <section className='audio-cont'>
-                    <CardAudio 
-                        music='/src/assets/Arms.mp3'
-                        title='Arms around you'
-                        author='XXXTentationXXX'>
-                    </CardAudio>
-                    <CardAudio
-                        music='/src/assets/Write.mp3'
-                        title='Write This Down'
-                        author='50 cent, Drake'>
-                    </CardAudio>
-                    <CardAudio
-                        music='/src/assets/Maqui.mp3'
-                        title='Maquiavelico'
-                        author='Cancerbero'>
-                    </CardAudio>
-                    <CardAudio
-                        music='/src/assets/Sunflower.mp3'
-                        title='Sunflower'
-                        author='Post Malone'>
-                    </CardAudio>
+                <section className='skills-cont'>
+                    <CardSkills 
+                        title='Scalable and efficient'
+                        subTitle='Streamlined solutions that improve workflow and increase efficiency.'>
+                    </CardSkills>
+                    <CardSkills
+                        title='Code and Performance'
+                        subTitle='Writing clean code is a priority, as is keeping it as optimized as possible.'>
+                    </CardSkills>
+                    <CardSkills
+                        title='Security and Reliability'
+                        subTitle='Building secure and reliable systems to ensure data integrity and protection.'>
+                    </CardSkills>
+                    <CardSkills
+                        title='User-Centric Design'
+                        subTitle='Creating intuitive and seamless experiences by focusing on user needs.'>
+                    </CardSkills>
                 </section>
 
                 <section className='navigate' id="experience"></section>
                 <Title title='Experience' subTitle='A showcase of my professional journey, highlighting key achievements and expertise in cybersecurity, CTF challenges, and offensive security' />
                 <div className='experience'>
-                    <span className='float-word'>Technology lover</span>
                     <div className='column-2'>
-                        <div className='float-icon-right'>
-                            <Potion/>
+                        <Hexagon type='right'></Hexagon>
+                        <div className='cont-pad'>
+                            <CardText 
+                                title='Volunteer NicaSecurity (Oct 2024...)'
+                                text='I am part of the community contributing to the development of web tools and the creation of CTF challenges, with the aim of supporting learning and cybersecurity. Teamwork to design interactive content that fosters a collaborative space, where participants can improve their technical skills.'>
+                            </CardText>
                         </div>
-                        <CardText 
-                            title='Volunteer Nicasecurity (Oct 2024 - Present)'
-                            text='I am part of the community contributing to the development of web tools and the creation of CTF challenges, with the aim of supporting learning and cybersecurity. Teamwork to design interactive content that fosters a collaborative space, where participants can improve their technical skills and face challenging challenges.'>
-                        </CardText>
-                        <CardText 
-                            title='Web Developer (Feb 2022 - Mar 2022)'
-                            text='I designed and developed a website that met the specific requirements of the client, ensuring that every aspect of design and functionality was aligned with their commercial needs and objectives. In addition, I optimized site performance to ensure fast charge and efficient user experience.'>
-                        </CardText>
+                        <div className='cont-pad'>
+                            <CardText 
+                                title='Web Developer (Feb 2022 - Mar 2022)'
+                                text='I designed and developed a website that met the specific requirements of the client, ensuring that every aspect of design and functionality was aligned with their commercial needs and objectives. In addition, I optimized site performance to ensure fast charge and efficient user experience.'>
+                            </CardText>
+                        </div>
                     </div>
                 </div>
 
                 <section className='navigate' id="service"></section>
                 <Title title='Services' subTitle='My journey in cybersecurity and web development-building secure, high-performance applications while tackling complex security challenges' />
                 <div className='service'>
-                    <span className='float-word'>Futbool lover</span>
                     <div className='column-2'>
-                        <div className='float-icon-left'>
-                            <Service/>
+                        <Hexagon type='left'></Hexagon>
+                        <div className='cont-pad'>
+                            <CardText 
+                                title='University Works'
+                                text='I offer assistance and support in carrying out university projects related to computer science. From in-depth research to structured writing, I can help you achieve your academic goals with quality, precision, and a well-organized approach that ensures clarity and professionalism.'>
+                            </CardText>
                         </div>
-                        <CardText 
-                            title='University Works'
-                            text='I offer assistance and support in carrying out university projects related to computer science. From in-depth research to structured writing, I can help you achieve your academic goals with quality, precision, and a well-organized approach that ensures clarity and professionalism.'>
-                        </CardText>
-                        <CardText 
-                            title='Web Development'
-                            text='High-quality web development tailored to your specific needs. From the creation of static websites to dynamic web applications, I can help you build a robust, scalable, and visually appealing online presence that enhances engagement and drives your success.'>
-                        </CardText>
-                        <CardText 
-                            title='Training and Virtual Sessions'
-                            text='I offer personalized classes in computer science and cybersecurity. From fundamental concepts to advanced techniques, I help students, professionals, and corporate teams enhance their skills and deepen their knowledge with practical, hands-on learning.'>
-                        </CardText>
-                        <CardText 
-                            title='Software Development'
-                            text='Custom software development tailored to your business needs. From desktop applications to complex enterprise solutions, I provide innovative, scalable, and efficient technologies that enhance productivity, streamline operations, and drive long-term growth.'>
-                        </CardText>
+                        <div className='cont-pad'>
+                            <CardText 
+                                title='Web Development'
+                                text='High-quality web development tailored to your specific needs. From the creation of static websites to dynamic web applications, I can help you build a robust, scalable, and visually appealing online presence that enhances engagement and drives your success.'>
+                            </CardText>
+                        </div>
+                        <div className='cont-pad'>
+                            <CardText 
+                                title='Training and Virtual Sessions'
+                                text='I offer personalized classes in computer science and cybersecurity. From fundamental concepts to advanced techniques, I help students, professionals, and corporate teams enhance their skills and deepen their knowledge with practical, hands-on learning.'>
+                            </CardText>
+                        </div>
+                        <div className='cont-pad'>
+                            <CardText 
+                                title='Software Development'
+                                text='Custom software development tailored to your business needs. From desktop applications to complex enterprise solutions, I provide innovative, scalable, and efficient technologies that enhance productivity, streamline operations, and drive long-term growth.'>
+                            </CardText>
+                        </div>
                     </div>
                 </div>
 
                 <section className='navigate' id="projects"></section>
                 <Title title='Projects' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant)' />
                 <div className='projects'>
-                    <span className='float-word'>Game lover</span>
                     <div className='column-2'>
-                        <div className='float-icon-right'>
-                            <Rocket/>
-                        </div>
+                        <Hexagon type='right'></Hexagon>
                         <CardProject 
                             url='/GSpark2.jpg'
                             title='GrizzlySpark (web app)'

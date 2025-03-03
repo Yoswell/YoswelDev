@@ -3,12 +3,6 @@ import { Copy, Download } from "@/components/icons/HeroIcons"
 export function Footer() {
     return (
         <footer>
-            <div className='cont-line'>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
             <div className="grizzly-card">
                 <h1 className='title'>Grizzlyspark</h1>
                 <p className='subTitle'>A powerful tool written in Python designed to assist in CTFs</p>

@@ -10,7 +10,6 @@ export function Skills() {
 
     return (
         <div className="cont-squares">
-            <span className='float-word'>Movies lover</span>
             <div className="cont1">
                 {skills.map((skill, index) => (
                     <SkillBox key={index} name={skill} />

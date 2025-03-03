@@ -18,15 +18,16 @@ export function About() {
     return (
         <header>
             <div className='blur1'>
-                <img src='/Back.webp' alt='Circle white image background'></img>
+                <img src='/Back.webp' alt='Circle white image background' />
             </div>
 
             <Nav/>
-            <div className='status'>
-                <h3>
-                    <Info/>
-                    Available to work immediately
-                </h3>
+            <div className='brand'>
+                <img src='/CTimer.jpg' alt='Me image' />
+                <img src='/GSpark2.jpg' alt='Me image' />
+                <img src='/Vishok.png' alt='Me image' />
+                <img src='/MLearn.jpg' alt='Me image' />
+                <img src='/DHouse.png' alt='Me image' />
             </div>
             <h1>Hey crack, what happen?</h1>
             <p>I'm Yoswel Badilla a Full-Stack Developer and Cybersecurity Analyst, my passion for technological innovation has led me to specialize in the development of applications that not only solve complex problems in a timely manner. efficient, but also designed with a robust and secure architecture</p>
@@ -43,11 +44,6 @@ export function About() {
                     Download Resume
                 </button>
             </div>
-            <div className='cont-line'>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
 
             <ModalContext value={{isOpenModal, setIsOpenModal}}>
                 <ModalCV/>
@@ -55,10 +51,9 @@ export function About() {
 
             <div className='float-left-bottom'>
                 <Arrow/>
-                <h4>Scroll dowm</h4>
+                <h4>Scroll Dowm</h4>
             </div>
             <div className='float-right-bottom'>
-                <h4>Available sections</h4>
                 <div className='row'>
                     <a href='#home'><span>About</span></a>
                     <a href='#experience'><span>Experience</span></a>
@@ -70,7 +65,7 @@ export function About() {
             </div>
 
             <div className='blur2'>
-                <img src='/Back.webp' alt='Circle white image background'></img>
+                <img src='/Back.webp' alt='Circle white image background' />
             </div>
         </header>
     )

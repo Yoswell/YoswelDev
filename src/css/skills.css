@@ -20,11 +20,11 @@
     width: auto;
     height: 40px;
     padding: 8px 20px !important;
-    border-radius: 15px;
+    border-radius: calc(var(--radius-card) + 5px);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--border-sm-white);
+    outline: 1px solid var(--border-sm-white);
     background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 30%, var(--border-white) 100%);
     position: relative;
     cursor: pointer;
@@ -34,7 +34,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-weight: 500;
     white-space: nowrap;
     text-align: center;
     background-color: var(--font-black);
@@ -44,6 +43,6 @@
     color: var(--font-black);
     border-radius: 10px;
     text-transform: uppercase;
-    font-family: "Chakra Petch", serif;
     font-size: 15px;
+    font-weight: 500;
 }
