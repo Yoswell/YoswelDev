@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import { ModalContext } from '@/components/About'
 import { Check, Download } from '@/components/icons/HeroIcons'
+import { Hexagon } from './recycle/Hexagon'
 
 export function ModalCV() {
     const { isOpenModal, setIsOpenModal } = useContext(ModalContext)
@@ -24,10 +25,9 @@ export function ModalCV() {
     return (
         <section className={`modal ${isOpenModal && "modal-open"}`}>
             <div className='card-modal'>
-                <h5>
-                    <Download/>
-                    Download my resume
-                </h5>
+                <Hexagon type='right'></Hexagon>
+                <h5><Download/>Download my resume</h5>
+                
                 <div className='modal-question'>
                     <label>Choose a sector</label>
                     <div className='form-group'>

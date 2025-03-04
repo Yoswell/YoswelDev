@@ -10,51 +10,34 @@
     z-index: 1000;
 
     & .card-modal {
+        position: relative;
         padding: 20px;
         display: grid;
-        gap: 20px;
+        gap: 15px;
         width: 350px;
+
+        .float-icon-right {
+            top: -10px;
+            margin-right: 10px !important;
+        }
 
         & h5 {
             display: grid;
             place-items: center;
             gap: 10px;
             color: var(--font-black);
-            font-weight: 600;
+            font-weight: 500;
             font-size: 18px;
-            padding-bottom: 20px;
+            padding: 20px;
             position: relative;
             text-transform: uppercase;
-            font-family: "Chakra Petch", serif;
-
-            &::before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                max-width: 900px;
-                height: 1px;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                background: linear-gradient(90deg, var(--bg-white), var(--font-black), var(--bg-white));
-            }
-
-            &::after {
-                position: absolute;
-                content: '';
-                width: 30px;
-                height: 5px;
-                bottom: -2px;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: var(--font-black);
-                box-shadow: 0 0 15px var(--font-black);
-                border-radius: 6px;
-            }
+            border: 1px solid var(--border-white);
+            border-radius: var(--radius-card);
+            background: linear-gradient(To bottom, var(--border-white), var(--bg-white), var(--bg-white));
             
             & svg {
                 width: 35px;
-                height: 30px;
+                height: 35px;
                 display: grid;
                 place-items: center;
                 border-radius: 8px;
@@ -66,17 +49,16 @@
 
         & label {
             color: var(--font-black);
-            margin-bottom: 10px;
             text-transform: uppercase;
-            font-family: "Chakra Petch", serif;
+            font-weight: 500;
         }
 
         & .modal-question {
             display: grid;
             gap: 10px;
-            padding: 15px;
-            border-radius: 20px;
-            border: 1px solid var(--border-sm-white);
+            padding: 20px;
+            border-radius: var(--radius-card);
+            border: 1px solid var(--border-white);
             background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%, var(--bg-white) 100%);
 
             & .row {
@@ -87,7 +69,6 @@
                 & label {
                     margin: 0;
                     color: var(--font-sm-black);
-                    font-family: "Inter", serif;
                     text-transform: none;
                 }
             }
@@ -102,7 +83,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            gap: 10px;
+            gap: 8px;
 
             & .btn {
                 display: flex;
@@ -112,7 +93,10 @@
                 background-color: var(--border-white);
                 border-color: var(--border-sm-white);
                 padding: 8px 15px;
-                border-radius: 15px;
+                border-radius: var(--radius-card);
+                border: none;
+                color: var(--font-black);
+                font-weight: 500;
 
                 &:hover {
                     color: var(--bg-white);

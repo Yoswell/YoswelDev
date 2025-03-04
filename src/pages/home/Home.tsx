@@ -1,11 +1,10 @@
 import { About } from '@/components/About'
 import { CardProject } from '@/components/CardProject'
-import { CardText } from '@/components/recycle/CardText'
+import { CardText } from '@/components/CardText'
 import { Skills } from '@/components/skills'
-import { Title } from '@/components/recycle/Title'
+import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
 import { CardSkills } from '@/components/CardSkills'
-import { Potion, Rocket, Service } from '@/components/icons/HeroIcons'
 import { Hexagon } from '@/components/recycle/Hexagon'
 
 export function Home() {
