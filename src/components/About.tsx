@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react'
 import { ModalCV } from '@/components/ModalCV'
 import { Nav } from '@/components/Nav'
-import { Download, Info, Contact, Arrow } from '@/components/icons/HeroIcons'
+import { Download, Contact, Arrow } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
     isOpenModal: false,
