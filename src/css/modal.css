@@ -6,7 +6,7 @@
     height: 100vh;
     display: none;
     place-items: center;
-    backdrop-filter: blur(5px) brightness(0.1);
+    backdrop-filter: blur(5px);
     z-index: 1000;
 
     & .card-modal {
@@ -16,24 +16,18 @@
         gap: 15px;
         width: 350px;
 
-        .float-icon-right {
-            top: -10px;
-            margin-right: 10px !important;
-        }
-
         & h5 {
             display: grid;
             place-items: center;
             gap: 10px;
             color: var(--font-black);
-            font-weight: 500;
-            font-size: 18px;
+            font-weight: 600;
             padding: 20px;
             position: relative;
             text-transform: uppercase;
-            border: 1px solid var(--border-white);
+            border: 1px solid var(--border-mm-white);
             border-radius: var(--radius-card);
-            background: linear-gradient(To bottom, var(--border-white), var(--bg-white), var(--bg-white));
+            background-color: var(--bg-white);
             
             & svg {
                 width: 35px;
@@ -47,10 +41,17 @@
             }
         }
 
-        & label {
+        & h6 {
+            font-size: 14px;
             color: var(--font-black);
             text-transform: uppercase;
             font-weight: 500;
+            background-color: var(--bg-white);
+            background-image: url('/fflurry.svg');
+            background-size: 130px;
+            border: 1px dashed var(--border-mm-white);
+            padding: 8px 10px;
+            border-radius: var(--radius-card);
         }
 
         & .modal-question {
@@ -58,8 +59,8 @@
             gap: 10px;
             padding: 20px;
             border-radius: var(--radius-card);
-            border: 1px solid var(--border-white);
-            background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%, var(--bg-white) 100%);
+            border: 1px solid var(--border-mm-white);
+            background-color: var(--bg-white);
 
             & .row {
                 display: flex;
@@ -67,17 +68,14 @@
                 gap: 10px;
 
                 & label {
-                    margin: 0;
+                    font-size: 15px;
                     color: var(--font-sm-black);
-                    text-transform: none;
+                    font-weight: 500;
                 }
             }
         }
 
-        & .form-group {
-            display: grid;
-            gap: 10px;
-        }
+        & .form-group { display: grid; gap: 8px; }
 
         & .cont-button {
             display: flex;
@@ -113,14 +111,15 @@
 .select {
     width: 18px;
     height: 18px;
-    background-color: var(--border-white);
-    outline: 1px solid var(--border-sm-white);
+    background-color: var(--bg-white);
+    outline: 1px solid var(--border-mm-white);
     border-radius: 4px;   
     display: grid;
     place-content: center;
 
     & svg {
-        width: 16px;
+        width: 12px;
+        stroke-width: 3px;
         color: var(--font-black);
     }
 }

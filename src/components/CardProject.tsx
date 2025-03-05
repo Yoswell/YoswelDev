@@ -13,9 +13,7 @@ export function CardProject({url, title, text, children1, children2}: CardProjec
     return (
         <article className='cont-card'>
             <div className='cardProject'>
-                <picture>
-                    <img src={url} alt='Project image'></img>
-                </picture>
+                <img src={url} alt='Project image'></img>
                 <div className='cont-text'>
                     <h3 className='title'>
                         <div className='raimbow'>

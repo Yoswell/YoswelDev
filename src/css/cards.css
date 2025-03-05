@@ -1,75 +1,35 @@
 .cont-card { display: flex; }
+
 .cont-pad { 
     display: flex;
     align-items: stretch;
-    padding: 1px;
+    padding: 2;
+    border-radius: 15px;
     background-color: var(--border-white);
-    clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
-}
-
-.card {
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 15px;
-    background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 30%, var(--bg-white) 100%);
-    clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
-
-    & .title {
-        font-size: 17px;
-        color: var(--font-black);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        text-transform: uppercase;
-        font-weight: 500;
-
-        & .raimbow {
-            display: grid;
-            place-items: center;
-            padding: 2px;
-            border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
-            background-color: var(--font-sm-black);
-
-            & svg { 
-                width: 30px;
-                padding: 6px;
-                border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
-                color: var(--font-black);
-                background-color: var(--bg-white);  
-            }
-        }
-    }
-
-    & p { 
-        color: var(--font-sm-black);
-    }
+    /*clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);*/
 }
 
 .skills-cont {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 15px;
     margin-bottom: 80px;
-    -webkit-mask-image: linear-gradient(90deg, var(--bg-white) 80%, transparent 100%);
-    mask-image: linear-gradient(90deg, var(--bg-white) 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(To right, transparent 0%, var(--bg-white) 20%, var(--bg-white) 90%, transparent 100%);
+    mask-image: linear-gradient(To right, transparent 0%, var(--bg-white) 20%, var(--bg-white) 90%, transparent 100%);
 }
 
 .cardSoftSkill {
     width: 100%;
-    background-color: var(--bg-mm-white);
-    border-radius: 20px;
-    overflow: hidden;
+    background-color: var(--bg-white);
     display: flex;
     position: relative;
     align-items: flex-start;
     gap: 10px;
     padding: 10px;
-    border: 1px solid var(--border-white);
-    background: linear-gradient(160deg, var(--bg-white) 30%, var(--bg-white) 70%, var(--border-white) 100%);
-
-    & img { width: 120px; outline: 1px solid var(--border-white); border-radius: calc(var(--radius-card) + 8px); }
+    border-radius: 15px;
+    border: 1px solid var(--border-mm-white);
+    
+    & img { width: 80px; outline: 1px solid var(--border-mm-white); border-radius: calc(var(--radius-card)); }
 
     & .row {
         display: grid;
@@ -83,25 +43,82 @@
             background-color: var(--bg-mm-white);
             padding: 8px 15px;
             border-radius: var(--radius-card);
-            outline: 1px solid var(--border-white);
+            outline: 1px solid var(--border-mm-white);
         }
         
-        & h6 { color: var(--font-sm-black); font-size: 14px; line-height: 18px; font-weight: 600; }
+        & h6 { 
+            color: var(--font-sm-black);
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+        }
     }
 }
 
-.bubble { animation: morph 4s infinite ease-in-out; }
+& .raimbow {
+    display: grid;
+    place-items: center;
+    padding: 1px;
+    background-color: var(--border-mm-white);
+    border-radius: 8px;
 
-.projects, .extras {
+    & svg { 
+        width: 30px;
+        padding: 6px;
+        color: var(--font-black);
+    }
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--bg-white);
+    outline: 1px solid var(--border-mm-white);
+    border-radius: 15px;
+    /*clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);*/
+
+    & .title {
+        width: 100%;
+        font-size: 17px;
+        color: var(--font-black);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        background-color: var(--bg-white);
+        background-image: url('/fflurry.svg');
+        background-size: 100px;
+        border: 1px dashed var(--border-mm-white);
+        padding: 5px;
+        border-radius: var(--radius-card);
+    }
+
+    & p { 
+        font-weight: 500;
+        color: var(--font-sm-black);
+        -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
+        mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
+    }
+}
+
+.projects {
     & .cardProject {
         width: 100%;
         position: relative;
-        overflow: hidden; 
-        border-radius: 20px;
+        border-radius: 15px;
+        border: 1px solid var(--border-mm-white);
+        padding: 20px;
         background-color: var(--bg-white);
-        outline: 1px solid var(--border-white);
         
-        & img { max-width: 100%; }
+        & img {
+            border-radius: 20px;
+            filter: saturate(0) brightness(0.3); 
+            max-width: 100%;
+        }
 
         & .cont-text {
             display: grid;
@@ -112,45 +129,36 @@
                 align-items: center;
                 gap: 12px;
                 color: var(--font-black);
-                font-size: 17px;
+                font-size: clamp(17px, 3vw, 20px);
                 text-transform: uppercase;
                 font-weight: 500;
-
-                & .raimbow {
-                    display: grid;
-                    place-items: center;
-                    padding: 2px;
-                    border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
-                    background-color: var(--bg-purple);
-        
-                    & svg { 
-                        width: 30px;
-                        padding: 6px;
-                        border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
-                        color: var(--font-black);
-                        background-color: var(--bg-white);  
-                    }
-                }
+                background-color: var(--bg-white);
+                background-image: url('/fflurry.svg');
+                background-size: 100px;
+                border: 1px dashed var(--border-mm-white);
+                padding: 5px;
+                border-radius: var(--radius-card);
             }
 
             & p {
+                font-weight: 500;
                 color: var(--font-sm-black);
-                max-width: 70ch;
-                -webkit-mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-                mask-image: linear-gradient(To bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 text-overflow: ellipsis;
+                -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
+                mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
             }
         }
 
         & .cont-links {
-            padding: 15px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
-            position: absolute;
 
             & .link {
                 padding: 5px 10px;
@@ -158,9 +166,9 @@
                 border-radius: var(--radius-card);
                 text-decoration: none;
                 color: var(--font-black);
-                background-color: var(--border-white);
-                outline: 1px solid var(--border-sm-white);
-                font-weight: 400;
+                background-color: var(--bg-mm-white);
+                outline: 1px solid var(--border-mm-white);
+                font-weight: 00;
             }
         }
 
@@ -175,65 +183,8 @@
                 mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
                 border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
                 border: 2px solid var(--border-sm-white);
-                filter: saturate(0) brightness(0.5);
             }   
         }
-    }
-}
-
-.projects {
-    .cardProject {
-        padding: 20px;
-        background: linear-gradient(160deg, var(--border-white) 0%, var(--bg-white) 15%, var(--bg-white) 90%);
-
-        & img {
-            border: 2px solid var(--bg-mm-white);
-            border-radius: 20px;
-            filter: saturate(0) brightness(0.5);
-            -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 70%, transparent 100%);
-            mask-image: linear-gradient(To bottom, var(--bg-white) 70%, transparent 100%);
-        }
-
-        & .cont-text {
-            background: transparent;
-            padding: 15px 0 0 0;
-        }
-
-        .cont-links { top: 20px; }
-    }
-}
-
-.extras {
-    & .cardProject {
-        & picture { display: none; }
-    }
-
-    & .cont-text { background: linear-gradient(160deg, var(--bg-sm-white) 0%, var(--bg-white) 30%); }
-    
-    & .cont-links { 
-        z-index: 100 !important; 
-        right: 0px !important;
-        bottom: 0px !important;
-    }
-}
-
-@keyframes floatOne {
-    0% {
-        transform: translateX(0%) translateY(0%);
-    } 50% {
-        transform: translateX(-3px) translateY(-10px);
-    } 100% {
-        transform: translateX(0%) translateY(0%);
-    }
-}
-
-@keyframes floatTwo {
-    0% {
-        transform: translateX(0%) translateY(0%);
-    } 50% {
-        transform: translateX(-2px) translateY(-5px);
-    } 100% {
-        transform: translateX(0%) translateY(0%);
     }
 }
 
