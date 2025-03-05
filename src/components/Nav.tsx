@@ -1,4 +1,4 @@
-import { Contact, Link, Volt } from '@/components/icons/HeroIcons'
+import { Contact, Link } from '@/components/icons/HeroIcons'
 
 export function Nav() {
     return (
