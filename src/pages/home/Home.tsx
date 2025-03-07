@@ -1,10 +1,9 @@
 import { About } from '@/components/About'
 import { CardProject } from '@/components/cards/CardProject'
 import { CardText } from '@/components/cards/CardText'
-import { Skills } from '@/components/Skills'
+import { Skills } from '@/components/cards/Skills'
 import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
-import { CardSkills } from '@/components/cards/CardSkills'
 import { Download, Copy } from '@/components/icons/HeroIcons'
 import { Code } from '@/components/recycle/Code'
 import { Grid } from '@/components/recycle/Grid'
@@ -18,25 +17,6 @@ export function Home() {
 
                 <section id='home'></section>
                 <About />
-
-                <section className='skills-cont'>
-                    <CardSkills
-                        title='Scalable and efficient'
-                        subTitle='Streamlined solutions that improve workflow and increase efficiency.'>
-                    </CardSkills>
-                    <CardSkills 
-                        title='Innovative and Creative'
-                        subTitle='Creative problem-solving that leads to innovative and effective solutions.'>
-                    </CardSkills>
-                    <CardSkills
-                        title='Security and Reliability'
-                        subTitle='Building secure and reliable systems to ensure data integrity and protection.'>
-                    </CardSkills>
-                    <CardSkills
-                        title='User-Centric Design'
-                        subTitle='Creating intuitive and seamless experiences by focusing on user needs.'>
-                    </CardSkills>
-                </section>
 
                 <section className='navigate' id="experience"></section>
                 <Title title='Experience' subTitle='A showcase of my professional journey, highlighting key achievements and expertise in cybersecurity, CTF challenges, and offensive security' />
