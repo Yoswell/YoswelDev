@@ -71,14 +71,13 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
-    position: relative;
     border-radius: 20px;
     min-height: 600px;
 
     .Me {
         width: 450px;
-        -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 80%, transparent 100%);
-        mask-image: linear-gradient(To bottom, var(--bg-white) 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 50%, transparent 80%);
+        mask-image: linear-gradient(To bottom, var(--bg-white) 50%, transparent 80%);
     }
 
     .title {
@@ -113,46 +112,10 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     display: grid;
     place-items: center;
-    margin-top: 50px;
     position: relative;
-
-    h3 {
-        position: absolute;
-        top: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 20px;
-        padding-bottom: 5px;
-        color: #3d3d40;
-        font-weight: 600;
-        text-transform: uppercase;
-        white-space: nowrap;
-
-        &::before {
-            position: absolute;
-            content: '';
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 500%;
-            height: 1px;
-            border-bottom: 1px dashed var(--border-mm-white);
-        }
-
-        &::after {
-            position: absolute;
-            content: '';
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 500%;
-            height: 1px;
-            border-bottom: 1px dashed var(--border-mm-white);
-        }
-    }
 
     .title {
         text-align: center;
@@ -169,18 +132,88 @@ header {
         font-size: 18px;
         color: var(--font-sm-black);
         font-weight: 500;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 }
 
-.experience, .service, .projects {
+.experience, .service, .projects, .skills, .extra, .experience-two {
     max-width: 1200px;
-    padding: 50px 0;
-    margin: 0 auto;
-    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 80px 0 40px 0;
+    margin: 0 auto;
     gap: 15px;
+    grid-template-columns: 1fr 1fr;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 500%;
+        height: 40px;
+        border-top: 1px dashed var(--border-mm-white);
+        border-bottom: 1px dashed var(--border-mm-white);
+        background-image: url('/fflurry.svg');
+        background-size: 100px;
+    }
+}
+
+.experience-two {
+    padding: 0;
+    &::after { 
+        top: 0px;
+    }
+}
+
+.extra {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 50px 0;
+    gap: 30px;
+    height: 800px;
+
+    .Me {
+        width: 300px;
+        filter: saturate(0);
+        -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 60%, transparent 80%);
+        mask-image: linear-gradient(To bottom, var(--bg-white) 60%, transparent 80%);
+    }
+
+    .cont-text {
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        h1 {
+            margin-top: -130px;
+            text-align: center;
+            font-size: clamp(40px, 10vw, 120px);
+            max-width: 15ch;
+            color: var(--font-black);
+            font-weight: 900;
+            z-index: 10;
+    
+            & span { 
+                font-size: inherit;
+                font-weight: inherit; 
+                color: inherit;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: clamp(18px, 5vw, 20px);
+            color: var(--font-sm-black);
+            line-height: 1.5;
+            max-width: 80ch;
+            font-weight: 500;
+        }
+    }
 }
 
 .contact {

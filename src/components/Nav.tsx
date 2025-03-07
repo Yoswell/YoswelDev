@@ -5,10 +5,10 @@ export function Nav() {
         <nav>
             <ul className='navigate-link'>
                 <h1>Vishok</h1>
-                <a className='link' href="">About</a>
-                <a className='link' href="">Experience</a>
-                <a className='link' href="">Services</a>
-                <a className='link' href="">Projects</a>
+                <a className='link' href="#home">About</a>
+                <a className='link' href="#">Experience</a>
+                <a className='link' href="#">Services</a>
+                <a className='link' href="#">Projects</a>
             </ul>
             <ul>
                 <button>

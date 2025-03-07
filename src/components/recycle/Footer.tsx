@@ -1,15 +1,11 @@
-import { Copy, Download } from "@/components/icons/HeroIcons"
-
 export function Footer() {
     return (
         <footer>
-            <div className="grizzly-card">
-                <h1 className='title'>Grizzlyspark</h1>
-                <p className='subTitle'>A powerful tool written in Python designed to assist in CTFs</p>
-                <div className='clone-git-tool'>
-                    <Copy/>
-                    <input value="git clone https://github.com/Yoswell/GrizzlySpark"></input>
-                    <Download/>
+            <div className="cardHire">
+                <div className="smallMeImage"></div>
+                <div>
+                    <h3>Yoswel is available to work</h3>
+                    <button>Hire Services</button>
                 </div>
             </div>
         </footer>

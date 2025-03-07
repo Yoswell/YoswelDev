@@ -1,44 +1,29 @@
-import { motion } from 'framer-motion'
-import { useState } from 'react'
-
 export function Skills() {
-    const skills = [
-        "JavaScript", ".NET", "Git", "Linux", "Debian", "Java",
-        "TypeScript", "C#", "Python", "HTML", "React", "VS Code",
-        "Vite", "Kali", "Visual Studio", "Postman", "CSS"
-    ]
+    const images = [ "js", "dotnet", "git", "github", "debian", "java", "typescript", "cs", "py", "html", "react", "css" ]
 
     return (
-        <div className="cont-squares">
-            <div className="cont1">
-                {skills.map((skill, index) => (
-                    <SkillBox key={index} name={skill} />
-                ))}
-            </div>
+        <div className="skills">
+            <article>
+                <div className="shadow">
+                    {Array.from({length: 8}).map(() => (
+                        images.map((data) => (
+                            <SkillBox url={data}></SkillBox>
+                        ))
+                    ))}
+                </div>
+            </article>
         </div>
     )
 }
 
 interface SkillBoxProps {
-    name: string
+    url: string
 }
-function SkillBox({name}: SkillBoxProps) {
-    const [rotation, setRotation] = useState(0)
 
+function SkillBox({url}: SkillBoxProps) {
     return (
-        <motion.div
-            className="skill-box"
-            onHoverStart={() => setRotation(Math.random() * 30 - 10)}
-            whileHover={{ scale: 1.2, rotate: rotation }}
-            transition={{ duration: 0.3, ease: [0.95, 0.05, 0.795, 0.035] }}>
-            <motion.span
-                initial={{ scale: 0 }}
-                whileHover={{ scale: 1 }}
-                transition={{ duration: 0.2 }}
-                className="tooltip">
-                {name}
-            </motion.span>
-            <span className="skill-text">{name}</span>
-        </motion.div>
+        <div className="skill-box">
+            <img src={`https://skillicons.dev/icons?i=${url}`} alt='Skill image' decoding="async" loading="lazy" />
+        </div>
     )
 }

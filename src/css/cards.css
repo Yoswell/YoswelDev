@@ -18,6 +18,10 @@
     mask-image: linear-gradient(To right, transparent 0%, var(--bg-white) 20%, var(--bg-white) 90%, transparent 100%);
 }
 
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
 .cardSoftSkill {
     width: 100%;
     background-color: var(--bg-white);
@@ -29,13 +33,13 @@
     border-radius: 15px;
     border: 1px solid var(--border-mm-white);
     
-    & img { width: 80px; outline: 1px solid var(--border-mm-white); border-radius: calc(var(--radius-card)); }
+    img { width: 80px; outline: 1px solid var(--border-mm-white); border-radius: calc(var(--radius-card)); }
 
-    & .row {
+    .row {
         display: grid;
         gap: 8px;
 
-        & h4 {
+        h4 {
             color: var(--font-black);
             font-weight: 600;
             font-size: 15px;
@@ -46,7 +50,7 @@
             outline: 1px solid var(--border-mm-white);
         }
         
-        & h6 { 
+        h6 { 
             color: var(--font-sm-black);
             font-size: 14px;
             line-height: 18px;
@@ -55,19 +59,24 @@
     }
 }
 
-& .raimbow {
+.raimbow {
     display: grid;
     place-items: center;
     padding: 1px;
-    background-color: var(--border-mm-white);
+    background-color: var(--border-white);
+    border: 1px solid var(--border-mm-white);
     border-radius: 8px;
 
-    & svg { 
+    svg { 
         width: 30px;
         padding: 6px;
         color: var(--font-black);
     }
 }
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 .card {
     padding: 20px;
@@ -80,9 +89,8 @@
     border-radius: 15px;
     /*clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);*/
 
-    & .title {
+    .title {
         width: 100%;
-        font-size: 17px;
         color: var(--font-black);
         display: flex;
         align-items: center;
@@ -97,16 +105,20 @@
         border-radius: var(--radius-card);
     }
 
-    & p { 
+    p { 
         font-weight: 500;
         color: var(--font-sm-black);
-        -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
-        mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
+        -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
+        mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
     }
 }
 
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
 .projects {
-    & .cardProject {
+    .cardProject {
         width: 100%;
         position: relative;
         border-radius: 15px;
@@ -114,22 +126,25 @@
         padding: 20px;
         background-color: var(--bg-white);
         
-        & img {
+        img {
             border-radius: 20px;
-            filter: saturate(0) brightness(0.3); 
-            max-width: 100%;
+            filter: saturate(0) brightness(0.7); 
+            max-width: 90%;
+            max-height: 300px;
+            -webkit-mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
+            mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
         }
 
-        & .cont-text {
+        .cont-text {
             display: grid;
             gap: 15px; 
+            margin-top: -30px;
 
-            & .title {
+            .title {
                 display: flex;
                 align-items: center;
                 gap: 12px;
                 color: var(--font-black);
-                font-size: clamp(17px, 3vw, 20px);
                 text-transform: uppercase;
                 font-weight: 500;
                 background-color: var(--bg-white);
@@ -138,21 +153,22 @@
                 border: 1px dashed var(--border-mm-white);
                 padding: 5px;
                 border-radius: var(--radius-card);
+                backdrop-filter: blur(100px);
             }
 
-            & p {
+            p {
                 font-weight: 500;
                 color: var(--font-sm-black);
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 text-overflow: ellipsis;
-                -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
-                mask-image: linear-gradient(200deg, var(--bg-white) 30%, transparent);
+                -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
+                mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
             }
         }
 
-        & .cont-links {
+        .cont-links {
             position: absolute;
             top: 10px;
             left: 10px;
@@ -160,30 +176,235 @@
             align-items: center;
             gap: 8px;
 
-            & .link {
+            .link {
                 padding: 5px 10px;
                 font-size: 12px;
-                border-radius: var(--radius-card);
                 text-decoration: none;
+                font-weight: 500;
                 color: var(--font-black);
-                background-color: var(--bg-mm-white);
                 outline: 1px solid var(--border-mm-white);
-                font-weight: 00;
+                border-radius: var(--radius-card);
+                background-image: url('/fflurry.svg');
+                background-size: 200px;
             }
         }
 
         & .cont-skills {
             position: absolute;
-            top: 30px;
-            right: 30px;
+            top: 10px;
+            right: 10px;
 
             & img {
                 width: 30px;
-                -webkit-mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
                 mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
                 border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
                 border: 2px solid var(--border-sm-white);
             }   
+        }
+    }
+}
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.extra {
+    .cardTerminal {
+        width: 100%;
+        max-width: 1100px;
+        display: grid;
+        outline: 1px solid var(--border-mm-white);
+        border-radius: calc(var(--radius-card) + 5px);
+        background-color: var(--bg-white);
+        background-size: cover;
+        filter: saturate(0);
+
+        pre {
+            width: 100%; 
+            height: 400px; 
+            font-size: 14px; 
+            line-height: 1.5; 
+            padding: 20px; 
+            border-radius: calc(var(--radius-card) + 5px);
+            backdrop-filter: blur(10px); 
+            background-color: #000000d3;
+            color: var(--font-black); 
+            overflow: auto;
+            font-family: "Source Code Pro", monospace;
+            scrollbar-width: none;
+            font-weight: 500;
+            -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 30%, transparent 80%);
+            mask-image: linear-gradient(To bottom, var(--bg-white) 30%, transparent 80%);
+
+            span {
+                font-weight: 500;
+                font-size: inherit;
+                font-family: inherit;
+            }
+
+            span.green { font-weight: 800; color: #ff0040; margin-right: 8px; }
+            span.yellow { font-weight: 800; color: #ff8c00; }
+            span.blue { font-weight: 800; color: #9dc7ff; }
+            span.purple { font-weight: 800; color: #a49dff; }
+            span.red { font-weight: 800; color: #ff9d9d; }
+        }
+    }
+}
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.cardHire {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    bottom: 10px;
+    gap: 5px;
+    z-index: 100;
+    
+    .smallMeImage {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        border: 1px solid var(--border-mm-white);
+        background-image: url('/Yo.png');
+        background-position-x: -28px;
+        background-position-y: -5px;
+        background-size: 100px;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.62);
+    }
+
+    div { display: flex; align-items: center; gap: 5px; }
+
+    h3 {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.62);
+        padding: 8px 10px;
+        border: 1px solid var(--border-mm-white);
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--font-black);
+        text-transform: uppercase;
+        border-radius: var(--radius-card);
+    }
+
+    button {
+        background-color: var(--border-white);
+        padding: 8px 10px;
+        border: 1px solid var(--border-white);
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--font-black);
+        text-transform: uppercase;
+        border-radius: var(--radius-card);
+    }
+}
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.grizzly-card {
+    position: absolute;
+    place-items: center;
+    gap: 5px;
+    padding: 20px;
+    bottom: 30px;
+    background-color: #000000d3;
+    backdrop-filter: blur(3px);
+    border-radius: calc(var(--radius-card) + 5px);
+    border: 1px solid var(--border-mm-white);
+    background-image: url('/fflurry.svg');
+    background-size: 100px;
+
+    .title {
+        text-align: center;
+        color: var(--font-black);
+        font-size: clamp(20px, 3vw, 25px);
+        font-weight: 900;
+    }
+
+    .subTitle {
+        text-align: center;
+        color: var(--font-sm-black);
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+.clone-git-tool {
+    left: 15px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    
+    & svg {
+        width: 33px;
+        padding: 6px;
+        background-color: var(--bg-white);
+        outline: 1px solid var(--border-mm-white);
+        color: var(--font-black);
+        border-radius: 8px;
+    }
+    
+    input {
+        width: 300px;
+        border: none;
+        background-color: var(--border-sm-white);
+        font-weight: 500;
+        padding: 8px 10px;
+        color: var(--font-black);
+        text-overflow: ellipsis;
+        outline: none;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+}
+
+.cardFollower {
+    position: fixed;
+    top: 68px;
+    left: 80px;
+    border: 1px solid var(--border-mm-white);
+    padding: 5px;
+    display: grid;
+    gap: 2px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.62);
+    border-radius: var(--radius-card);
+
+    .cont-button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        button {
+            display: flex;
+            align-items: center;
+            background-color: var(--border-white);
+            gap: 5px;
+            padding: 3px 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+
+            p {
+                font-size: 14px;
+                color: var(--font-black);
+            }
+            
+            svg {
+                width: 18px;
+                color: var(--font-black);
+                fill: var(--border-mm-white);
+                stroke-width: 2px;
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     --bg-white: #000;
@@ -18,23 +18,38 @@
     --radius-card: 10px;
 }
 
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('/src/assets/font/ChakraPetch-Bold.woff2') format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('/src/assets/font/ChakraPetch-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('/src/assets/font/ChakraPetch-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 400;
     font-size: 16px;
-    scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--bg-mm-white) #050505 !important;
-    font-family: "Chakra Petch", serif;
+    font-family: 'Chakra Petch';
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--bg-white);
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
     scrollbar-gutter: stable !important;
 }
 
@@ -77,20 +92,6 @@ p { line-height: 24px; }
     }
 }
 
-.blur-me {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%)  translateY(-50%);
-    background-color: var(--font-black);
-    z-index: -1;
-    filter: blur(100px);
-    margin-top: -30px;
-    margin-left: 20px;
-}
-
 .flurry-left {
     position: fixed;
     top: 0;
@@ -117,6 +118,31 @@ p { line-height: 24px; }
     z-index: -10;
 }
 
+.grid {
+    position: absolute;
+    top: -310px;
+    left: 0;
+    transform: rotate(-180deg);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    z-index: -100;
+    -webkit-mask-image: radial-gradient(var(--bg-white) 40%, transparent 80%);
+    mask-image: radial-gradient(var(--bg-white) 40%, transparent 80%);
+
+    div {
+        width: 60px;
+        height: 60px;
+        border-left: 1px dashed var(--border-white);
+        border-bottom: 1px dashed var(--border-white);
+        z-index: -1;
+        background-image: url('/fflurry.svg');
+        background-size: 200px;
+        opacity: 0.7;
+    }
+}
+
 footer {
     position: relative;
     display: flex;
@@ -127,61 +153,6 @@ footer {
     overflow: hidden;
     border-radius: 20px;
     padding: 20px;
-
-    .grizzly-card {
-        height: auto;
-        display: grid;
-        place-items: center;
-        gap: 5px;
-        padding: 30px 0;
-        padding-bottom: 0;
-
-        .title {
-            text-align: center;
-            color: var(--font-black);
-            font-size: clamp(20px, 3vw, 25px);
-            font-weight: 900;
-        }
-
-        .subTitle {
-            text-align: center;
-            color: var(--font-sm-black);
-            font-size: 15px;
-            font-weight: 500;
-        }
-    }
-
-    .clone-git-tool {
-        left: 15px;
-        bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: 10px;
-        
-        & svg {
-            width: 32px;
-            padding: 6px;
-            background-color: var(--bg-white);
-            outline: 1px solid var(--border-white);
-            color: var(--bg-purple);
-            border-radius: 8px;
-            stroke-width: 2px;
-        }
-        
-        input {
-            width: 300px;
-            border: none;
-            background-color: var(--border-white);
-            font-weight: 500;
-            padding: 8px 15px;
-            color: var(--font-black);
-            text-overflow: ellipsis;
-            outline: none;
-            font-size: 14px;
-            border-radius: calc(var(--radius-card));
-        }
-    }
 }
 
 @media (max-width: 1200px) {
