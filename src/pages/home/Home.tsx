@@ -199,7 +199,6 @@ export function Home() {
             </div>
 
             <div className='experience-two'></div>
-
             <Footer/>
         </main>
     )
