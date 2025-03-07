@@ -4,7 +4,6 @@ import { CardText } from '@/components/cards/CardText'
 import { Skills } from '@/components/cards/Skills'
 import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
-import { Download, Copy } from '@/components/icons/HeroIcons'
 import { Code } from '@/components/recycle/Code'
 import { Grid } from '@/components/recycle/Grid'
 
@@ -15,10 +14,8 @@ export function Home() {
                 <div className='flurry-left'></div>
                 <div className='flurry-right'></div>
 
-                <section id='home'></section>
                 <About />
 
-                <section className='navigate' id="experience"></section>
                 <Title title='Experience' subTitle='A showcase of my professional journey, highlighting key achievements and expertise in cybersecurity, CTF challenges, and offensive security' />
                 <div className='experience'>
                     <CardText 
@@ -52,7 +49,6 @@ export function Home() {
                     </CardText>
                 </div>
 
-                <section className='navigate' id="projects"></section>
                 <Title title='Projects' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant)' />
                 <div className='projects'>
                     <CardProject 
@@ -150,35 +146,26 @@ export function Home() {
                     </CardProject>
                 </div>
 
-                <section className='navigate' id="skill"></section>
                 <Title title='My tech stack' subTitle='Over time, I have explored and worked with various technologies, but I have decided to highlight only those in which I have a strong command' />
                 <Skills />
 
-                <section className='navigate' id="extra"></section>
                 <Title title='Extra' subTitle='Discover my bigger project in Cibersecurity, prove it and told me, what do you think about the tool, anything like bugs, problems, dependency problems, incorrect names...' />
-                <div className='extra' id='extra'>
+                <section className='extra' id='extra'>
                     <Grid />
                     <div className='cont-text'>
                         <img className='Me' src='/GrizzlyS.png' alt='Me image' />
                         <h1>GrizzlyS</h1>
                         <p>A powerful tool written in Python designed to assist CTF (Capture The Flag) participants in solving cybersecurity challenges. This tool provides several useful functionalities that facilitate data analysis and manipulation, allowing users to focus on solving the challenges</p>
                     </div>
-                    <div className='cardTerminal'>
-                        <Code />
-                    </div>
-                    <div className="grizzly-card">
-                        <h1 className='title'>Download manual repo</h1>
-                        <p className='subTitle'>A powerful tool written in Python designed to assist in CTFs</p>
-                        <div className='clone-git-tool'>
-                            <Copy/>
-                            <input value="git clone https://github.com/Yoswell/GrizzlySpark"></input>
-                            <Download/>
-                        </div>
-                    </div>
-                </div>
+                    <Code />
+                </section>
             </div>
 
-            <div className='experience-two'></div>
+            <Title title='Contact me' subTitle='If you arrive so here, contact with me, always available to make projects, any type project that you think, I could help you' />
+            <section className='contact'>
+
+            </section>
+            
             <Footer/>
         </main>
     )

@@ -15,11 +15,11 @@ export function Nav() {
                     <Contact/>
                     Contact
                 </button>
-                <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr">
+                <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr" target='_blank'>
                     <Link/>
                     LinkedIn
                 </a>
-                <a href="https://github.com/Yoswell">
+                <a href="https://github.com/Yoswell" target='_blank'>
                     <Link/>
                     GitHub
                 </a>
