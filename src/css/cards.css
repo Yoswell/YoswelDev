@@ -9,62 +9,13 @@
     /*clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);*/
 }
 
-.skills-cont {
-    display: none;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 80px;
-    -webkit-mask-image: linear-gradient(To right, transparent 0%, var(--bg-white) 20%, var(--bg-white) 90%, transparent 100%);
-    mask-image: linear-gradient(To right, transparent 0%, var(--bg-white) 20%, var(--bg-white) 90%, transparent 100%);
-}
-
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
-.cardSoftSkill {
-    width: 100%;
-    background-color: var(--bg-white);
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px solid var(--border-mm-white);
-    
-    img { width: 80px; outline: 1px solid var(--border-mm-white); border-radius: calc(var(--radius-card)); }
-
-    .row {
-        display: grid;
-        gap: 8px;
-
-        h4 {
-            color: var(--font-black);
-            font-weight: 600;
-            font-size: 15px;
-            text-transform: uppercase;
-            background-color: var(--bg-mm-white);
-            padding: 8px 15px;
-            border-radius: var(--radius-card);
-            outline: 1px solid var(--border-mm-white);
-        }
-        
-        h6 { 
-            color: var(--font-sm-black);
-            font-size: 14px;
-            line-height: 18px;
-            font-weight: 600;
-        }
-    }
-}
-
 .raimbow {
     display: grid;
     place-items: center;
     padding: 1px;
-    background-color: var(--border-mm-white);
+    background-color: var(--bg--white);
     border-radius: 8px;
+    border: 2px solid var(--font-black);
 
     svg { 
         width: 30px;
@@ -86,7 +37,13 @@
     background-color: var(--bg-white);
     outline: 1px solid var(--border-mm-white);
     border-radius: 15px;
-    /*clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);*/
+
+    .cont-text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
     .title {
         width: 100%;
@@ -99,8 +56,8 @@
         background-color: var(--bg-white);
         background-image: url('/fflurry.svg');
         background-size: 100px;
-        border: 1px dashed var(--border-mm-white);
-        padding: 5px;
+        border: 1px solid var(--border-mm-white);
+        padding: 8px 15px;
         border-radius: var(--radius-card);
     }
 
@@ -139,20 +96,26 @@
             gap: 15px; 
             margin-top: -30px;
 
+            div { 
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
             .title {
+                width: 100%;
+                color: var(--font-black);
                 display: flex;
                 align-items: center;
                 gap: 12px;
-                color: var(--font-black);
                 text-transform: uppercase;
                 font-weight: 500;
                 background-color: var(--bg-white);
                 background-image: url('/fflurry.svg');
                 background-size: 100px;
-                border: 1px dashed var(--border-mm-white);
-                padding: 5px;
+                border: 1px solid var(--border-mm-white);
+                padding: 8px 15px;
                 border-radius: var(--radius-card);
-                backdrop-filter: blur(100px);
             }
 
             p {
@@ -195,6 +158,7 @@
 
             & img {
                 width: 30px;
+                filter: saturate(0) brightness(0.3);
                 mask-image: linear-gradient(To bottom, var(--bg-white), transparent);
                 border-radius: 30% 70% 70% 30% / 30% 30% 40% 70%;
                 border: 2px solid var(--border-sm-white);
@@ -210,18 +174,18 @@
 .extra {
     .cardTerminal {
         width: 100%;
-        max-width: 1100px;
-        display: grid;
+        max-width: 1200px;
+        display: flex;
         outline: 1px solid var(--border-mm-white);
         border-radius: calc(var(--radius-card) + 5px);
         background-color: var(--bg-white);
         background-size: cover;
-        filter: saturate(0);
+        overflow: hidden;
         position: relative;
 
         pre {
             width: 100%; 
-            height: 400px; 
+            height: 350px; 
             font-size: 10px; 
             line-height: 1.5; 
             padding: 20px; 
@@ -233,8 +197,8 @@
             font-family: "Source Code Pro", monospace;
             scrollbar-width: none;
             font-weight: 600;
-            -webkit-mask-image: linear-gradient(-120deg, var(--bg-white) 0%, transparent 100%);
-            mask-image: linear-gradient(-120deg, var(--bg-white) 0%, transparent 100%);
+            -webkit-mask-image: linear-gradient(-120deg, var(--bg-white) 50%, transparent 100%);
+            mask-image: linear-gradient(-120deg, var(--bg-white) 50%, transparent 100%);
 
             span {
                 font-weight: 500;
@@ -248,53 +212,34 @@
             span.purple { font-weight: 800; color: #a49dff; }
             span.red { font-weight: 800; color: #ff9d9d; }
         }
-    }
-}
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            width: 190px;
+            border-left: 1px solid var(--border-mm-white);
 
-.cardHire {
-    position: fixed;
-    display: grid;
-    place-items: center;
-    bottom: 10px;
-    gap: 5px;
-    z-index: 100;
-    
-    img {
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        border: 1px solid var(--border-mm-white);
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.62);
-    }
+            span {
+                width: 100%;
+                display: flex;
+                color: var(--font-sm-black);
+                font-size: 14px;
+                padding: 5px 15px;
+                gap: 5px;
+                
+                &:nth-child(1) {
+                    background-color: var(--bg-mm-white);
+                    border-bottom: 1px solid var(--bg-sm-white);
+                    color: var(--font-black);
+                    margin-bottom: 10px;
+                }
 
-    div { display: flex; align-items: center; gap: 5px; }
+                &:nth-child(6) { color: var(--font-black); }
 
-    h3 {
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.62);
-        padding: 8px 10px;
-        border: 1px solid var(--border-mm-white);
-        font-weight: 600;
-        font-size: 13px;
-        color: var(--font-black);
-        text-transform: uppercase;
-        border-radius: var(--radius-card);
-    }
-
-    button {
-        background-color: var(--border-white);
-        padding: 8px 10px;
-        border: 1px solid var(--border-white);
-        font-weight: 600;
-        font-size: 13px;
-        color: var(--font-black);
-        text-transform: uppercase;
-        border-radius: var(--radius-card);
+                svg { width: 18px; stroke-width: 2px; }
+                img { width: 18px; filter: saturate(0) brightness(0.7); }
+            }
+        }
     }
 }
 
@@ -310,10 +255,10 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: #000000d3;
-    backdrop-filter: blur(3px);
+    background-color: #000000ca;
+    backdrop-filter: blur(5px);
     border-radius: calc(var(--radius-card) + 5px);
-    border: 1px dashed var(--font-black);
+    border: 1px solid var(--border-white);
     
 
     .title {
@@ -344,7 +289,7 @@
         align-items: center;
         gap: 8px;
         padding: 10px;
-        height: 35px;
+        height: 33px;
         background-color: var(--font-black);
         border: none;
         color: var(--bg-white);
@@ -355,22 +300,17 @@
         svg { width: 20px; color: var(--bg-white); }
 
         &:hover {
-            background-color: var(--font-black);
-            border-color: var(--font-black);
-            background-image: url('/fflurryW.svg');
-            background-size: 100px;
-
-            svg { color: var(--bg-white); }
+            background-color: #fff;
         }
     }
     
     input {
         width: 300px;
-        background-color: var(--bg-white);
-        border: 1px solid var(--border-mm-white);
+        background-color: var(--border-mm-white);
+        border: none;
         font-weight: 500;
         height: 35px;
-        padding: 0 10px;
+        padding: 0 15px;
         color: var(--font-black);
         text-overflow: ellipsis;
         font-size: 14px;
@@ -378,45 +318,119 @@
     }
 }
 
-.cardFollower {
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.cardHire {
     position: fixed;
-    top: 68px;
-    left: 80px;
-    border: 1px solid var(--border-mm-white);
-    padding: 5px;
     display: grid;
-    gap: 2px;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.62);
-    border-radius: var(--radius-card);
+    place-items: center;
+    bottom: 10px;
+    gap: 5px;
+    z-index: 100;
+    
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid var(--border-mm-white);
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.62);
+    }
 
-    .cont-button {
-        display: flex;
-        align-items: center;
-        gap: 5px;
+    div { display: flex; align-items: center; gap: 5px; }
 
-        button {
-            display: flex;
-            align-items: center;
-            background-color: var(--border-white);
-            gap: 5px;
-            padding: 3px 8px;
-            border: none;
-            cursor: pointer;
-            border-radius: 8px;
+    h3 {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.62);
+        padding: 8px 15px;
+        border: 1px solid var(--border-mm-white);
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--font-black);
+        text-transform: uppercase;
+        border-radius: var(--radius-card);
+    }
 
-            p {
-                font-size: 14px;
-                color: var(--font-black);
-            }
-            
-            svg {
-                width: 18px;
-                color: var(--font-black);
-                fill: var(--border-mm-white);
-                stroke-width: 2px;
-            }
+    button {
+        background-color: var(--border-white);
+        padding: 8px 15px;
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--font-black);
+        text-transform: uppercase;
+        border-radius: var(--radius-card);
+        cursor: pointer;
+        border: 1px solid var(--border-white);
+
+        &:hover {
+            border-color: var(--border-mm-white);
+            background-color: var(--border-mm-white);
+            color: var(--font-black);
+        }
+    }
+}
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.socialCard {
+    position: relative;
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid var(--border-mm-white);
+    border-radius: calc(var(--radius-card) + 5px);
+    background-color: var(--bg-white);
+    text-decoration: none;
+    
+    &:hover {
+        .me-back {
+            outline: 2px solid var(--font-black);
+        }
+    }
+    
+    .banner-image {
+        max-width: 100%;
+        border-radius: calc(var(--radius-card) + 5px);
+    }
+    
+    .me-back {
+        position: absolute;
+        top: 90px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        outline: 1px solid var(--border-mm-white);
+        overflow: hidden;
+        background-color: var(--bg-white);
+        z-index: 10;
+
+        img { width: 160%; margin-left: -30px; }
+    }
+
+    .cont-text {
+        display: grid;
+        gap: 8px;
+
+        h3 {
+            width: 100%;
+            color: var(--font-black);
+            text-transform: uppercase;
+            text-align: right;
+            font-weight: 500;
+            border-radius: var(--radius-card);
+        }
+    
+        p { 
+            text-align: right;
+            font-weight: 500;
+            color: var(--font-sm-black);
+            -webkit-mask-image: linear-gradient(-200deg, var(--bg-white) 70%, transparent);
+            mask-image: linear-gradient(-200deg, var(--bg-white) 70%, transparent);
         }
     }
 }

@@ -6,6 +6,7 @@ import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
 import { Code } from '@/components/recycle/Code'
 import { Grid } from '@/components/recycle/Grid'
+import { SocialMediaCard } from '@/components/cards/SocialMediaCard'
 
 export function Home() {
     return (
@@ -14,7 +15,9 @@ export function Home() {
                 <div className='flurry-left'></div>
                 <div className='flurry-right'></div>
 
-                <About />
+                <section className='about'>
+                    <About />
+                </section>
 
                 <Title title='Experience' subTitle='A showcase of my professional journey, highlighting key achievements and expertise in cybersecurity, CTF challenges, and offensive security' />
                 <div className='experience'>
@@ -28,7 +31,6 @@ export function Home() {
                     </CardText>
                 </div>
             
-                <section className='navigate' id="service"></section>
                 <Title title='Services' subTitle='My journey in cybersecurity and web development-building secure, high-performance applications while tackling complex security challenges' />
                 <div className='service'>
                     <CardText 
@@ -159,13 +161,23 @@ export function Home() {
                     </div>
                     <Code />
                 </section>
+                <Title title='Contact me' subTitle='If you arrive so here, contact with me, always available to make projects, any type project that you think, I could help you' />
+                <section className='contact'>
+                    <SocialMediaCard
+                        url='https://www.linkedin.com/in/yoswel-badilla-cyberjr'
+                        src='/BannerL.webp'
+                        title='Yoswel Badilla (Vishok)'
+                        text='Ingeniería informática | Desarrollador Full-Stack Jr | C# | .NET | Java | React | JavaScript | Analista de Ciberseguridad Jr | Linux | Security+'>
+                    </SocialMediaCard>
+                    <SocialMediaCard
+                        url='https://github.com/Yoswell'
+                        src='/BannerG.webp'
+                        title='Yoswel Badilla'
+                        text='Ingeniería informática | Desarrollador Full-Stack Jr | C# | .NET | Java | React | JavaScript | Analista de Ciberseguridad Jr | Linux | Security+'>
+                    </SocialMediaCard>
+                </section>
             </div>
 
-            <Title title='Contact me' subTitle='If you arrive so here, contact with me, always available to make projects, any type project that you think, I could help you' />
-            <section className='contact'>
-
-            </section>
-            
             <Footer/>
         </main>
     )

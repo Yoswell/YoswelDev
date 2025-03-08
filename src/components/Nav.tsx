@@ -19,7 +19,7 @@ export function Nav() {
                     <Link/>
                     LinkedIn
                 </a>
-                <a href="https://github.com/Yoswell" target='_blank'>
+                <a className='active' href="https://github.com/Yoswell" target='_blank'>
                     <Link/>
                     GitHub
                 </a>

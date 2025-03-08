@@ -97,9 +97,8 @@
                 font-weight: 500;
 
                 &:hover {
-                    color: var(--bg-white);
-                    background-color: var(--font-black);
-                    border-color: var(--font-black);
+                    background-color: var(--border-mm-white);
+                    color: var(--font-black);
                 }
             }
         }

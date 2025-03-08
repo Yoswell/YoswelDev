@@ -17,7 +17,6 @@ export function CardGrizzly() {
             <div className='clone-git-tool'>
                 <button onClick={() => handleCopyClick()}>
                     <Copy/>
-                    Copy
                 </button>
                 <input disabled contentEditable={false} value={repoUrl}></input>
             </div>

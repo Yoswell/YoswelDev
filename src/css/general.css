@@ -60,6 +60,17 @@ body {
 
 p { line-height: 24px; }
 
+.stars-svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: cover;
+    z-index: -1;
+
+    -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 40%, transparent 100%);
+    mask-image: linear-gradient(To bottom, var(--bg-white) 40%, transparent 100%);
+}
+
 .column-2 {
     width: 100%;
     display: grid;
@@ -85,19 +96,11 @@ p { line-height: 24px; }
         cursor: pointer;
         border: none;
 
-        &:nth-child(2) {
-            background-color: var(--font-black);
-            color: var(--bg-white);
-        }
-
         & svg { width: 22px; }
 
         &:hover {
-            background-color: var(--font-black);
-            color: var(--bg-white);
-            border-color: var(--font-black);
-            background-image: url('/fflurryW.svg');
-            background-size: 100px;
+            background-color: var(--border-mm-white);
+            color: var(--font-black);
         }
     }
 }
@@ -105,7 +108,7 @@ p { line-height: 24px; }
 .flurry-left {
     position: fixed;
     top: 0;
-    left: 30px;
+    left: 40px;
     width: 40px;
     height: 100%;
     background-image: url('/fflurry.svg');
@@ -118,7 +121,7 @@ p { line-height: 24px; }
 .flurry-right {
     position: fixed;
     top: 0;
-    right: 30px;
+    right: 40px;
     width: 40px;
     height: 100%;
     background-image: url('/fflurry.svg');
@@ -149,7 +152,7 @@ p { line-height: 24px; }
         z-index: -1;
         background-image: url('/fflurry.svg');
         background-size: 200px;
-        opacity: 0.7;
+        opacity: 1;
     }
 }
 
@@ -159,7 +162,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 200px;
+    height: 150px;
     overflow: hidden;
     border-radius: 20px;
     padding: 20px;
@@ -172,4 +175,12 @@ footer {
 @media (max-width: 900px) {
     .blur1 { right: -100px; }
     .column-2 { grid-template-columns: 1fr; }
+
+    .flurry-left {
+        left: 30px;
+    }
+    
+    .flurry-right {
+        right: 30px;
+    }
 }

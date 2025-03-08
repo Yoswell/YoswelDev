@@ -8,12 +8,12 @@ interface CardTextProps {
 export function CardText({title, text}: CardTextProps) {
     return (
         <article className='card'>
-            <h3 className='title'>
+            <div className='cont-text'>
                 <div className='raimbow'>
                     <Collection/>
                 </div>
-                {title}
-            </h3>
+                <h3 className='title'>{title}</h3>
+            </div>
             <p>{text}</p>
         </article>
     )

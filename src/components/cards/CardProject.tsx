@@ -15,12 +15,12 @@ export function CardProject({url, title, text, children1, children2}: CardProjec
             <div className='cardProject'>
                 <img src={url} alt='Project image'></img>
                 <div className='cont-text'>
-                    <h3 className='title'>
+                    <div>
                         <div className='raimbow'>
                             <Idea/>
                         </div>
-                        {title}
-                    </h3>
+                        <h3 className='title'>{title}</h3>
+                    </div>
                     <p>{text}</p>
                 </div>
                 <article className='cont-links'>

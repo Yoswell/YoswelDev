@@ -1,4 +1,5 @@
-import { CardGrizzly } from "../cards/CardGrizzly";
+import { CardGrizzly } from "@/components/cards/CardGrizzly"
+import { File } from "@/components/icons/HeroIcons"
 
 export function Code() {
     return (
@@ -51,6 +52,29 @@ export function Code() {
                 <span className="red">E4</span>      Generate Reverse Shell                         -m -i -j      IP, Port                     Reverse Shells<br></br>
                 <span className="red">E5</span>      Generate dictionary                            -m -i         Text Pattern                 Dictionary File<br></br>
             </pre>
+            <div className="right-panel">
+                <span>Explorer</span>
+                <span>
+                    <img src="https://skillicons.dev/icons?i=py" alt="Skill used to create the file" />
+                    Encode.py
+                </span>
+                <span>
+                    <img src="https://skillicons.dev/icons?i=py" alt="Skill used to create the file" />
+                    Decode.py
+                </span>
+                <span>
+                    <img src="https://skillicons.dev/icons?i=py" alt="Skill used to create the file" />
+                    Exploit.py
+                </span>
+                <span>
+                    <File />
+                    Requeriments.txt
+                </span>
+                <span>
+                    <img src="https://skillicons.dev/icons?i=py" alt="Skill used to create the file" />
+                    GrizzlySpark.py
+                </span>
+            </div>
 
             <CardGrizzly />
         </article>
