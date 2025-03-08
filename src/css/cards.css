@@ -197,8 +197,8 @@
             font-family: "Source Code Pro", monospace;
             scrollbar-width: none;
             font-weight: 600;
-            -webkit-mask-image: linear-gradient(-120deg, var(--bg-white) 50%, transparent 100%);
-            mask-image: linear-gradient(-120deg, var(--bg-white) 50%, transparent 100%);
+            -webkit-mask-image: linear-gradient(-130deg, var(--bg-white) 50%, transparent 100%);
+            mask-image: linear-gradient(-140deg, var(--bg-white) 50%, transparent 100%);
 
             span {
                 font-weight: 500;
@@ -258,7 +258,8 @@
     background-color: #000000ca;
     backdrop-filter: blur(5px);
     border-radius: calc(var(--radius-card) + 5px);
-    border: 1px solid var(--border-white);
+    border: 1px solid var(--border-mm-white);
+    box-shadow: 0 20px 80px #000;
     
 
     .title {
