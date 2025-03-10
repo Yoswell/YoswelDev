@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react'
 import { ModalCV } from '@/components/cards/ModalCV'
-import { Nav } from '@/components/Nav'
 import { Download } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
