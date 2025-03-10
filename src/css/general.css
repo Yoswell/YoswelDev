@@ -3,14 +3,15 @@
 :root {
     --bg-white: #000;
     --bg-sm-white: #0f0f0f;
-    --bg-mm-white: #090909;
+    --bg-mm-white: #080809;
 
     --border-white: #101010;
     --border-sm-white: #151515;
     --border-mm-white: #191919;
+    --border-lm-white: #353535;
 
-    --font-black: #d9d9d9;
-    --font-sm-black: #7f7f85;
+    --font-black: #caccd3;
+    --font-sm-black: #51515b;
     --font-mm-black: #20242b;
 
     --bg-purple: #c0a5ea;
@@ -19,33 +20,44 @@
 }
 
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('/src/assets/font/ChakraPetch-Bold.woff2') format('woff2');
-    font-weight: 900;
+    font-family: "Poppins";
+    src: url('/src/assets/font/Poppins-Regular.woff2') format(woff2);
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('/src/assets/font/ChakraPetch-SemiBold.woff2') format('woff2');
+    font-family: "Poppins";
+    src: url('/src/assets/font/Poppins-Medium.woff2') format(woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('/src/assets/font/Poppins-SemiBold.woff2') format(woff2);
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Chakra Petch';
-    src: url('/src/assets/font/ChakraPetch-Medium.woff2') format('woff2');
-    font-weight: 500;
+    font-family: "Poppins";
+    src: url('/src/assets/font/Poppins-Bold.woff2') format(woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('/src/assets/font/Poppins-ExtraBold.woff2') format(woff2);
+    font-weight: 900;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 15px;
     scrollbar-width: thin;
     scrollbar-color: var(--bg-mm-white) #050505 !important;
-    font-family: 'Chakra Petch';
+    font-family: 'Poppins';
     scroll-behavior: smooth;
-    scrollbar-width: none !important;
 }
 
 body {
@@ -54,22 +66,36 @@ body {
 }
 
 .container-home { 
-    padding: 10px 20px; 
-    overflow: hidden;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-left: 1px solid var(--border-mm-white);
+    border-right: 1px solid var(--border-mm-white);
+    position: relative;
+
+    .flurry-left {
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width: 40px;
+        height: 100%;
+        background-image: url('/Lines.svg');
+        background-size: 200px;
+        border-left: 1px solid var(--border-mm-white);
+    }
+    
+    .flurry-right {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        width: 40px;
+        height: 100%;
+        background-image: url('/Lines.svg');
+        background-size: 200px;
+        border-right: 1px solid var(--border-mm-white);
+    }
 }
 
 p { line-height: 24px; }
-
-.stars-svg {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: cover;
-    z-index: -1;
-
-    -webkit-mask-image: linear-gradient(To bottom, var(--bg-white) 40%, transparent 100%);
-    mask-image: linear-gradient(To bottom, var(--bg-white) 40%, transparent 100%);
-}
 
 .column-2 {
     width: 100%;
@@ -80,92 +106,72 @@ p { line-height: 24px; }
 }
 
 .cont-big-button {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
 
     .link {
-        padding: 8px 15px;
-        border-radius: var(--radius-card);
-        background-color: var(--border-white);
-        color: var(--font-black);
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background-color: var(--font-black);
+        color: var(--bg-white);
+        display: flex; align-items: center; gap: 8px;
         font-weight: 500;
         cursor: pointer;
         border: none;
+        position: relative;
 
         & svg { width: 22px; }
 
-        &:hover {
-            background-color: var(--border-mm-white);
-            color: var(--font-black);
-        }
+        &:hover { opacity: 0.5; }
     }
 }
 
-.flurry-left {
-    position: fixed;
-    top: 0;
-    left: 40px;
-    width: 40px;
-    height: 100%;
-    background-image: url('/fflurry.svg');
-    background-size: 100px;
-    border-left: 1px dashed var(--border-mm-white);
-    border-right: 1px dashed var(--border-mm-white);
-    z-index: -10;
-}
+.me-cyber {
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
 
-.flurry-right {
-    position: fixed;
-    top: 0;
-    right: 40px;
-    width: 40px;
-    height: 100%;
-    background-image: url('/fflurry.svg');
-    background-size: 100px;
-    border-left: 1px dashed var(--border-mm-white);
-    border-right: 1px dashed var(--border-mm-white);
-    z-index: -10;
-}
+    img {
+        filter: saturate(0) brightness(0.5);
+        max-width: 600px;
+        outline: 1px solid var(--border-lm-white);
+    }
 
-.grid {
-    position: absolute;
-    top: -310px;
-    left: 0;
-    transform: rotate(-180deg);
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(40, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    z-index: -100;
-    -webkit-mask-image: radial-gradient(var(--bg-white) 40%, transparent 80%);
-    mask-image: radial-gradient(var(--bg-white) 40%, transparent 80%);
-
-    div {
-        width: 60px;
-        height: 60px;
-        border-left: 1px dashed var(--border-white);
-        border-bottom: 1px dashed var(--border-white);
+    .edge-float {
+        position: absolute;
+        right: 0;
+        bottom: -180px;
+        width: 500px;
         z-index: -1;
-        background-image: url('/fflurry.svg');
-        background-size: 200px;
-        opacity: 1;
+        transform: rotate(190deg);
+        outline: none;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: right;
+        font-size: 16px;
+        color: var(--font-black);
+        font-weight: 500;
+        line-height: 1.4;
+        padding: 15px;
+        outline: 1px solid var(--border-mm-white);
     }
 }
 
 footer {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 20px;
+    height: 70px;
     padding: 20px;
+    
+    h3 {
+        font-weight: 500;
+        color: var(--font-black);
+    }
 }
 
 @media (max-width: 1200px) {

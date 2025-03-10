@@ -4,13 +4,11 @@ export function Skills() {
     return (
         <div className="skills">
             <article>
-                <div className="shadow">
-                    {Array.from({length: 8}).map(() => (
-                        images.map((data) => (
-                            <SkillBox url={data}></SkillBox>
-                        ))
-                    ))}
-                </div>
+                {Array.from({length: 2}).map(() => (
+                    images.map((data) => (
+                        <SkillBox url={data}></SkillBox>
+                    ))
+                ))}
             </article>
         </div>
     )

@@ -1,4 +1,3 @@
-import { CardGrizzly } from "@/components/cards/CardGrizzly"
 import { File } from "@/components/icons/HeroIcons"
 
 export function Code() {
@@ -75,8 +74,6 @@ export function Code() {
                     GrizzlySpark.py
                 </span>
             </div>
-
-            <CardGrizzly />
         </article>
     )
 }

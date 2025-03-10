@@ -1,44 +1,26 @@
 .skills {
-    max-width: 100% !important;
-    display: grid;
-    place-items: center;
-    gap: 10px;
-    height: 430px;
+    overflow: hidden;
     
     article {
-        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        gap: 1px;
         width: 100%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-mask-image: linear-gradient(To right, transparent 5% var(--bg-white), transparent 95%);
-        mask-image: linear-gradient(To right, transparent 5%, var(--bg-white), transparent 95%);
-    }
-    
-    .shadow {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(24, 1fr) !important;
-    }
-
-    div {
-        min-width: 70px;
-        min-height: 70px;
-        border-radius: var(--radius-card);
     }
 }
 
 .skill-box {
     max-width: 70px;
+    min-width: 70px;
     max-height: 70px;
+    min-height: 70px;
     padding: 10px;
-    border: 1px solid var(--border-mm-white);
-    border-radius: calc(var(--radius-card) + 5px);
-    background-image: url('/fflurry.svg');
-    background-size: 200px;
+    outline: 1px solid var(--border-mm-white);
+    display: grid;
+    place-items: center;
     
     img {
-        width: 100%;
+        width: 40px;
         filter: saturate(0) brightness(0.4);
     }
 

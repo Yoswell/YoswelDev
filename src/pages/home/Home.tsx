@@ -5,8 +5,6 @@ import { Skills } from '@/components/cards/Skills'
 import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
 import { Code } from '@/components/recycle/Code'
-import { Grid } from '@/components/recycle/Grid'
-import { SocialMediaCard } from '@/components/cards/SocialMediaCard'
 
 export function Home() {
     return (
@@ -49,6 +47,11 @@ export function Home() {
                         title='Software Development'
                         text='Custom software development tailored to your business needs. From desktop applications to complex enterprise solutions, I provide innovative, scalable, and efficient technologies that enhance productivity, streamline operations, and drive long-term growth.'>
                     </CardText>
+                </div>
+
+                <div className='me-cyber'>
+                    <img src='/Cyber.webp' alt='Me in competitions' />
+                    <h1>I participated in Cybersecurity CTF competitions On-site, where I had the chance to met many profetionals hackers</h1>
                 </div>
 
                 <Title title='Projects' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant)' />
@@ -115,37 +118,6 @@ export function Home() {
                             <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                         }>
                     </CardProject>
-                    <CardProject 
-                        url='/DTech.jpg'
-                        title='Dragon Tech (web page)'
-                        text='Dragon Tech is a platform that simulates an eCommerce specialized in PC components, offering a fluid and intuitive shopping experience. It features a shopping cart system, as well as well-organized sections for different types of hardware, allowing users to easily browse and select the products they need.'
-                        children1={
-                            <><a className='link'>Finished</a>
-                            <a className='link' href='https://github.com/Yoswell/Ecommerce' target='_black'>Repo</a>
-                            <a className='link' href='https://yoswell.github.io/Ecommerce/dmlzaG9rQ1RGezVoMHJ0M24zZF9sMW5rNV80cjNfaDB3X3QwX240djFnNHQzX2JsMW5kbDR9.html' target='_black'>Demo</a></>
-                        }
-                        children2={
-                            <><img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                            <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                            <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
-                        }>
-                    </CardProject>
-                    <CardProject 
-                        url='/RDev.webp'
-                        title='Clon React Dev (web app)'
-                        text='This project, as shown in the image, is an almost exact replica of a specific page on the React Dev platform. Its purpose is to serve as a visual and structural clone of the said page is user interface. It is designed solely for the frontend, meaning that it is limited to the graphical representation and visual structure of the original page, without including the functionality or dynamic interaction that characterizes the real version of the platform.'
-                        children1={
-                            <><a className='link'>Finished</a>
-                            <a className='link' href='https://github.com/Yoswell/Clone_ReactDev' target='_black'>Repo</a>
-                            <a className='link' href='https://clone-react-dev.vercel.app' target='_blanck'>Demo</a></>
-                        }
-                        children2={
-                            <><img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
-                            <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                            <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                            <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
-                        }>
-                    </CardProject>
                 </div>
 
                 <Title title='My tech stack' subTitle='Over time, I have explored and worked with various technologies, but I have decided to highlight only those in which I have a strong command' />
@@ -153,32 +125,12 @@ export function Home() {
 
                 <Title title='Extra' subTitle='Discover my bigger project in Cibersecurity, prove it and told me, what do you think about the tool, anything like bugs, problems, dependency problems, incorrect names...' />
                 <section className='extra' id='extra'>
-                    <Grid />
-                    <div className='cont-text'>
-                        <img className='Me' src='/GrizzlyS.png' alt='Me image' />
-                        <h1>GrizzlyS</h1>
-                        <p>A powerful tool written in Python designed to assist CTF (Capture The Flag) participants in solving cybersecurity challenges. This tool provides several useful functionalities that facilitate data analysis and manipulation, allowing users to focus on solving the challenges</p>
-                    </div>
                     <Code />
                 </section>
                 <Title title='Contact me' subTitle='If you arrive so here, contact with me, always available to make projects, any type project that you think, I could help you' />
-                <section className='contact'>
-                    <SocialMediaCard
-                        url='https://www.linkedin.com/in/yoswel-badilla-cyberjr'
-                        src='/BannerL.webp'
-                        title='Yoswel Badilla (Vishok)'
-                        text='Ingeniería informática | Desarrollador Full-Stack Jr | C# | .NET | Java | React | JavaScript | Analista de Ciberseguridad Jr | Linux | Security+'>
-                    </SocialMediaCard>
-                    <SocialMediaCard
-                        url='https://github.com/Yoswell'
-                        src='/BannerG.webp'
-                        title='Yoswel Badilla'
-                        text='Ingeniería informática | Desarrollador Full-Stack Jr | C# | .NET | Java | React | JavaScript | Analista de Ciberseguridad Jr | Linux | Security+'>
-                    </SocialMediaCard>
-                </section>
+                <Footer/>
             </div>
 
-            <Footer/>
         </main>
     )
 }

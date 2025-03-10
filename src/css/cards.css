@@ -13,12 +13,12 @@
     display: grid;
     place-items: center;
     padding: 1px;
-    background-color: var(--bg--white);
-    border-radius: 8px;
-    border: 2px solid var(--font-black);
+    background-color: var(--bg-white);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-mm-white);
 
     svg { 
-        width: 30px;
+        width: 35px;
         padding: 6px;
         color: var(--font-black);
     }
@@ -33,40 +33,24 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 15px;
-    background-color: var(--bg-white);
+    gap: 10px;
     outline: 1px solid var(--border-mm-white);
-    border-radius: 15px;
+    background: linear-gradient(To bottom, var(--bg-white) 20%, var(--bg-mm-white) 100%);
 
     .cont-text {
         width: 100%;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     .title {
-        width: 100%;
         color: var(--font-black);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        text-transform: uppercase;
         font-weight: 500;
-        background-color: var(--bg-white);
-        background-image: url('/fflurry.svg');
-        background-size: 100px;
-        border: 1px solid var(--border-mm-white);
-        padding: 8px 15px;
-        border-radius: var(--radius-card);
+        font-size: 16px;
     }
 
-    p { 
-        font-weight: 500;
-        color: var(--font-sm-black);
-        -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
-        mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
-    }
+    p { font-weight: 500; color: var(--font-sm-black); font-size: 14px; }
 }
 
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
@@ -77,10 +61,9 @@
     .cardProject {
         width: 100%;
         position: relative;
-        border-radius: 15px;
-        border: 1px solid var(--border-mm-white);
+        outline: 1px solid var(--border-mm-white);
         padding: 20px;
-        background-color: var(--bg-white);
+        background: var(--bg-white);
         
         img {
             border-radius: 20px;
@@ -93,29 +76,21 @@
 
         .cont-text {
             display: grid;
-            gap: 15px; 
+            gap: 10px; 
             margin-top: -30px;
+            overflow: hidden;
 
             div { 
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 15px;
             }
 
             .title {
                 width: 100%;
                 color: var(--font-black);
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                text-transform: uppercase;
                 font-weight: 500;
-                background-color: var(--bg-white);
-                background-image: url('/fflurry.svg');
-                background-size: 100px;
-                border: 1px solid var(--border-mm-white);
-                padding: 8px 15px;
-                border-radius: var(--radius-card);
+                font-size: 16px;
             }
 
             p {
@@ -125,15 +100,14 @@
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 text-overflow: ellipsis;
-                -webkit-mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
-                mask-image: linear-gradient(200deg, var(--bg-white) 70%, transparent);
+                font-size: 14px;
             }
         }
 
         .cont-links {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 20px;
+            left: 20px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -174,31 +148,26 @@
 .extra {
     .cardTerminal {
         width: 100%;
-        max-width: 1200px;
         display: flex;
         outline: 1px solid var(--border-mm-white);
-        border-radius: calc(var(--radius-card) + 5px);
         background-color: var(--bg-white);
         background-size: cover;
-        overflow: hidden;
         position: relative;
 
         pre {
             width: 100%; 
             height: 350px; 
-            font-size: 10px; 
+            font-size: 13px; 
             line-height: 1.5; 
             padding: 20px; 
             border-radius: calc(var(--radius-card) + 5px);
             backdrop-filter: blur(10px); 
             background-color: #000000d3;
-            color: var(--font-black); 
+            color: var(--font-sm-black); 
             overflow: auto;
             font-family: "Source Code Pro", monospace;
             scrollbar-width: none;
             font-weight: 600;
-            -webkit-mask-image: linear-gradient(-130deg, var(--bg-white) 50%, transparent 100%);
-            mask-image: linear-gradient(-140deg, var(--bg-white) 50%, transparent 100%);
 
             span {
                 font-weight: 500;
@@ -208,15 +177,12 @@
 
             span.green { font-weight: 800; color: #ff0040; margin-right: 8px; }
             span.yellow { font-weight: 800; color: #ff8c00; }
-            span.blue { font-weight: 800; color: #9dc7ff; }
-            span.purple { font-weight: 800; color: #a49dff; }
-            span.red { font-weight: 800; color: #ff9d9d; }
         }
 
         .right-panel {
             display: flex;
             flex-direction: column;
-            width: 190px;
+            width: 220px;
             border-left: 1px solid var(--border-mm-white);
 
             span {
@@ -243,206 +209,9 @@
     }
 }
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
-.grizzly-card {
-    position: absolute;
-    place-items: center;
-    gap: 5px;
-    padding: 20px;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background-color: #000000ca;
-    backdrop-filter: blur(5px);
-    border-radius: calc(var(--radius-card) + 5px);
-    border: 1px solid var(--border-mm-white);
-    box-shadow: 0 20px 80px #000;
-    
-
-    .title {
-        text-align: center;
-        color: var(--font-black);
-        font-size: clamp(20px, 3vw, 25px);
-        font-weight: 900;
-    }
-
-    .subTitle {
-        text-align: center;
-        color: var(--font-sm-black);
-        font-size: 15px;
-        font-weight: 500;
-    }
-}
-
-.clone-git-tool {
-    left: 15px;
-    bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-    
-    button {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px;
-        height: 33px;
-        background-color: var(--font-black);
-        border: none;
-        color: var(--bg-white);
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: 500;
-
-        svg { width: 20px; color: var(--bg-white); }
-
-        &:hover {
-            background-color: #fff;
-        }
-    }
-    
-    input {
-        width: 300px;
-        background-color: var(--border-mm-white);
-        border: none;
-        font-weight: 500;
-        height: 35px;
-        padding: 0 15px;
-        color: var(--font-black);
-        text-overflow: ellipsis;
-        font-size: 14px;
-        border-radius: 8px;
-    }
-}
-
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
-.cardHire {
-    position: fixed;
-    display: grid;
-    place-items: center;
-    bottom: 10px;
-    gap: 5px;
-    z-index: 100;
-    
-    img {
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        border: 1px solid var(--border-mm-white);
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.62);
-    }
-
-    div { display: flex; align-items: center; gap: 5px; }
-
-    h3 {
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.62);
-        padding: 8px 15px;
-        border: 1px solid var(--border-mm-white);
-        font-weight: 600;
-        font-size: 13px;
-        color: var(--font-black);
-        text-transform: uppercase;
-        border-radius: var(--radius-card);
-    }
-
-    button {
-        background-color: var(--border-white);
-        padding: 8px 15px;
-        font-weight: 600;
-        font-size: 13px;
-        color: var(--font-black);
-        text-transform: uppercase;
-        border-radius: var(--radius-card);
-        cursor: pointer;
-        border: 1px solid var(--border-white);
-
-        &:hover {
-            border-color: var(--border-mm-white);
-            background-color: var(--border-mm-white);
-            color: var(--font-black);
-        }
-    }
-}
-
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
-.socialCard {
-    position: relative;
-    display: grid;
-    gap: 20px;
-    padding: 10px;
-    border: 1px solid var(--border-mm-white);
-    border-radius: calc(var(--radius-card) + 5px);
-    background-color: var(--bg-white);
-    text-decoration: none;
-    
-    &:hover {
-        .me-back {
-            outline: 2px solid var(--font-black);
-        }
-    }
-    
-    .banner-image {
-        max-width: 100%;
-        border-radius: calc(var(--radius-card) + 5px);
-    }
-    
-    .me-back {
-        position: absolute;
-        top: 90px;
-        left: 20px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        outline: 1px solid var(--border-mm-white);
-        overflow: hidden;
-        background-color: var(--bg-white);
-        z-index: 10;
-
-        img { width: 160%; margin-left: -30px; }
-    }
-
-    .cont-text {
-        display: grid;
-        gap: 8px;
-
-        h3 {
-            width: 100%;
-            color: var(--font-black);
-            text-transform: uppercase;
-            text-align: right;
-            font-weight: 500;
-            border-radius: var(--radius-card);
-        }
-    
-        p { 
-            text-align: right;
-            font-weight: 500;
-            color: var(--font-sm-black);
-            -webkit-mask-image: linear-gradient(-200deg, var(--bg-white) 70%, transparent);
-            mask-image: linear-gradient(-200deg, var(--bg-white) 70%, transparent);
-        }
-    }
-}
-
 @media (max-width: 1800px) {
     .skills-cont {
         overflow: hidden;
         border-radius: 20px;
-    }
-
-    .cardSoftSkill {
-        min-width: 450px;
     }
 }
