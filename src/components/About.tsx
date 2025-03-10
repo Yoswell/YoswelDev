@@ -17,7 +17,6 @@ export function About() {
 
     return (
         <>
-        <Nav/>
         <img className='Me' src='/Yo.png' alt='Me image' />
         <h1 className='title'>Hey, I'm Yoswel Badilla<br></br>a Full-Stack<br></br>Developer</h1>
         <div className='cont-big-button'>

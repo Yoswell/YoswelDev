@@ -5,14 +5,17 @@ import { Skills } from '@/components/cards/Skills'
 import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
 import { Code } from '@/components/recycle/Code'
+import { Nav } from '@/components/Nav'
 
 export function Home() {
     return (
         <main>
             <div className='container-home'>
+                <Nav />
                 <div className='flurry-left'></div>
                 <div className='flurry-right'></div>
 
+                <Title title='About' subTitle='I am a Full-Stack Developer passionate about creating innovative and high performance solutions. With a lot experience in web applications using React and .NET' />
                 <section className='about'>
                     <About />
                 </section>
@@ -49,9 +52,8 @@ export function Home() {
                     </CardText>
                 </div>
 
-                <div className='me-cyber'>
-                    <img src='/Cyber.webp' alt='Me in competitions' />
-                    <h1>I participated in Cybersecurity CTF competitions On-site, where I had the chance to met many profetionals hackers</h1>
+                <div className='banner'>
+                    <img className='circle-img' src='/Circle.avif' alt='Circle image' />
                 </div>
 
                 <Title title='Projects' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant)' />
@@ -120,6 +122,10 @@ export function Home() {
                     </CardProject>
                 </div>
 
+                <div className='banner'>
+                    <img className='circle-img' src='/Circle.avif' alt='Circle image' />
+                </div>
+
                 <Title title='My tech stack' subTitle='Over time, I have explored and worked with various technologies, but I have decided to highlight only those in which I have a strong command' />
                 <Skills />
 
@@ -127,6 +133,11 @@ export function Home() {
                 <section className='extra' id='extra'>
                     <Code />
                 </section>
+                
+                <div className='banner'>
+                    <img className='circle-img' src='/Circle.avif' alt='Circle image' />
+                </div>
+
                 <Title title='Contact me' subTitle='If you arrive so here, contact with me, always available to make projects, any type project that you think, I could help you' />
                 <Footer/>
             </div>

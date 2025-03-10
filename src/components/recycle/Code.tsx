@@ -52,7 +52,7 @@ export function Code() {
                 <span className="red">E5</span>      Generate dictionary                            -m -i         Text Pattern                 Dictionary File<br></br>
             </pre>
             <div className="right-panel">
-                <span>Explorer</span>
+                <span>Explorer files</span>
                 <span>
                     <img src="https://skillicons.dev/icons?i=py" alt="Skill used to create the file" />
                     Encode.py

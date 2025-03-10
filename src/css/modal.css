@@ -6,15 +6,37 @@
     height: 100vh;
     display: none;
     place-items: center;
-    backdrop-filter: brightness(0.2);
-    z-index: 100;
+    backdrop-filter: brightness(0.1);
+    z-index: 1000;
 
     & .card-modal {
         position: relative;
-        padding: 20px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 15px;
         width: 350px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -1px;
+            transform: translateY(-50%);
+            height: 200vh;
+            border-left: 1px solid var(--border-mm-white);
+            z-index: 10;
+        }
+    
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: -1px;
+            transform: translateY(-50%);
+            height: 200vh;
+            border-right: 1px solid var(--border-mm-white);
+            z-index: 10;
+        }
 
         & h5 {
             display: grid;
@@ -23,11 +45,11 @@
             color: var(--font-black);
             font-weight: 600;
             padding: 20px;
-            position: relative;
             text-transform: uppercase;
-            border: 1px solid var(--border-mm-white);
-            border-radius: var(--radius-card);
+            outline: 1px solid var(--border-mm-white);
             background-color: var(--bg-white);
+            background-image: url('/Lines.svg');
+            background-size: 200px;
             
             & svg {
                 width: 35px;
@@ -47,20 +69,35 @@
             text-transform: uppercase;
             font-weight: 500;
             background-color: var(--bg-white);
-            background-image: url('/fflurry.svg');
-            background-size: 130px;
-            border: 1px dashed var(--border-mm-white);
-            padding: 8px 10px;
-            border-radius: var(--radius-card);
         }
 
         & .modal-question {
-            display: grid;
+            display: flex;
+            flex-direction: column;
             gap: 10px;
             padding: 20px;
-            border-radius: var(--radius-card);
-            border: 1px solid var(--border-mm-white);
             background-color: var(--bg-white);
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200vw;
+                border-top: 1px solid var(--border-mm-white);
+            }
+        
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200vw;
+                border-bottom: 1px solid var(--border-mm-white);
+            }
 
             & .row {
                 display: flex;
@@ -82,19 +119,17 @@
             align-items: center;
             justify-content: flex-end;
             gap: 8px;
+            padding-right: 15px;
 
             & .btn {
-                display: flex;
-                align-items: center;
-                gap: 8px;
                 text-decoration: none;
-                background-color: var(--border-white);
-                border-color: var(--border-sm-white);
-                padding: 8px 15px;
+                padding: 6px 15px;
                 border-radius: var(--radius-card);
-                border: none;
                 color: var(--font-black);
                 font-weight: 500;
+                border: 1px solid var(--border-mm-white);
+                background: linear-gradient(To bottom, var(--bg-white) 40%, var(--bg-mm-white) 100%);
+
 
                 &:hover {
                     background-color: var(--border-mm-white);
