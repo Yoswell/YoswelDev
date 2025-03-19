@@ -4,7 +4,6 @@ import { CardText } from '@/components/cards/CardText'
 import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
 import { Nav } from '@/components/Nav'
-import { Download } from '@/components/icons/HeroIcons'
 
 export function Home() {
     return (
