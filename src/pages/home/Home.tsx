@@ -112,8 +112,8 @@ export function Home() {
                             title='GrizzlySpark (hacking tool)'
                             text='A powerful and versatile tool written in Python, specifically designed to assist CTF (Capture The Flag) participants in tackling a wide range of cybersecurity challenges. This tool offers several essential functionalities that streamline data analysis, cryptographic decoding, and manipulation of encoded or obfuscated information. By automating tedious tasks and providing intuitive features, it allows users to concentrate on the core problem-solving aspects of each challenge, enhancing efficiency and accuracy in CTF competitions.'
                             children1={
-                                <><a className='link link-tag'>In process</a>
-                                <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a></>
+                                <><a className='link link-tag'>In process, I need to make a deploy</a>
+                                <a className='link' href='#' target='_blanck'>Demo</a></>
                             }>
                         </CardProject>
                         <CardProject 
@@ -122,7 +122,7 @@ export function Home() {
                             text='A technical documentation system designed to organize and centralize knowledge acquired from university courses, with a focus on cybersecurity, programming, and forensic analysis. This project aims to facilitate access to key concepts, code examples, and practical solutions through a clear and well-structured format. The platform will serve as a reference repository for students and professionals, enabling quick information retrieval and collaboration in content improvement.'
                             children1={
                                 <><a className='link link-tag'>In process</a>
-                                <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a></>
+                                <a className='link' href='https://github.com/Yoswell/GrizzlySpark' target='_blanck'>Repo</a></>
                             }>
                         </CardProject>
                     </div>
