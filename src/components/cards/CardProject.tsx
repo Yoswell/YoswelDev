@@ -2,34 +2,28 @@ import { ReactNode } from 'react'
 import { Idea } from '@/components/icons/HeroIcons'
 
 interface CardProjectProps {
-    url: string
+    className: string
     title: string
     text: string
     children1: ReactNode
     children2: ReactNode
 }
 
-export function CardProject({url, title, text, children1, children2}: CardProjectProps) {
+export function CardProject({className, title, text, children1, children2}: CardProjectProps) {
     return (
-        <article className='cont-card'>
-            <div className='cardProject'>
-                <img src={url} alt='Project image'></img>
-                <div className='cont-text'>
-                    <div>
-                        <div className='raimbow'>
-                            <Idea/>
-                        </div>
-                        <h3 className='title'>{title}</h3>
+        <article className={`cardProject ${className}`}>
+            <div className='cont-text'>
+                <div>
+                    <div className='raimbow'>
+                        <Idea/>
                     </div>
-                    <p>{text}</p>
+                    <h3 className='title'>{title}</h3>
                 </div>
-                <article className='cont-links'>
-                    {children1}
-                </article>
-                <article className='cont-skills'>
-                    {children2}
-                </article>
+                <p>{text}</p>
             </div>
+            <article className='cont-links'>
+                {children1}
+            </article>
         </article>
     )
 }

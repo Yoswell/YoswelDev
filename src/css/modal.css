@@ -6,7 +6,7 @@
     height: 100vh;
     display: none;
     place-items: center;
-    backdrop-filter: brightness(0.1);
+    backdrop-filter: brightness(0.5) blur(3px);
     z-index: 1000;
 
     & .card-modal {
@@ -23,7 +23,7 @@
             left: -1px;
             transform: translateY(-50%);
             height: 200vh;
-            border-left: 1px solid var(--border-mm-white);
+            border-left: 1px solid var(--br-3);
             z-index: 10;
         }
     
@@ -34,7 +34,7 @@
             right: -1px;
             transform: translateY(-50%);
             height: 200vh;
-            border-right: 1px solid var(--border-mm-white);
+            border-right: 1px solid var(--br-3);
             z-index: 10;
         }
 
@@ -42,41 +42,38 @@
             display: grid;
             place-items: center;
             gap: 10px;
-            color: var(--font-black);
-            font-weight: 600;
-            padding: 20px;
+            color: var(--fg-1);
+            padding: var(--p-20);
             text-transform: uppercase;
-            outline: 1px solid var(--border-mm-white);
-            background-color: var(--bg-white);
+            outline: var(--border-solid-1);
+            background-color: var(--bg-1);
             background-image: url('/Lines.svg');
-            background-size: 200px;
+            background-size: 100px;
             
             & svg {
                 width: 35px;
                 height: 35px;
                 display: grid;
                 place-items: center;
-                border-radius: 8px;
-                padding: 5px;
-                color: var(--bg-white);
-                background-color: var(--font-black);
+                border-radius: 6px;
+                padding: var(--p-8);
+                color: var(--fg-1);
+                background-color: var(--br-3);
             }
         }
 
         & h6 {
-            font-size: 14px;
-            color: var(--font-black);
+            color: var(--fg-1);
             text-transform: uppercase;
-            font-weight: 500;
-            background-color: var(--bg-white);
+            background-color: var(--bg-1);
         }
 
         & .modal-question {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            padding: 20px;
-            background-color: var(--bg-white);
+            gap: var(--g-10);
+            padding: var(--p-20);
+            background-color: var(--bg-1);
             position: relative;
 
             &::before {
@@ -86,7 +83,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 200vw;
-                border-top: 1px solid var(--border-mm-white);
+                border-top: var(--border-solid-1);
             }
         
             &::after {
@@ -96,18 +93,17 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 200vw;
-                border-bottom: 1px solid var(--border-mm-white);
+                border-bottom: var(--border-solid-1);
             }
 
             & .row {
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: var(--g-10);
 
                 & label {
                     font-size: 15px;
-                    color: var(--font-sm-black);
-                    font-weight: 500;
+                    color: var(--fg-2);
                 }
             }
         }
@@ -124,17 +120,13 @@
             & .btn {
                 text-decoration: none;
                 padding: 6px 15px;
-                border-radius: var(--radius-card);
-                color: var(--font-black);
+                border-radius: var(--rd-10);
+                color: var(--fg-1);
                 font-weight: 500;
-                border: 1px solid var(--border-mm-white);
-                background: linear-gradient(To bottom, var(--bg-white) 40%, var(--bg-mm-white) 100%);
+                border: var(--border-solid-3);
+                background: linear-gradient(To bottom, var(--bg-1) 40%, var(--bg-3) 100%);
 
-
-                &:hover {
-                    background-color: var(--border-mm-white);
-                    color: var(--font-black);
-                }
+                &:hover { opacity: 0.5; }
             }
         }
     }
@@ -145,16 +137,17 @@
 .select {
     width: 18px;
     height: 18px;
-    background-color: var(--bg-white);
-    outline: 1px solid var(--border-mm-white);
-    border-radius: 4px;   
+    background-color: var(--bg-1);
+    outline: var(--border-solid-3);
+    border-radius: var(--rd-4);   
     display: grid;
     place-content: center;
 
     & svg {
         width: 12px;
         stroke-width: 3px;
-        color: var(--font-black);
+        -webkit-text-stroke-width: 3px;
+        color: var(--fg-1);
     }
 }
 

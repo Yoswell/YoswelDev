@@ -1,22 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 :root {
-    --bg-white: #000;
-    --bg-sm-white: #0f0f0f;
-    --bg-mm-white: #080809;
+    --bg-1: #020607;
+    --bg-2: #0f0f0f;
+    --bg-3: #101618ad;
 
-    --border-white: #101010;
-    --border-sm-white: #151515;
-    --border-mm-white: #191919;
-    --border-lm-white: #353535;
+    --br-1: #161a1c;
+    --br-2: #1c2123;
+    --br-3: #272d30;
 
-    --font-black: #caccd3;
-    --font-sm-black: #51515b;
-    --font-mm-black: #20242b;
+    --fg-1: #e8e8e8;
+    --fg-2: #828f92;
+    --fg-3: #3f484a;
 
-    --bg-purple: #c0a5ea;
+    --rd-4: 4px;
+    --rd-6: 6px;
+    --rd-8: 8px;
+    --rd-10: 10px;
+    --rd-15: 15px;
+    --rd-20: 20px;
 
-    --radius-card: 10px;
+    --g-8: 8px;
+    --g-10: 10px;
+    --g-15: 15px;
+    --g-20: 20px;
+
+    --p-8: 8px;
+    --p-10: 10px;
+    --p-15: 15px;
+    --p-20: 20px;
+
+    --m-8: 8px;
+    --m-10: 10px;
+    --m-15: 15px;
+    --m-20: 20px;
+    
+    --sz-1: 15px;
+    --sz-2: 18px;
+    --sz-3: 22px;
+
+    --fw-500: 500;
+    --fw-600: 600;
+
+    --border-solid-1: 1px solid var(--br-1);
+    --border-solid-2: 1px solid var(--br-2);
+    --border-solid-3: 1px solid var(--br-3);
 }
 
 @font-face {
@@ -24,121 +53,112 @@
     src: url('/src/assets/font/Poppins-Regular.woff2') format(woff2);
     font-weight: 400;
 }
-
-@font-face {
-    font-family: "Poppins";
-    src: url('/src/assets/font/Poppins-Medium.woff2') format(woff2);
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url('/src/assets/font/Poppins-SemiBold.woff2') format(woff2);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url('/src/assets/font/Poppins-Bold.woff2') format(woff2);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url('/src/assets/font/Poppins-ExtraBold.woff2') format(woff2);
-    font-weight: 900;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
+    font-weight: var(--fw-600);
+    font-size: var(--sz-1);
     scrollbar-width: thin;
-    scrollbar-color: var(--bg-mm-white) #050505 !important;
-    font-family: 'Poppins';
+    scrollbar-color: var(--bg-3) #050505 !important;
+    font-family: "Red Hat Display", sans-serif;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body {
-    background-color: var(--bg-white);
+    background-color: var(--bg-1);
     overflow-x: hidden;
 }
 
 .container-home { 
+    display: grid;
+    grid-template-columns: 1fr 50fr 1fr;
+    height: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    border-left: 1px solid var(--border-mm-white);
-    border-right: 1px solid var(--border-mm-white);
-    position: relative;
+    
+    .scroll-sec {
+        border-left: var(--border-solid-3);
+        border-right: var(--border-solid-3);
+        display: grid;
+        background-color: var(--bg-1);
+    }
 
     .flurry-left {
-        position: absolute;
-        top: 0;
-        left: -40px;
-        width: 40px;
+        min-width: 40px !important;
+        max-width: 40px !important;
         height: 100%;
         background-image: url('/Lines.svg');
-        background-size: 200px;
-        border-left: 1px solid var(--border-mm-white);
+        background-size: 100px;
+        border-left: var(--border-solid-3);
     }
     
     .flurry-right {
-        position: absolute;
-        top: 0;
-        right: -40px;
-        width: 40px;
+        min-width: 40px !important;
+        max-width: 40px !important;
         height: 100%;
         background-image: url('/Lines.svg');
-        background-size: 200px;
-        border-right: 1px solid var(--border-mm-white);
+        background-size: 100px;
+        border-right: var(--border-solid-3);
     }
 }
 
-p { line-height: 24px; }
-
-.column-2 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    position: relative;
-}
+p { line-height: 1.6; }
 
 .cont-big-button {
-    margin-top: 30px;
+    margin-left: var(--m-20);
+    margin-top: var(--m-10);
+    position: relative;
+    display: flex;
+    gap: var(--g-10);
 
     .link {
-        padding: 10px 15px;
-        border-radius: 15px;
-        background-color: var(--font-black);
-        color: var(--bg-white);
-        display: flex; align-items: center; gap: 8px;
-        font-weight: 500;
-        cursor: pointer;
+        border-radius: var(--rd-10);
         border: none;
-        position: relative;
+        display: flex; align-items: center; 
+        gap: var(--g-8);
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--fg-1);
+        padding: var(--p-8) var(--p-15);
+        border: var(--border-solid-3);
+        background: linear-gradient(To bottom, var(--bg-1) 40%, var(--bg-3) 100%);
 
         & svg { width: 22px; }
 
         &:hover { opacity: 0.5; }
     }
+
+    .active { background-color: var(--br-3); }
+    .inactive { background-color: var(--br-1); }
+    .empty { background-color: var(--br-1); }
 }
 
-.banner {
-    width: 100%;
-    height: 300px;
-    display: grid; place-items: center;
-    padding-top: 70px;
-    position: relative;
-    background-image: url('/Points.svg');
-    background-size: 250px;
-    border-top: 1px solid var(--border-mm-white);
-    overflow: hidden;
+.float-svg {
+    width: 1900px;
+    position: absolute;
+    z-index: -1;
+}
 
-    .circle-img {
-        max-width: 800px;
-    }
+.svg-1 {
+    left: -400px;
+}
+
+.svg-2 {
+    top: 900px;
+    right: -400px;
+}
+
+.svg-3 {
+    top: 1800px;
+    left: -400px;
+}
+
+.svg-4 {
+    top: 2600px;
+    right: -400px;
 }
 
 footer {
@@ -147,11 +167,10 @@ footer {
     align-items: center;
     justify-content: flex-end;
     height: 70px;
-    padding: 20px;
+    padding: var(--p-20);
     
     h3 {
-        font-weight: 500;
-        color: var(--font-black);
+        color: var(--fg-1);
     }
 }
 

@@ -4,6 +4,9 @@ export function Nav() {
     return (
         <nav>
             <ul>
+                <h1>Vishok</h1>
+            </ul>
+            <ul>
                 <button>
                     <Contact/>
                     Contact
