@@ -22,7 +22,7 @@ export function ModalCV() {
     }
 
     return (
-        <section className={`modal ${isOpenModal && "modal-open"}`}>
+        <section className={`modal ${isOpenModal ? "modal-open" : "modal-close"}`}>
             <div className='card-modal'>
                 <h5><Download/>Download my resume</h5>
                 

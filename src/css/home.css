@@ -79,7 +79,7 @@ header {
         right: 0;
         width: 600px;
         height: 100%;
-        background: linear-gradient(-60deg, #81f0ff0f, transparent);
+        background: linear-gradient(-60deg, var(--bg-bl-li-1), transparent);
         -webkit-mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
         mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
     }
@@ -91,12 +91,31 @@ header {
         line-height: 1.1;
         letter-spacing: -7px;
         position: relative;
-        border-top: 1px solid var(--br-1);
-        border-bottom: 1px solid var(--br-1);
-        padding: 0 var(--p-20);
+        padding: 0 var(--p-10);
+        max-width: 17ch;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200vw;
+            border-top: 1px solid var(--br-1);
+        }
+    
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200vw;
+            border-bottom: 1px solid var(--br-1);
+        }
     }
 
-    .subtitle {
+    .subTitle {
         color: var(--fg-2);
         max-width: 90ch;
         font-size: var(--sz-2);
@@ -129,7 +148,7 @@ header {
         text-align: left;
         font-weight: 600;
         position: relative;
-        padding: 0 var(--p-20) 2px;
+        padding: 0 var(--p-10) 2px;
 
         &::before {
             position: absolute;
@@ -156,7 +175,7 @@ header {
         color: var(--fg-2);
         font-weight: 600;
         line-height: 1.5;
-        padding: 0 var(--p-20);
+        padding: 0 var(--p-10);
         font-size: var(--sz-2);
         max-width: 90ch;
     }
@@ -181,56 +200,7 @@ header {
 .code-tailwind {
     font-family: "Consolas";
     color: var(--fg-3);
-    padding-left: var(--p-8);
-}
-
-.skill-sec {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    padding: 80px 0;
-    overflow: hidden;
-    position: relative;
-    border-top: var(--border-solid-3);
-    border-bottom: var(--border-solid-3);
-    background-image: url('/Lines.svg');
-    background-size: 100px;
-
-    .title {
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        font-size: clamp(50px, 8vw, 70px);
-        color: var(--fg-1);
-        line-height: 1;
-        letter-spacing: -6px;
-        position: relative;
-        border-top: 1px solid var(--br-1);
-        border-bottom: 1px solid var(--br-1);
-        padding: 0 var(--p-20);
-        z-index: 10;
-    }
-}
-
-.about, .experience, .service, .projects, .contact {
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr;
-}
-
-.experience, .service, .projects {
-    padding: var(--p-10);
-    background-color: var(--bg-3);
-    gap: var(--g-10);
-    border-top: var(--border-solid-3);
-    border-bottom: var(--border-solid-3);
-}
-
-.extra {
-    width: 100%;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding-left: var(--p-10);
 }
 
 @media (max-width: 900px) {

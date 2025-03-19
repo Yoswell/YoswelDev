@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
     background-color: var(--br-3);
-    border-radius: var(--rd-6);
+    border-radius: 30% 70% 50% 50% / 30% 30% 70% 70% ;
 
     svg { 
         width: 35px;
@@ -11,7 +11,6 @@
     }
 }
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
@@ -31,7 +30,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        gap: var(--g-15);
+        gap: var(--g-10);
     }
     
     .title {
@@ -49,7 +48,16 @@
     }
 }
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+.card-experience {
+    .cont-text {
+        display: grid;
+        gap: var(--g-8);
+        
+        h4 { color: var(--fg-4); }
+        h6 { color: var(--fg-3); }
+    }
+}
+
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
@@ -111,9 +119,9 @@
         height: 100px;
         border-radius: 50%;
         filter: blur(100px);
-     }
+    }
 
-     &::after {
+    &::after {
         position: absolute;
         content: '';
         bottom: -100px;
@@ -124,7 +132,7 @@
         background-image: url('/Noiss.avif');
         -webkit-mask-image: linear-gradient(-30deg, var(--bg-1), transparent 75%);
         mask-image: linear-gradient(-30deg, var(--bg-1), transparent 75%);
-     }
+    }
 
     .cont-text {
         display: grid;
@@ -164,40 +172,30 @@
             font-size: 13px;
             text-decoration: none;
             color: var(--fg-1);
-            background-color: var(--br-1);
             border-radius: var(--rd-10);
+            box-shadow: inset 0 0 3px #7a81ff6a;
 
-            &:hover { background-color: var(--br-3); }
+            &:hover { opacity: 0.5; }
+        }
+
+        .link-tag {
+            box-shadow: inset 0 0 3px #ff7a7a6a;
+            &:hover { opacity: 1; }
         }
     }
 }
 
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 .project-image {
     position: absolute;
-    max-width: 400px;
+    max-width: 600px;
     overflow: hidden;
     border-radius: var(--rd-20);
-    border: var(--border-solid-3);
-    z-index: 0;
-
-    &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-size: 700px;
-        background-repeat: no-repeat;
-        -webkit-mask-image: linear-gradient(To left, var(--bg-1), transparent);
-        mask-image: linear-gradient(To left, var(--bg-1), transparent);
-        filter: saturate(0);
-    }
-
+    border: var(--border-solid-1);
+    z-index: 1;
+    
     &::after {
         position: absolute;
         content: '';
@@ -205,11 +203,10 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(-60deg, #81f0ff0f, transparent);
+        background: linear-gradient(-60deg, var(--bg-bl-li-1), transparent);
         -webkit-mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
         mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
     }
-
 
     img {
         width: 100%;
@@ -218,13 +215,78 @@
 }
 
 .project-image-1 {
-    top: 10%;
+    top: 40%;
     left: -10%;
     transform: rotate(20deg);
 }
 
 .project-image-2 {
-    bottom: 10%;
+    top: 40%;
     right: -10%;
-    transform: rotate(20deg);
+    transform: rotateY(180deg) rotate(20deg);
+}
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.code-terminal {
+    max-width: 500px;
+    background-color: var(--bg-1);
+    border: var(--border-solid-1);
+    border-radius: var(--rd-10);
+    border-bottom: 2px solid var(--bg-1);
+    box-shadow: inset 1px 1px 10px var(--br-1);
+    position: relative;
+    padding: var(--p-20);
+    margin-top: 30px;
+    z-index: 10;
+
+    &::before {
+        position: absolute;
+        content: '';
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 100px;
+        filter: blur(60px);
+        background-color: var(--bg-bl-li-1);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url('/Noiss.avif');
+        -webkit-mask-image: linear-gradient(To top, var(--bg-1), transparent 80%);
+        mask-image: linear-gradient(To top, var(--bg-1), transparent 80%);
+    }
+    
+    img {
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        background-color: var(--bg-1);
+        border-radius: 50% 50% 0 0;
+        padding: var(--p-8);
+        border-bottom: 2px solid var(--bg-1);
+        box-shadow: inset 1px 1px 10px var(--br-3); 
+        -webkit-mask-image: linear-gradient(To bottom, var(--bg-1) 40%, transparent 10%);
+        mask-image: linear-gradient(To bottom, var(--bg-1) 40%, transparent 100%);
+    }
+    
+    code {
+        font-family: "Consolas";
+        text-wrap: wrap;
+        color: var(--fg-1);
+        font-weight: 500;
+        font-size: 14px;
+    }
 }
