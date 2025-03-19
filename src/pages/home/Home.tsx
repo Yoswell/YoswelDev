@@ -68,13 +68,6 @@ export function Home() {
                             children1={
                                 <><a className='link'>In process</a>
                                 <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a></>
-                            }
-                            children2={
-                                <><img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                             }>
                         </CardProject>
                         <CardProject 
@@ -85,11 +78,6 @@ export function Home() {
                                 <><a className='link'>Finished</a>
                                 <a className='link' href='https://github.com/Yoswell/Custom_Timer' target='_black'>Repo</a>
                                 <a className='link' href='https://yoswell.github.io/Custom_Timer/' target='_black'>Demo</a></>
-                            }
-                            children2={
-                                <><img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                             }>
                         </CardProject>
                         <CardProject 
@@ -100,12 +88,6 @@ export function Home() {
                                 <><a className='link'>Finished</a>
                                 <a className='link' href='https://github.com/Yoswell/Clone_Microsoft_Learn' target='_black'>Repo</a>
                                 <a className='link' href='https://clone-microsoft-learn.vercel.app' target='_blanck'>Demo</a></>
-                            }
-                            children2={
-                                <><img src='https://skillicons.dev/icons?i=react' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                             }>
                         </CardProject>
                         <CardProject 
@@ -114,13 +96,6 @@ export function Home() {
                             text='Devhouse is a non -profit initiative designed to help young developers and apprentices to acquire experience in the real world through The collaboration in practical projects that simulate a professional work environment. Participants perform tasks, attend meetings and use tools Industry standard, everything while receiving mentors guidance and improves their skills in a collaborative and support environment.'
                             children1={
                                 <a className='link'>In process</a>
-                            }
-                            children2={
-                                <><img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                             }>
                         </CardProject>
                         <CardProject 
@@ -130,13 +105,6 @@ export function Home() {
                             children1={
                                 <><a className='link'>In process</a>
                                 <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a></>
-                            }
-                            children2={
-                                <><img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                             }>
                         </CardProject>
                         <CardProject 
@@ -146,13 +114,6 @@ export function Home() {
                             children1={
                                 <><a className='link'>In process</a>
                                 <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a></>
-                            }
-                            children2={
-                                <><img src='https://skillicons.dev/icons?i=cs' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=dotnet' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=html' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=css' alt='Skill icon image'></img>
-                                <img src='https://skillicons.dev/icons?i=js' alt='Skill icon image'></img></>
                             }>
                         </CardProject>
                     </div>

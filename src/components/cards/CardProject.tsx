@@ -6,10 +6,9 @@ interface CardProjectProps {
     title: string
     text: string
     children1: ReactNode
-    children2: ReactNode
 }
 
-export function CardProject({className, title, text, children1, children2}: CardProjectProps) {
+export function CardProject({className, title, text, children1}: CardProjectProps) {
     return (
         <article className={`cardProject ${className}`}>
             <div className='cont-text'>
