@@ -1,8 +1,9 @@
 .raimbow {
     display: grid;
     place-items: center;
-    background-color: var(--br-3);
-    border-radius: 30% 70% 50% 50% / 30% 30% 70% 70% ;
+    background-color: var(--bg-1);
+    border-radius: 30% 70% 52% 48% / 49% 46% 54% 51%;
+    box-shadow: inset 0px 0px 5px var(--fg-4);
 
     svg { 
         width: 35px;
@@ -41,7 +42,7 @@
     p { 
         color: var(--fg-2);
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -62,42 +63,37 @@
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 .cardProject-1 {
-    &::before {
-       background-color: #7afff46a;
-    }
+    &::before { background-color: var(--bg1); }
 }
 
 .cardProject-2 {
-    &::before {
-       background-color: #7a81ff6a;
-    }
+    &::before { background-color: var(--bg2); }
 }
 
 .cardProject-3 {
-    &::before {
-       background-color: #d57aff6a;
-    }
+    &::before { background-color: var(--bg3); }
 }
 
 .cardProject-4 {
-    &::before {
-       background-color: #a67aff6a;
-    }
+    &::before { background-color: var(--bg4); }
 }
 
 .cardProject-5 {
-    &::before {
-       background-color: #ff7a7a6a;
-    }
+    &::before { background-color: var(--bg5); }
 }
 
 .cardProject-6 {
-    &::before {
-       background-color: #7d7d7d6a;
-    }
+    &::before { background-color: var(--bg6); }
 }
 
 .cardProject {
+    --bg1: #7afff46a;
+    --bg2: #7a81ff6a;
+    --bg3: #d57aff6a;
+    --bg4: #a67aff6a;
+    --bg5: #ff7a7a6a;
+    --bg6: #7d7d7d6a;
+
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -120,20 +116,7 @@
         border-radius: 50%;
         filter: blur(100px);
     }
-
-    &::after {
-        position: absolute;
-        content: '';
-        bottom: -100px;
-        right: -100px;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background-image: url('/Noiss.avif');
-        -webkit-mask-image: linear-gradient(-30deg, var(--bg-1), transparent 75%);
-        mask-image: linear-gradient(-30deg, var(--bg-1), transparent 75%);
-    }
-
+    
     .cont-text {
         display: grid;
         gap: var(--g-10); 
@@ -168,18 +151,18 @@
         z-index: 10;
 
         .link {
-            padding: 5px var(--p-15);
+            padding: 4px var(--p-10);
             font-size: 13px;
             text-decoration: none;
             color: var(--fg-1);
             border-radius: var(--rd-10);
-            box-shadow: inset 0 0 3px #7a81ff6a;
+            border: 1px solid var(--br-1);
 
-            &:hover { opacity: 0.5; }
+            &:hover { opacity: 0.8; }
         }
 
         .link-tag {
-            box-shadow: inset 0 0 3px #ff7a7a6a;
+            border: 1px solid var(--br-3);
             &:hover { opacity: 1; }
         }
     }
@@ -207,23 +190,50 @@
         -webkit-mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
         mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
     }
+}
 
-    img {
+.skill-code-1, .skill-code-2 {
+    position: absolute;
+    width: 130px;
+    border: var(--border-solid-3);
+    border-bottom: 2px solid var(--bg-1);
+    box-shadow: inset 1px 1px 10px var(--br-3); 
+    background-color: var(--bg-1);
+    padding: var(--p-20);
+    border-radius: var(--rd-20);
+    z-index: 10;
+    overflow: hidden;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
         width: 100%;
-        filter: saturate(0) brightness(0.5);
+        height: 100%;
+        background-image: url('/Noiss.avif');
+        -webkit-mask-image: linear-gradient(-30deg, var(--bg-1), transparent 80%);
+        mask-image: linear-gradient(-30deg, var(--bg-1), transparent 80%);
     }
+
+    img {width: 100%; }
 }
 
-.project-image-1 {
-    top: 40%;
-    left: -10%;
+.skill-code-1 {
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(-20deg);
+}
+
+.skill-code-2 {
+    bottom: -20px;
+    right: -10px;
     transform: rotate(20deg);
-}
 
-.project-image-2 {
-    top: 40%;
-    right: -10%;
-    transform: rotateY(180deg) rotate(20deg);
+    &::after {
+        -webkit-mask-image: linear-gradient(30deg, var(--bg-1), transparent 80%);
+        mask-image: linear-gradient(30deg, var(--bg-1), transparent 80%);
+    }
 }
 
 /*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
@@ -234,11 +244,10 @@
     background-color: var(--bg-1);
     border: var(--border-solid-1);
     border-radius: var(--rd-10);
-    border-bottom: 2px solid var(--bg-1);
     box-shadow: inset 1px 1px 10px var(--br-1);
     position: relative;
     padding: var(--p-20);
-    margin-top: 30px;
+    margin-top: 40px;
     z-index: 10;
 
     &::before {
@@ -267,26 +276,188 @@
         mask-image: linear-gradient(To top, var(--bg-1), transparent 80%);
     }
     
-    img {
-        position: absolute;
-        top: -75px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80px;
-        background-color: var(--bg-1);
-        border-radius: 50% 50% 0 0;
-        padding: var(--p-8);
-        border-bottom: 2px solid var(--bg-1);
-        box-shadow: inset 1px 1px 10px var(--br-3); 
-        -webkit-mask-image: linear-gradient(To bottom, var(--bg-1) 40%, transparent 10%);
-        mask-image: linear-gradient(To bottom, var(--bg-1) 40%, transparent 100%);
-    }
-    
     code {
         font-family: "Consolas";
         text-wrap: wrap;
         color: var(--fg-1);
         font-weight: 500;
         font-size: 14px;
+    }
+}
+
+.skill-sec {
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 260px;
+    }
+}
+
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+.show-project {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--bg-1);
+    border: 2px solid var(--br-2);
+    z-index: 10;
+}
+
+.float-skill-ring {
+    position: absolute;
+    top: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    scale: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .skill {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        padding: var(--p-15);
+        border-radius: var(--rd-10);
+        border-bottom: 2px solid var(--bg-1);
+        box-shadow: inset 1px 1px 10px var(--br-3); 
+        background-color: var(--bg-1);
+        transform: translateX(50%) translateY(500%);
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -50px;
+            right: -50px;
+            width: 100px;
+            height: 100px;
+            filter: blur(140px);
+        }
+    
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/Noiss.avif');
+            -webkit-mask-image: linear-gradient(-50deg, var(--bg-1), transparent);
+            mask-image: linear-gradient(-50deg, var(--bg-1), transparent 80%);
+        }
+
+        .skill-image { width: 100%; }
+    }
+
+    .skill-color-1 {
+        &::before { background-color: var(--bg1); }
+    }
+
+    .skill-color-2 {
+        &::before { background-color: var(--bg2); }
+    }
+
+    .skill-color-3 {
+        &::before { background-color: var(--bg3); }
+    }
+
+    .skill-color-4 {
+        &::before { background-color: var(--bg4); }
+    }
+
+    .skill-color-5 {
+        &::before { background-color: var(--bg5); }
+    }
+
+    .skill-color-6 {
+        &::before { background-color: var(--bg6); }
+    }
+
+    .skill-1 {
+        bottom: -10px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        transition: 600ms;
+    }
+    
+    .skill-2 {
+        top: -40px;
+        left: 150px;
+        width: 90px;
+        height: 90px;
+        transition: 100ms;
+    }
+    
+    .skill-3 {
+        bottom: -15px;
+        right: 190px;
+        width: 50px;
+        height: 50px;
+        transition: 800ms;
+    }
+    
+    .skill-4 {
+        top: -10px;
+        right: -10px;
+        width: 50px;
+        height: 50px;
+        transition: 500ms;
+    }
+    
+    .skill-5 {
+        top: -40px;
+        right: 50px;
+        width: 100px;
+        height: 100px;
+        transition: 200ms;
+    }
+
+    .skill-6 {
+        bottom: -10px;
+        left: -20px;
+        width: 90px;
+        height: 90px;
+        transition: 400ms;
+    }
+
+    .skill-7 {
+        bottom: 80px;
+        left: -10px;
+        width: 55px;
+        height: 55px;
+        transition: 100ms;
+    }
+}
+
+.cardProject {
+    .show-project:hover {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        top: 0;
+        right: 0;
+        border: none;
+
+        .float-skill-ring {
+            scale: 1;
+
+            .skill-1 { transform: rotate(10deg) translateX(0%) translateY(0%); }
+            .skill-2 { transform: rotate(-20deg) translateX(0%) translateY(0%); }
+            .skill-3 { transform: rotate(-10deg) translateX(0%) translateY(0%); }
+            .skill-4 { transform: rotate(-20deg) translateX(0%) translateY(0%); }
+            .skill-5 { transform: rotate(20deg) translateX(0%) translateY(0%); }
+            .skill-6 { transform: rotate(20deg) translateX(0%) translateY(0%); }
+            .skill-7 { transform: rotate(-20deg) translateX(0%) translateY(0%); }
+        }
     }
 }

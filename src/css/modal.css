@@ -16,12 +16,14 @@
         flex-direction: column;
         gap: var(--g-10);
         width: 350px;
-        border: 1px solid var(--br-3);
-        padding: var(--p-10);
-        background-color: var(--bg-3);
+        border: var(--border-solid-1);
+        padding: var(--p-15);
         border-radius: var(--rd-10);
         scale: 0;
-        transition: 300ms;
+        transition: 100ms;
+        border-bottom: 2px solid var(--bg-1);
+        box-shadow: inset 1px 1px 10px var(--br-3); 
+        background-color: var(--bg-1);
 
         & h5 {
             display: grid;
@@ -35,7 +37,6 @@
             border-radius: var(--rd-10);
             background-color: var(--bg-1);
             border: var(--border-solid-1);
-            border-bottom: 2px solid var(--bg-1);
             box-shadow: inset 1px 1px 10px var(--br-1);
             
             & svg {
@@ -43,7 +44,7 @@
                 height: 35px;
                 display: grid;
                 place-items: center;
-                border-radius: 6px;
+                border-radius: var(--rd-6);
                 padding: var(--p-8);
                 color: var(--fg-1);
                 background-color: var(--br-3);
@@ -65,7 +66,6 @@
             border-radius: var(--rd-10);
             background-color: var(--bg-1);
             border: var(--border-solid-1);
-            border-bottom: 2px solid var(--bg-1);
             box-shadow: inset 1px 1px 10px var(--br-1);
 
             & .row {

@@ -1,4 +1,4 @@
-import { Collection } from '@/components/icons/HeroIcons'
+import { Idea } from '@/components/icons/HeroIcons'
 
 interface CardTextProps {
     title: string
@@ -10,7 +10,7 @@ export function CardText({title, text}: CardTextProps) {
         <article className='card'>
             <div className='cont-text'>
                 <div className='raimbow'>
-                    <Collection/>
+                    <Idea />
                 </div>
                 <h3 className='title'>{title}</h3>
             </div>

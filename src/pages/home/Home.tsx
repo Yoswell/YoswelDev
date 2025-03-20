@@ -41,32 +41,32 @@ export function Home() {
                 
                     <Title title='< Services />' subTitle='My journey in cybersecurity and web development-building secure, high-performance applications while tackling complex security challenges.' />
                     <div className='service'>
-                        <CardText 
+                        <CardText
                             title='University Works'
-                            text='I offer assistance and support in carrying out university projects related to computer science. From in-depth research to structured writing, I can help you achieve your academic goals with quality, precision, and a well-organized approach that ensures clarity and professionalism.'>
+                            text='I offer comprehensive assistance and support in carrying out university projects related to computer science. Whether you need help with algorithm design, data analysis, or software development, I provide in-depth research, structured writing, and clear documentation to ensure your project meets academic standards. My approach focuses on delivering quality, precision, and a well-organized workflow that guarantees clarity and professionalism, helping you achieve your academic goals with confidence.'>
                         </CardText>
-                        <CardText 
+                        <CardText
                             title='Web Development'
-                            text='High-quality web development tailored to your specific needs. From the creation of static websites to dynamic web applications, I can help you build a robust, scalable, and visually appealing online presence that enhances engagement and drives your success.'>
+                            text='I specialize in high-quality web development tailored to your specific needs. From creating visually stunning static websites to building dynamic, interactive web applications, I ensure your online presence is robust, scalable, and user-friendly. Using the latest technologies and frameworks, I deliver solutions that enhance user engagement, improve performance, and drive your business success. Whether you need an e-commerce platform, a portfolio site, or a custom web app, I’ve got you covered.'>
                         </CardText>
-                        <CardText 
+                        <CardText
                             title='Training and Virtual Sessions'
-                            text='I offer personalized classes in computer science and cybersecurity. From fundamental concepts to advanced techniques, I help students, professionals, and corporate teams enhance their skills and deepen their knowledge with practical, hands-on learning.'>
+                            text='I offer personalized training sessions and virtual classes in computer science and cybersecurity. Whether you’re a student, a professional, or part of a corporate team, I provide hands-on learning experiences that cover fundamental concepts to advanced techniques. My sessions are designed to enhance your skills, deepen your knowledge, and prepare you for real-world challenges. From programming languages like Python and JavaScript to cybersecurity best practices, I tailor each session to meet your specific learning goals.'>
                         </CardText>
-                        <CardText 
+                        <CardText
                             title='Software Development'
-                            text='Custom software development tailored to your business needs. From desktop applications to complex enterprise solutions, I provide innovative, scalable, and efficient technologies that enhance productivity, streamline operations, and drive long-term growth.'>
+                            text='I provide custom software development services tailored to your business needs. From desktop applications to complex enterprise solutions, I create innovative, scalable, and efficient technologies that enhance productivity and streamline operations. My development process includes thorough planning, agile methodologies, and rigorous testing to ensure the final product meets your expectations. Whether you need a CRM system, inventory management software, or a custom SaaS solution, I deliver tools that drive long-term growth and success.'>
                         </CardText>
-                        <CardText 
+                        <CardText
                             title='Mobile App Development'
-                            text='I specialize in creating mobile applications for iOS and Android platforms. Whether you need a user-friendly app for your business or a custom solution for your specific requirements, I deliver high-performance, intuitive, and visually appealing apps that meet your goals.'>
+                            text='I specialize in creating high-performance mobile applications for both iOS and Android platforms. Whether you need a user-friendly app for your business or a custom solution for your specific requirements, I deliver intuitive, visually appealing, and feature-rich apps that meet your goals. My development process includes UI/UX design, backend integration, and rigorous testing to ensure a seamless user experience. From concept to launch, I work closely with you to bring your app ideas to life.'>
                         </CardText>
-                        <CardText 
+                        <CardText
                             title='Cybersecurity Consulting'
-                            text='I provide expert cybersecurity consulting to protect your digital assets and ensure the integrity of your systems. From vulnerability assessments to implementing robust security measures, I help you safeguard your data and maintain compliance with industry standards.'>
+                            text='I provide expert cybersecurity consulting to protect your digital assets and ensure the integrity of your systems. My services include vulnerability assessments, penetration testing, and the implementation of robust security measures tailored to your organization’s needs. I help you identify potential risks, safeguard sensitive data, and maintain compliance with industry standards. Whether you’re a small business or a large enterprise, I offer solutions that enhance your security posture and give you peace of mind in an increasingly digital world.'>
                         </CardText>
                     </div>
-
+                    
                     <Title title='< Projects />' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant).' />
                     <div className='projects'>
                         <CardProject 
@@ -76,6 +76,33 @@ export function Home() {
                             children1={
                                 <><a className='link link-tag'>In process</a>
                                 <a className='link' href='http://grizzlyspark.runasp.net' target='_blanck'>Demo</a></>
+                            }
+                            children2={
+                                <div className='show-project'>
+                                    <article className='float-skill-ring'>
+                                        <div className='skill skill-1 skill-color-1'>
+                                            <img className='skill-image' src='/NET.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-2 skill-color-1'>
+                                            <img className='skill-image' src='/CS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-3 skill-color-1'>
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-4 skill-color-1'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-5 skill-color-1'>
+                                            <img className='skill-image' src='/HTML.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-6 skill-color-1'>
+                                            <img className='skill-image' src='/NET.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-7 skill-color-1'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                    </article>
+                                </div>
                             }>
                         </CardProject>
                         <CardProject 
@@ -86,6 +113,34 @@ export function Home() {
                                 <><a className='link link-tag'>Finished</a>
                                 <a className='link' href='https://github.com/Yoswell/Custom_Timer' target='_black'>Repo</a>
                                 <a className='link' href='https://yoswell.github.io/Custom_Timer/' target='_black'>Demo</a></>
+                            }
+                            children2={
+                                <div className='show-project'>
+                                    <article className='float-skill-ring'>
+    
+                                        <div className='skill skill-1 skill-color-2'>
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-2 skill-color-2'>
+                                            <img className='skill-image' src='/HTML.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-3 skill-color-2'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-4 skill-color-2'>
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-5 skill-color-2'>
+                                            <img className='skill-image' src='/HTML.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-6 skill-color-2'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-7 skill-color-2'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                    </article>
+                                </div>
                             }>
                         </CardProject>
                         <CardProject 
@@ -96,6 +151,34 @@ export function Home() {
                                 <><a className='link link-tag'>Finished</a>
                                 <a className='link' href='https://github.com/Yoswell/Clone_Microsoft_Learn' target='_black'>Repo</a>
                                 <a className='link' href='https://clone-microsoft-learn.vercel.app' target='_blanck'>Demo</a></>
+                            }
+                            children2={
+                                <div className='show-project'>
+                                    <article className='float-skill-ring'>
+
+                                        <div className='skill skill-1 skill-color-3'>
+                                            <img className='skill-image' src='/React.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-2 skill-color-3'>
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-3 skill-color-3'>
+                                            <img className='skill-image' src='/HTML.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-4 skill-color-3'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-5 skill-color-3'>
+                                            <img className='skill-image' src='/React.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-6 skill-color-3'>
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-7 skill-color-3'>
+                                            <img className='skill-image' src='/React.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                    </article>
+                                </div>
                             }>
                         </CardProject>
                         <CardProject 
@@ -104,6 +187,33 @@ export function Home() {
                             text='Devhouse is a non -profit initiative designed to help young developers and apprentices to acquire experience in the real world through The collaboration in practical projects that simulate a professional work environment. Participants perform tasks, attend meetings and use tools Industry standard, everything while receiving mentors guidance and improves their skills in a collaborative and support environment.'
                             children1={
                                 <a className='link link-tag'>In process</a>
+                            }
+                            children2={
+                                <div className='show-project'>
+                                    <article className='float-skill-ring'>
+                                        <div className='skill skill-1 skill-color-4'>
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-2 skill-color-4'>
+                                            <img className='skill-image' src='/TS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-3 skill-color-4'>
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-4 skill-color-4'>
+                                            <img className='skill-image' src='/HTML.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-5 skill-color-4'>
+                                            <img className='skill-image' src='/React.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-6 skill-color-4'>
+                                            <img className='skill-image' src='/NET.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-7 skill-color-4'>
+                                            <img className='skill-image' src='/CS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                    </article>
+                                </div>
                             }>
                         </CardProject>
                         <CardProject 
@@ -111,8 +221,35 @@ export function Home() {
                             title='GrizzlySpark (hacking tool)'
                             text='A powerful and versatile tool written in Python, specifically designed to assist CTF (Capture The Flag) participants in tackling a wide range of cybersecurity challenges. This tool offers several essential functionalities that streamline data analysis, cryptographic decoding, and manipulation of encoded or obfuscated information. By automating tedious tasks and providing intuitive features, it allows users to concentrate on the core problem-solving aspects of each challenge, enhancing efficiency and accuracy in CTF competitions.'
                             children1={
-                                <><a className='link link-tag'>In process, I need to make a deploy</a>
-                                <a className='link' href='#' target='_blanck'>Demo</a></>
+                                <><a className='link link-tag'>Finished, frecuency added features</a>
+                                <a className='link' href='https://github.com/Yoswell/GrizzlySpark' target='_blanck'>Repo</a></>
+                            }
+                            children2={
+                                <div className='show-project'>
+                                    <article className='float-skill-ring'>
+                                        <div className='skill skill-1 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-2 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-3 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-4 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-5 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-6 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-7 skill-color-5'>
+                                            <img className='skill-image' src='/PY.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                    </article>
+                                </div>
                             }>
                         </CardProject>
                         <CardProject 
@@ -121,15 +258,44 @@ export function Home() {
                             text='A technical documentation system designed to organize and centralize knowledge acquired from university courses, with a focus on cybersecurity, programming, and forensic analysis. This project aims to facilitate access to key concepts, code examples, and practical solutions through a clear and well-structured format. The platform will serve as a reference repository for students and professionals, enabling quick information retrieval and collaboration in content improvement.'
                             children1={
                                 <><a className='link link-tag'>In process</a>
-                                <a className='link' href='https://github.com/Yoswell/GrizzlySpark' target='_blanck'>Repo</a></>
+                                <a className='link' href='https://github.com/Yoswell/GrizzlySpark' target='_blanck'>Demo</a></>
+                            }
+                            children2={
+                                <div className='show-project'>
+                                    <article className='float-skill-ring'>
+                                        <div className='skill skill-1 skill-color-6'>
+                                            <img className='skill-image' src='/TS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-2 skill-color-6'>    
+                                            <img className='skill-image' src='/React.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-3 skill-color-6'>    
+                                            <img className='skill-image' src='/JS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-4 skill-color-6'>    
+                                            <img className='skill-image' src='/CSS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-5 skill-color-6'>    
+                                            <img className='skill-image' src='/HTML.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-6 skill-color-6'>
+                                            <img className='skill-image' src='/TS.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                        <div className='skill skill-7 skill-color-6'>    
+                                            <img className='skill-image' src='/React.svg' alt='Skill that show how is built this projetc' />
+                                        </div>
+                                    </article>
+                                </div>
                             }>
                         </CardProject>
                     </div>
 
                     <Title title='< Hacking />' subTitle='Here are more projects, but in this case, they are specifically related to cybersecurity. These projects focus on different areas within the field, such as network security, ethical hacking, and data protection.' />
                     <section className='skill-sec'>
+                        <div className='skill-code skill-code-1'>    
+                            <img src='/PY.svg' alt='Skill that show how is built this projetc' />
+                        </div>
                         <div className='code-terminal'>
-                            <img src='/Gs.png' alt='Logo for the hacking tool' />
                             <pre>
                                 <code>
                                     ~ ❯ grizzlySpark -mE5 -i'Yoswel'
@@ -149,12 +315,8 @@ export function Home() {
                                 </code>
                             </pre>
                         </div>
-                        {/* ----------------- */}
-                        <div className='project-image project-image-1'>
-                            <img src='/1.png' loading='lazy' alt='Project image banner' />
-                        </div>
-                        <div className='project-image project-image-2'>
-                            <img src='/2.jpg' loading='lazy' alt='Project image banner' />
+                        <div className='skill-code skill-code-2'>    
+                            <img src='/PY.svg' alt='Skill that show how is built this projetc' />
                         </div>
                     </section>
 

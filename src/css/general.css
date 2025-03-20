@@ -99,8 +99,8 @@ body {
     }
 
     .flurry-left {
-        min-width: 40px !important;
-        max-width: 40px !important;
+        min-width: 40px;
+        max-width: 40px;
         height: 100%;
         background-image: url('/Lines.svg');
         background-size: 100px;
@@ -109,8 +109,8 @@ body {
     }
     
     .flurry-right {
-        min-width: 40px !important;
-        max-width: 40px !important;
+        min-width: 40px;
+        max-width: 40px;
         height: 100%;
         background-image: url('/Lines.svg');
         background-size: 100px;
@@ -122,8 +122,8 @@ body {
 p { line-height: 1.6; }
 
 .cont-big-button {
-    margin-left: var(--m-20);
-    margin-top: var(--m-10);
+    margin-left: var(--m-10);
+    margin-top: var(--m-20);
     position: relative;
     display: flex;
     gap: var(--g-10);
@@ -138,17 +138,13 @@ p { line-height: 1.6; }
         text-decoration: none;
         color: var(--fg-1);
         padding: calc(var(--p-8) - 1px) var(--p-15);
-        border: var(--border-solid-3);
+        outline: var(--border-solid-3);
         background: linear-gradient(To bottom, var(--bg-1) 40%, var(--bg-3) 100%);
 
         & svg { width: 22px; }
 
-        &:hover { opacity: 0.5; }
+        &:hover { opacity: 0.8; }
     }
-
-    .active { background-color: var(--br-3); }
-    .inactive { background-color: var(--br-1); }
-    .empty { background-color: var(--br-1); }
 }
 
 .float-svg {
@@ -195,19 +191,8 @@ footer {
     }
 }
 
-@media (max-width: 1200px) {
-    .blur1 { right: -300px; }
-}
-
-@media (max-width: 900px) {
-    .blur1 { right: -100px; }
-    .column-2 { grid-template-columns: 1fr; }
-
-    .flurry-left {
-        left: 30px;
-    }
-    
-    .flurry-right {
-        right: 30px;
+@media (max-width: 1300px) {
+    .flurry-left, .flurry-right {
+        border: none !important;
     }
 }

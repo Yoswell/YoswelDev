@@ -93,6 +93,7 @@ header {
         position: relative;
         padding: 0 var(--p-10);
         max-width: 17ch;
+        text-shadow: 3px 3px 10px var(--bg-1);
 
         &::before {
             position: absolute;
@@ -119,7 +120,9 @@ header {
         color: var(--fg-2);
         max-width: 90ch;
         font-size: var(--sz-2);
-        padding: 0 var(--p-20);
+        padding: 0 var(--p-10);
+        z-index: 10;
+        text-shadow: 3px 3px 5px var(--bg-1);
     }
 } 
 
