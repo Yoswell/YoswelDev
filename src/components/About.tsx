@@ -22,7 +22,7 @@ export function About() {
             <p className='subTitle'>I am a passionate Full-Stack Developer dedicated to creating innovative and high-performance solutions. With experience in web applications using React for the frontend and .NET for the backend, I focus on building efficient, scalable, and secure solutions, leveraging my skills in Cybersecurity.</p>
             <div className='cont-big-button'>
                 <button
-                    className='link active'
+                    className='link btn-active'
                     onClick={() => handleOpenModal()}>
                     <Download />
                     Download CV

@@ -4,6 +4,7 @@ import { CardText } from '@/components/cards/CardText'
 import { Title } from '@/components/recycle/HeaderTitle'
 import { Footer } from '@/components/recycle/Footer'
 import { Nav } from '@/components/Nav'
+import { Contact } from '@/components/Contact'
 
 export function Home() {
     return (
@@ -321,7 +322,9 @@ export function Home() {
                     </section>
 
                     <Title title='< Contact me />' subTitle='If you arrive so here, contact with me, always available to make projects, any type project that you think, I could help you' />
-                    <Footer/>
+                    <Contact />
+                    
+                    <Footer />
                 </div>
                 <div className='flurry-right'></div>
             </div>

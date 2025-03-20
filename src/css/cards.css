@@ -156,7 +156,7 @@
             text-decoration: none;
             color: var(--fg-1);
             border-radius: var(--rd-10);
-            border: 1px solid var(--br-1);
+            border: 1px solid var(--br-2);
 
             &:hover { opacity: 0.8; }
         }
