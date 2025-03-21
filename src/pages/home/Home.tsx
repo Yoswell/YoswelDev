@@ -256,10 +256,10 @@ export function Home() {
                         <CardProject 
                             className='cardProject-6'
                             title='Unedlance (web app)'
-                            text='A technical documentation system designed to organize and centralize knowledge acquired from university courses, with a focus on cybersecurity, programming, and forensic analysis. This project aims to facilitate access to key concepts, code examples, and practical solutions through a clear and well-structured format. The platform will serve as a reference repository for students and professionals, enabling quick information retrieval and collaboration in content improvement.'
+                            text='A technical documentation system designed to organize and centralize knowledge acquired from UNED university courses, with a focus on cybersecurity, programming. This project aims to facilitate access to key concepts, code examples, and practical solutions through a clear and well-structured format. The platform will serve as a reference repository for students and professionals, enabling quick information retrieval and collaboration in content improvement.'
                             children1={
                                 <><a className='link link-tag'>In process</a>
-                                <a className='link' href='https://github.com/Yoswell/GrizzlySpark' target='_blanck'>Demo</a></>
+                                <a className='link' href='https://unedlance.vercel.app' target='_blanck'>Demo</a></>
                             }
                             children2={
                                 <div className='show-project'>

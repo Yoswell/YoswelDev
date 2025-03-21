@@ -94,26 +94,6 @@ header {
         padding: 0 var(--p-10);
         max-width: 17ch;
         text-shadow: 3px 3px 10px var(--bg-1);
-
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200vw;
-            border-top: 1px solid var(--br-1);
-        }
-    
-        &::after {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200vw;
-            border-bottom: 1px solid var(--br-1);
-        }
     }
 
     .subTitle {
