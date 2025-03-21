@@ -255,7 +255,7 @@ export function Home() {
                         </CardProject>
                         <CardProject 
                             className='cardProject-6'
-                            title='Unedlance (web app)'
+                            title='UnedHouse (web app)'
                             text='A technical documentation system designed to organize and centralize knowledge acquired from UNED university courses, with a focus on cybersecurity, programming. This project aims to facilitate access to key concepts, code examples, and practical solutions through a clear and well-structured format. The platform will serve as a reference repository for students and professionals, enabling quick information retrieval and collaboration in content improvement.'
                             children1={
                                 <><a className='link link-tag'>In process</a>

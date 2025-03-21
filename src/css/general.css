@@ -107,6 +107,7 @@ body {
         background-size: 100px;
         border-left: var(--border-solid-3);
         background-color: var(--bg-1);
+        z-index: 10;
     }
     
     .flurry-right {
@@ -117,6 +118,7 @@ body {
         background-size: 100px;
         border-right: var(--border-solid-3);
         background-color: var(--bg-1);
+        z-index: 10;
     }
 }
 
@@ -151,6 +153,7 @@ p { line-height: 1.6; }
 .btn-active {
     background-image: url('/Lines.svg') !important;
     background-size: 100px !important;
+    background-color: var(--bg-1) !important;
 }
 
 .float-svg {
@@ -200,5 +203,11 @@ footer {
 @media (max-width: 1300px) {
     .flurry-left, .flurry-right {
         border: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .cont-big-button {
+        .social-media { display: none; }
     }
 }

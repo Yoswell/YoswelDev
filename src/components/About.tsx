@@ -20,18 +20,18 @@ export function About() {
             <p className='subTitle'>I am a passionate Full-Stack Developer dedicated to creating innovative and high-performance solutions. With experience in web applications using React for the frontend and .NET for the backend, I focus on building efficient, scalable, and secure solutions, leveraging my skills in Cybersecurity.</p>
             <div className='cont-big-button'>
                 <button
-                    className='link btn-active'
+                    className='link btn btn-active'
                     onClick={() => handleOpenModal()}>
                     <Download />
                     Download CV
                 </button>
                 <a 
-                    className='link inactive'
+                    className='link social-media inactive'
                     href="https://www.linkedin.com/in/yoswel-badilla-cyberjr"
                     target='_blank'><Link />LinkedIn
                 </a>
                 <a 
-                    className='link empty'
+                    className='link social-media empty'
                     href='https://github.com/Yoswell'
                     target='_blanck'><Link />GitHub
                 </a>
