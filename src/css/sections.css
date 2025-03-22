@@ -111,6 +111,8 @@
             background-image: url('/Lines.svg');
             background-size: 100px;
             background-color: var(--bg-1);
+            
+            &:hover { opacity: 0.8; }
         }
 
         .hide-span-1, .hide-span-2 { display: none; }
