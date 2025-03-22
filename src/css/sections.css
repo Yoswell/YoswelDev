@@ -101,6 +101,7 @@
         }
 
         .btn {
+            cursor: pointer;
             white-space: nowrap;
             border: var(--border-solid-3);
             height: 40px;
