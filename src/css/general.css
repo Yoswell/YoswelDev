@@ -53,18 +53,21 @@
     font-family: "Red Hat Display";
     src: url('/src/assets/font/RedHatDisplay-Medium.woff2') format(woff2);
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Red Hat Display";
     src: url('/src/assets/font/RedHatDisplay-SemiBold.woff2') format(woff2);
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Red Hat Display";
     src: url('/src/assets/font/RedHatDisplay-Bold.woff2') format(woff2);
     font-weight: 900;
+    font-display: swap;
 }
 
 * {
@@ -75,7 +78,7 @@
     font-size: var(--sz-1);
     scrollbar-width: thin;
     scrollbar-color: var(--bg-3) #050505 !important;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Red Hat Display";
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
