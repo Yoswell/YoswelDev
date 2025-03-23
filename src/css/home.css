@@ -18,32 +18,33 @@ nav {
         border-bottom: 1px solid var(--br-1);
     }
     
-    ul {
+    h1 {
+        font-weight: 900;
+        font-size: 30px;
+        color: var(--fg-1);
+    }
+    
+    a, button {
         display: flex;
+        align-items: center;
+        text-decoration: none;
         gap: var(--g-8);
-
-        h1 {
-            font-weight: 900;
-            font-size: 30px;
-            color: var(--fg-1);
-        }
+        color: var(--fg-1);
+        border: none;
+        padding: var(--p-8) var(--p-15);
+        border-radius: var(--rd-10);
+        border: var(--border-solid-3);
+        background: linear-gradient(To bottom, var(--bg-1) 40%, var(--bg-3) 100%);
         
-        a, button {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            gap: var(--g-8);
-            color: var(--fg-1);
-            border: none;
-            padding: var(--p-8) var(--p-15);
-            border-radius: var(--rd-10);
-            border: var(--border-solid-3);
-            background: linear-gradient(To bottom, var(--bg-1) 40%, var(--bg-3) 100%);
-            
-            & svg { color: inherit; width: 20px; }
+        & svg { color: inherit; width: 20px; }
 
-            &:hover { opacity: 0.5; }
-        }
+        &:hover { opacity: 0.5; }
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: var(--g-8);
     }
 }
 
@@ -114,16 +115,7 @@ header {
     position: relative;
     padding: 15px 0;
     margin-top: 80px;
-
-    &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 200vw;
-        border-top: 1px solid var(--br-1);
-    }
+    border-top: 1px solid var(--br-3);
 
     .title {
         font-size: clamp(25px, 5vw, 40px);
@@ -132,26 +124,6 @@ header {
         font-weight: 600;
         position: relative;
         padding: 0 var(--p-10) 2px;
-
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200vw;
-            border-top: 1px solid var(--br-1);
-        }
-    
-        &::after {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200vw;
-            border-bottom: 1px solid var(--br-1);
-        }
     }
 
     .subTitle {
@@ -168,10 +140,9 @@ header {
         top: calc(50% - 8px);
         left: -160px;
         color: var(--fg-2);
-        font-family: "Consolas";
         text-transform: uppercase;
-        font-size: calc(var(--sz-1) - 1px);
-        font-weight: 600;
+        font-size: calc(var(--sz-1) - 2px);
+        font-weight: 500;
         transform: rotate(-90deg);
         background-color: var(--bg-1);
         padding: 3px var(--p-10);

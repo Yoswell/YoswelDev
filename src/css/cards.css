@@ -12,9 +12,6 @@
     }
 }
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
 .card {
     padding: var(--p-20);
     display: flex;
@@ -58,9 +55,6 @@
         h6 { color: var(--fg-3); }
     }
 }
-
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 .cardProject-1 {
     &::before { background-color: var(--bg1); }
@@ -168,9 +162,6 @@
     }
 }
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-
 .project-image {
     position: absolute;
     max-width: 600px;
@@ -194,7 +185,8 @@
 
 .skill-code-1, .skill-code-2 {
     position: absolute;
-    width: 130px;
+    width: 100px;
+    height: 100px;
     border: var(--border-solid-3);
     border-bottom: 2px solid var(--bg-1);
     box-shadow: inset 1px 1px 10px var(--br-3); 
@@ -221,13 +213,13 @@
 
 .skill-code-1 {
     bottom: -20px;
-    left: -10px;
+    left: 20px;
     transform: rotate(-20deg);
 }
 
 .skill-code-2 {
     bottom: -20px;
-    right: -10px;
+    right: 20px;
     transform: rotate(20deg);
 
     &::after {
@@ -235,9 +227,6 @@
         mask-image: linear-gradient(30deg, var(--bg-1), transparent 80%);
     }
 }
-
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 .code-terminal {
     max-width: 500px;
@@ -294,9 +283,6 @@
         width: 260px;
     }
 }
-
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 .show-project {
     position: absolute;

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { ReactNode, FC } from 'react'
 import { Idea } from '@/components/icons/HeroIcons'
 
 interface CardProjectProps {
@@ -9,14 +9,12 @@ interface CardProjectProps {
     children2: ReactNode
 }
 
-export function CardProject({className, title, text, children1, children2}: CardProjectProps) {
+export const CardProject: FC<CardProjectProps> = ({className, title, text, children1, children2}) => {
     return (
         <article className={`cardProject ${className}`}>
             <div className='cont-text'>
                 <div>
-                    <div className='raimbow'>
-                        <Idea/>
-                    </div>
+                    <div className='raimbow'><Idea/></div>
                     <h3 className='title'>{title}</h3>
                 </div>
                 <p>{text}</p>

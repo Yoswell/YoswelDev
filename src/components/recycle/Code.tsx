@@ -65,8 +65,7 @@ export function Code() {
                     <img src="https://skillicons.dev/icons?i=py" alt="Skill used to create the file" />
                     Exploit.py
                 </span>
-                <span>
-                    <File />
+                <span><File />
                     Requeriments.txt
                 </span>
                 <span>

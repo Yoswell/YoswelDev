@@ -25,16 +25,8 @@ export function About() {
                     <Download />
                     Download CV
                 </button>
-                <a 
-                    className='link social-media inactive'
-                    href="https://www.linkedin.com/in/yoswel-badilla-cyberjr"
-                    target='_blank'><Link />LinkedIn
-                </a>
-                <a 
-                    className='link social-media empty'
-                    href='https://github.com/Yoswell'
-                    target='_blanck'><Link />GitHub
-                </a>
+                <a className='link social-media inactive' href="https://www.linkedin.com/in/yoswel-badilla-cyberjr" target='_blank' rel='noopener noreferrer'><Link />LinkedIn</a>
+                <a className='link social-media empty'href='https://github.com/Yoswell'target='_blanck' rel='noopener noreferrer'><Link />GitHub</a>
             </div>
             <ModalContext value={{isOpenModal, setIsOpenModal}}>
                 <ModalCV/>

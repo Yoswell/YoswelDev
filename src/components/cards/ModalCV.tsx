@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import { ModalContext } from '@/components/About'
 import { Check, Download } from '@/components/icons/HeroIcons'
+import "@/css/modal.css"
 
 export function ModalCV() {
     const { isOpenModal, setIsOpenModal } = useContext(ModalContext)
@@ -34,6 +35,7 @@ export function ModalCV() {
                                 type='checkbox'
                                 id='cyber_cv'
                                 name='cyber_cv'
+                                aria-label='cyber-cv'
                                 hidden
                                 onChange={() => handleAreaResume(1)}>
                             </input>
@@ -49,6 +51,7 @@ export function ModalCV() {
                                 type='checkbox'
                                 id='dev_cv'
                                 name='dev_cv'
+                                aria-label='cyber-cv'
                                 hidden
                                 onChange={() => handleAreaResume(2)}>
                             </input>
@@ -71,6 +74,7 @@ export function ModalCV() {
                                     type='checkbox'
                                     id='cv_english'
                                     name='cv_english'
+                                    aria-label='dev-cv'
                                     hidden
                                     onChange={() => handleIdiomResume(1)}>
                                 </input>
@@ -86,6 +90,7 @@ export function ModalCV() {
                                     type='checkbox'
                                     id='cv_spanish'
                                     name='cv_spanish'
+                                    aria-label='dev-cv'
                                     hidden
                                     onChange={() => handleIdiomResume(2)}>
                                 </input>
@@ -102,36 +107,17 @@ export function ModalCV() {
 
                 <div className='cont-button'>
                     {areaResumen === 1 && idiomResume === 1 && (
-                        <a 
-                            className='btn'
-                            href='/src/assets/CV_YoswelCyber_En.pdf'
-                            download='CV_YoswelCyber_En.pdf'>
-                            Download
-                        </a>
+                        <a className='btn' href='/src/assets/CV_YoswelCyber_En.pdf' download='CV_YoswelCyber_En.pdf' rel='noopener noreferrer'>Download</a>
                     )}
                     {areaResumen === 1 && idiomResume === 2 && (
-                        <a 
-                            className='btn'
-                            href='/src/assets/CV_YoswelCyber_Es.pdf'
-                            download='CV_YoswelCyber_Es.pdf'>
-                            Download
-                        </a>
+                        <a className='btn' href='/src/assets/CV_YoswelCyber_Es.pdf' download='CV_YoswelCyber_Es.pdf' rel='noopener noreferrer'>Download</a>
                     )}
                     {areaResumen === 2 && idiomResume === 1 && (
-                        <a 
-                            className='btn'
-                            href='/src/assets/CV_YoswelDev_En.pdf'
-                            download='CV_YoswelDev_En.pdf'>
-                            Download
+                        <a className='btn' href='/src/assets/CV_YoswelDev_En.pdf' download='CV_YoswelDev_En.pdf' rel='noopener noreferrer'>Download
                         </a>
                     )}
                     {areaResumen === 2 && idiomResume === 2 && (
-                        <a 
-                            className='btn'
-                            href='/src/assets/CV_YoswelDev_Es.pdf'
-                            download='CV_YoswelDev_Es.pdf'>
-                            Download
-                        </a>
+                        <a className='btn' href='/src/assets/CV_YoswelDev_Es.pdf' download='CV_YoswelDev_Es.pdf' rel='noopener noreferrer'>Download</a>
                     )}
                     <button 
                         className='btn'

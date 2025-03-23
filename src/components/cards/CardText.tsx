@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { Idea } from '@/components/icons/HeroIcons'
 
 interface CardTextProps {
@@ -5,13 +6,11 @@ interface CardTextProps {
     text: string
 }
 
-export function CardText({title, text}: CardTextProps) {
+export const CardText: FC<CardTextProps> = ({title, text}) => {
     return (
         <article className='card'>
             <div className='cont-text'>
-                <div className='raimbow'>
-                    <Idea />
-                </div>
+                <div className='raimbow'><Idea /></div>
                 <h3 className='title'>{title}</h3>
             </div>
             <p>{text}</p>
