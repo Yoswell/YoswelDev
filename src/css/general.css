@@ -133,6 +133,7 @@ p { line-height: 1.6; }
     position: relative;
     display: flex;
     gap: var(--g-10);
+    z-index: 10;
 
     .link {
         border-radius: var(--rd-10);

@@ -1,28 +1,23 @@
 .modal {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: calc(100vh - 0px);
-    scale: 0;
-    display: grid;
-    place-items: center;
-    backdrop-filter: brightness(0.5) blur(3px);
+    transform: translateX(-200%);
+    width: 320px;
     z-index: 1000;
+    transition: 300ms;
 
     & .card-modal {
         position: relative;
         display: flex;
         flex-direction: column;
         gap: var(--g-10);
-        width: 350px;
-        border: var(--border-solid-1);
+        width: 100%; height: 100%;
         padding: var(--p-15);
-        border-radius: var(--rd-10);
-        scale: 0;
-        transition: 100ms;
-        border-bottom: 2px solid var(--bg-1);
-        box-shadow: inset 1px 1px 10px var(--br-3); 
+        border-radius: 0 var(--rd-10);
+        border-top: var(--border-solid-3);
+        border-right: var(--border-solid-3);
+        backdrop-filter: blur(10px);
         background-color: var(--bg-1);
 
         & h5 {
@@ -104,19 +99,11 @@
 }
 
 .modal-open { 
-    scale: 1;
-    
-    .card-modal {
-        scale: 1;
-    }
+    transform: translateX(0%);
 }
 
 .modal-close { 
-    scale: 0;
-    
-    .card-modal {
-        scale: 0;
-    }
+    transform: translateX(-200%);   
 }
 
 .select {
