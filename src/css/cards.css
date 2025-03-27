@@ -1,28 +1,18 @@
-.raimbow {
-    display: grid;
-    place-items: center;
-    background-color: var(--bg-1);
-    border-radius: 30% 70% 52% 48% / 49% 46% 54% 51%;
-    box-shadow: inset 0px 0px 5px var(--fg-4);
-
-    svg { 
-        width: 35px;
-        padding: var(--p-8);
-        color: var(--fg-1);
-    }
-}
-
 .card {
-    padding: var(--p-20);
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    padding: var(--p-25);
+    display: grid;
     gap: var(--g-10);
     background-color: var(--bg-1);
-    border-radius: var(--rd-10);
+    position: relative;
     border: var(--border-solid-1);
-    border-bottom: 2px solid var(--bg-1);
-    box-shadow: inset 1px 1px 10px var(--br-1);
+    border-radius: var(--rd-20);
+
+    span {
+        font-weight: 700;
+        color: var(--fg-3);
+        text-transform: uppercase;
+        font-size: 12px;
+    }
     
     .cont-text {
         width: 100%;
@@ -31,15 +21,17 @@
         gap: var(--g-10);
     }
     
-    .title {
-        color: var(--fg-1);
-        font-size: var(--sz-2);
+    .title { 
+        font-size: var(--sz-2); 
+        text-transform: uppercase;
+        stroke-width: 0.5px;
+        -webkit-text-stroke-width: 0.5px;
     }
     
     p { 
         color: var(--fg-2);
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -49,75 +41,32 @@
 .card-experience {
     .cont-text {
         display: grid;
-        gap: var(--g-8);
-        
-        h4 { color: var(--fg-4); }
-        h6 { color: var(--fg-3); }
+        gap: var(--g-15);
+
+        ul {
+            display: grid;
+            gap: var(--g-8);
+            padding-left: calc(var(--p-20));
+            li { color: inherit; font-weight: 700; }
+        }
     }
-}
-
-.cardProject-1 {
-    &::before { background-color: var(--bg1); }
-}
-
-.cardProject-2 {
-    &::before { background-color: var(--bg2); }
-}
-
-.cardProject-3 {
-    &::before { background-color: var(--bg3); }
-}
-
-.cardProject-4 {
-    &::before { background-color: var(--bg4); }
-}
-
-.cardProject-5 {
-    &::before { background-color: var(--bg5); }
-}
-
-.cardProject-6 {
-    &::before { background-color: var(--bg6); }
 }
 
 .cardProject {
-    --bg1: #7afff46a;
-    --bg2: #7a81ff6a;
-    --bg3: #d57aff6a;
-    --bg4: #a67aff6a;
-    --bg5: #ff7a7a6a;
-    --bg6: #7d7d7d6a;
-
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: var(--p-20);
-    background-color: var(--bg-1);
-    border-radius: var(--rd-10);
-    border: var(--border-solid-1);
-    border-bottom: 2px solid var(--bg-1);
-    box-shadow: inset 1px 1px 10px var(--br-1);
-    gap: var(--g-15);
+    padding: var(--p-25);
     display: grid;
+    gap: var(--g-10);
+    background-color: var(--bg-1);
+    position: relative;
+    border: var(--border-solid-1);
+    border-radius: var(--rd-20);
+    overflow: hidden;
 
-    &::before {
-        position: absolute;
-        content: '';
-        bottom: -100px;
-        right: -100px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        filter: blur(100px);
-    }
-    
     .cont-text {
         display: grid;
         gap: var(--g-10); 
         overflow: hidden;
         z-index: 10;
-
-        .raimbow { display: none; }
 
         div { display: flex; align-items: center; gap: var(--g-15); }
 
@@ -145,142 +94,19 @@
         z-index: 10;
 
         .link {
-            padding: 4px var(--p-10);
+            padding: 4px var(--p-15);
             font-size: 13px;
             text-decoration: none;
             color: var(--fg-1);
-            border-radius: var(--rd-10);
-            border: 1px solid var(--br-2);
+            border-radius: var(--rd-8);
+            background-color: var(--br-1);
 
             &:hover { opacity: 0.8; }
         }
 
         .link-tag {
-            border: 1px solid var(--br-3);
             &:hover { opacity: 1; }
         }
-    }
-}
-
-.project-image {
-    position: absolute;
-    max-width: 600px;
-    overflow: hidden;
-    border-radius: var(--rd-20);
-    border: var(--border-solid-1);
-    z-index: 1;
-    
-    &::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(-60deg, var(--bg-bl-li-1), transparent);
-        -webkit-mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
-        mask-image: linear-gradient(To left, var(--bg-1), transparent 80%);
-    }
-}
-
-.skill-code-1, .skill-code-2 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: var(--border-solid-3);
-    border-bottom: 2px solid var(--bg-1);
-    box-shadow: inset 1px 1px 10px var(--br-3); 
-    background-color: var(--bg-1);
-    padding: var(--p-20);
-    border-radius: var(--rd-20);
-    z-index: 10;
-    overflow: hidden;
-
-    &::after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('/Noiss.avif');
-        -webkit-mask-image: linear-gradient(-30deg, var(--bg-1), transparent 80%);
-        mask-image: linear-gradient(-30deg, var(--bg-1), transparent 80%);
-    }
-
-    img {width: 100%; }
-}
-
-.skill-code-1 {
-    bottom: -20px;
-    left: 20px;
-    transform: rotate(-20deg);
-}
-
-.skill-code-2 {
-    bottom: -20px;
-    right: 20px;
-    transform: rotate(20deg);
-
-    &::after {
-        -webkit-mask-image: linear-gradient(30deg, var(--bg-1), transparent 80%);
-        mask-image: linear-gradient(30deg, var(--bg-1), transparent 80%);
-    }
-}
-
-.code-terminal {
-    max-width: 500px;
-    background-color: var(--bg-1);
-    border: var(--border-solid-1);
-    border-radius: var(--rd-10);
-    box-shadow: inset 1px 1px 10px var(--br-1);
-    position: relative;
-    padding: var(--p-20);
-    margin-top: 40px;
-    z-index: 10;
-
-    &::before {
-        position: absolute;
-        content: '';
-        bottom: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 150px;
-        height: 100px;
-        filter: blur(60px);
-        background-color: var(--bg-bl-li-1);
-    }
-
-    &::after {
-        position: absolute;
-        content: '';
-        bottom: -120px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background-image: url('/Noiss.avif');
-        -webkit-mask-image: linear-gradient(To top, var(--bg-1), transparent 80%);
-        mask-image: linear-gradient(To top, var(--bg-1), transparent 80%);
-    }
-    
-    code {
-        font-family: "Consolas";
-        text-wrap: wrap;
-        color: var(--fg-1);
-        font-weight: 500;
-        font-size: 14px;
-    }
-}
-
-.skill-sec {
-    .logo {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 260px;
     }
 }
 
@@ -290,9 +116,9 @@
     right: 10px;
     width: 15px;
     height: 15px;
-    border-radius: var(--rd-4);
+    border-radius: var(--rd-10);
     background-color: var(--bg-1);
-    outline: 1px solid var(--br-1);
+    outline: 1px solid var(--br-2);
     z-index: 10;
 }
 
@@ -318,17 +144,6 @@
         box-shadow: inset 1px 1px 10px var(--br-3); 
         background-color: var(--bg-1);
         transform: translateX(50%) translateY(500%);
-        overflow: hidden;
-
-        &::before {
-            position: absolute;
-            content: '';
-            bottom: -50px;
-            right: -50px;
-            width: 100px;
-            height: 100px;
-            filter: blur(140px);
-        }
     
         &::after {
             position: absolute;
@@ -342,51 +157,27 @@
             mask-image: linear-gradient(-50deg, var(--bg-1), transparent 80%);
         }
 
-        .skill-image { width: 100%; }
-    }
-
-    .skill-color-1 {
-        &::before { background-color: var(--bg1); }
-    }
-
-    .skill-color-2 {
-        &::before { background-color: var(--bg2); }
-    }
-
-    .skill-color-3 {
-        &::before { background-color: var(--bg3); }
-    }
-
-    .skill-color-4 {
-        &::before { background-color: var(--bg4); }
-    }
-
-    .skill-color-5 {
-        &::before { background-color: var(--bg5); }
-    }
-
-    .skill-color-6 {
-        &::before { background-color: var(--bg6); }
+        .skill-image { width: 100%; opacity: 0.5; }
     }
 
     .skill-1 {
-        bottom: -10px;
-        right: 30px;
+        bottom: -20px;
+        right: -0px;
         width: 70px;
         height: 70px;
         transition: 600ms;
     }
     
     .skill-2 {
-        top: -40px;
-        left: 150px;
-        width: 90px;
-        height: 90px;
+        top: -15px;
+        left: -15px;
+        width: 60px;
+        height: 60px;
         transition: 100ms;
     }
     
     .skill-3 {
-        bottom: -15px;
+        bottom: -20px;
         right: 190px;
         width: 50px;
         height: 50px;
@@ -394,35 +185,37 @@
     }
     
     .skill-4 {
-        top: -10px;
+        top: -15px;
         right: -10px;
         width: 50px;
         height: 50px;
         transition: 500ms;
+        img { display: none; }
     }
     
     .skill-5 {
-        top: -40px;
-        right: 50px;
-        width: 100px;
-        height: 100px;
+        top: -35px;
+        right: 40px;
+        width: 80px;
+        height: 80px;
         transition: 200ms;
     }
 
     .skill-6 {
-        bottom: -10px;
-        left: -20px;
-        width: 90px;
-        height: 90px;
+        bottom: -15px;
+        left: -25px;
+        width: 80px;
+        height: 80px;
         transition: 400ms;
     }
 
     .skill-7 {
         bottom: 80px;
-        left: -10px;
+        left: -20px;
         width: 55px;
         height: 55px;
         transition: 100ms;
+        img { display: none; }
     }
 }
 

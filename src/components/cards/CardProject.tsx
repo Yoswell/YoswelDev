@@ -1,5 +1,4 @@
 import { ReactNode, FC } from 'react'
-import { Idea } from '@/components/icons/HeroIcons'
 
 interface CardProjectProps {
     className: string
@@ -13,10 +12,7 @@ export const CardProject: FC<CardProjectProps> = ({className, title, text, child
     return (
         <article className={`cardProject ${className}`}>
             <div className='cont-text'>
-                <div>
-                    <div className='raimbow'><Idea/></div>
-                    <h3 className='title'>{title}</h3>
-                </div>
+                <h3 className='title'>{title}</h3>
                 <p>{text}</p>
             </div>
             <article className='cont-links'>

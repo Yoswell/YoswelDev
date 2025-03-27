@@ -7,8 +7,8 @@
     padding: 80px 0;
     overflow: hidden;
     position: relative;
-    border-top: var(--border-solid-3);
-    border-bottom: var(--border-solid-3);
+    border-top: var(--border-solid-1);
+    border-bottom: var(--border-solid-1);
 
     &::before {
         position: absolute;
@@ -38,18 +38,18 @@
     }
 }
 
-.experience, .service, .projects {
+.experience, .service, .projects, .contact-sec {
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr;
+    gap: var(--g-20);
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-.experience, .service, .projects, .contact-sec {
-    padding: var(--p-10);
-    background-color: var(--bg-3);
-    gap: var(--g-10);
-    border-top: var(--border-solid-3);
-    border-bottom: var(--border-solid-3);
+.experience { grid-template-columns: repeat(2, 1fr); }
+
+.service, .projects {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .contact-sec {
@@ -120,8 +120,16 @@
     }
 }
 
+@media (max-width: 1100px) {
+    .service, .projects { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
-    .about, .experience, .service, .projects { grid-template-columns: 1fr; }
+    .experience { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 750px) {
+    .service, .projects { grid-template-columns: repeat(1, 1fr); }
 }
 
 @media (max-width: 700px) {

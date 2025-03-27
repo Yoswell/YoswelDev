@@ -16,8 +16,15 @@ export function About() {
 
     return (
         <header>
-            <h1 className='title'>Hey, I'm Yoswel Badilla a Full-Stack Developer and Pentester Junior</h1>
-            <p className='subTitle'>I am a passionate Full-Stack Developer dedicated to creating innovative and high-performance solutions. With experience in web applications using React for the frontend and .NET for the backend, I focus on building efficient, scalable, and secure solutions, leveraging my skills in Cybersecurity.</p>
+            <div className='profile-photo'>
+                <img src='/Yo.png' decoding='async' loading='lazy' alt='Profile photo' />
+            </div>
+            <h1 className='title text-gradient-color'>
+                Hey, I'm Yoswel Badilla a Full
+                <br></br>Stack Developer and
+                <br></br>Pentester Junior
+            </h1>
+            <p className='subTitle text-gradient-color'>With experience in web applications, I focus on building efficient, scalable, and secure solutions, leveraging my skills in Cybersecurity.</p>
             <div className='cont-big-button'>
                 <button
                     className='link btn btn-active'
@@ -25,8 +32,6 @@ export function About() {
                     <Download />
                     Download CV
                 </button>
-                <a className='link social-media inactive' href="https://www.linkedin.com/in/yoswel-badilla-cyberjr" target='_blank' rel='noopener noreferrer'><Link />LinkedIn</a>
-                <a className='link social-media empty'href='https://github.com/Yoswell'target='_blanck' rel='noopener noreferrer'><Link />GitHub</a>
             </div>
             <ModalContext value={{isOpenModal, setIsOpenModal}}>
                 <ModalCV/>
