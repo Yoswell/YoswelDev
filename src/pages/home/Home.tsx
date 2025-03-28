@@ -10,9 +10,13 @@ export function Home() {
         <main>
             <div className='container-home'>
                 <div className='float-line float-line-1'></div>
+                <div className='float-line float-line-1-sm'></div>
                 <div className='float-line float-line-2'></div>
+                <div className='float-line float-line-2-sm'></div>
                 <div className='float-line float-line-3'></div>
+                <div className='float-line float-line-3-sm'></div>
                 <div className='float-line float-line-4'></div>
+                <div className='float-line float-line-4-sm'></div>
 
                 <div className='skill-color-h1'>
                     <img className='skill-image' src='/NET.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
@@ -37,13 +41,13 @@ export function Home() {
                 <div className='scroll-sec'>
                     <About />
                     <Title title='Experience' subTitle='A showcase of my professional journey, highlighting key achievements and expertise in cybersecurity, CTF challenges, and offensive security.' />
-                    <div className='experience'>
+                    <div className='experience' id='exp'>
                         <article className='card card-experience'>
                             <div className='cont-text'>
                                 <h3 className='title text-gradient-color-mm'>Cibersecuirty Volunteer NicaSecurity</h3>
                                 <ul className='text-gradient-color-sm'>
-                                    <li>● Community NicaSecurity</li>
-                                    <li>● Oct 2024 - Present</li>
+                                    <li>Community NicaSecurity</li>
+                                    <li>Oct 2024 - Present</li>
                                 </ul>
                             </div>
                             <p>I am part of the community contributing to the development of web tools and the creation of CTF challenges, with the aim of supporting learning and cybersecurity. Teamwork to design interactive content that fosters a collaborative space, where participants can improve their technical skills.</p>
@@ -52,8 +56,8 @@ export function Home() {
                             <div className='cont-text'>
                                 <h3 className='title text-gradient-color-mm'>Freelance Web Developer</h3>
                                 <ul className='text-gradient-color-sm'>
-                                    <li>● LARA'S Barbershop</li>
-                                    <li>● Feb 2022 - Mar 2022</li>
+                                    <li>LARA'S Barbershop</li>
+                                    <li>Feb 2022 - Mar 2022</li>
                                 </ul>
                             </div>
                             <p>I designed and developed a website that met the specific requirements of the client, ensuring that every aspect of design and functionality was aligned with their commercial needs and objectives. In addition, I optimized site performance to ensure fast charge and efficient user experience.</p>
@@ -61,7 +65,7 @@ export function Home() {
                     </div>
                 
                     <Title title='Services' subTitle='My journey in cybersecurity and web development-building secure, high-performance applications while tackling complex security challenges.' />
-                    <div className='service'>
+                    <div className='service' id='ser'>
                         <CardText
                             title='University Works'
                             text='I offer comprehensive assistance and support in carrying out university projects related to computer science. Whether you need help with algorithm design, data analysis, or software development, I provide in-depth research, structured writing, and clear documentation to ensure your project meets academic standards. My approach focuses on delivering quality, precision, and a well-organized workflow that guarantees clarity and professionalism, helping you achieve your academic goals with confidence.'>
@@ -89,7 +93,7 @@ export function Home() {
                     </div>
                     
                     <Title title='Projects' subTitle='A selection of my most impactful projects, showcasing my expertise in web development and cybersecurity, not all (only I considered most relevant).' />
-                    <div className='projects'>
+                    <div className='projects' id='pro'>
                         <CardProject 
                             className='cardProject-1'
                             title='GrizzlySpark (web app)'

@@ -5,7 +5,7 @@ export function Contact() {
     const [textareaValue, setTextareaValue] = useState("")
 
     return (
-        <section className="contact-sec" id="contact">
+        <section className="contact-sec" id="con">
             <form action="https://formspree.io/f/xqkjlrvd" method="POST" aria-label="contact-form">
                 <div className="cont-name">
                     <span className={`${inputValue.length > 0 ? "hide-span-1" : "show-span-1"}`}>Email...</span>
