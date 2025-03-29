@@ -280,15 +280,14 @@ p { line-height: 1.6; }
         align-items: center; 
         justify-content: center;
         gap: var(--g-8);
-        font-weight: 700;
         cursor: pointer;
         text-decoration: none;
         white-space: nowrap;
         color: var(--bg-1);
         padding: var(--p-10) var(--p-20);
-        border-radius: var(--rd-6);
         background: var(--fg-1);   
         position: relative;
+        width: 135px;
         
         &::before {
             position: absolute;

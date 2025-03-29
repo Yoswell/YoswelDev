@@ -103,29 +103,7 @@ export function Home() {
                             }
                             children2={
                                 <div className='show-project'>
-                                    <article className='float-skill-ring'>
-                                        <div className='skill skill-1 skill-color-1'>
-                                            <img className='skill-image' src='/NET.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-2 skill-color-1'>
-                                            <img className='skill-image' src='/CS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-3 skill-color-1'>
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-4 skill-color-1'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-5 skill-color-1'>
-                                            <img className='skill-image' src='/HTML.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-6 skill-color-1'>
-                                            <img className='skill-image' src='/NET.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-7 skill-color-1'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                    </article>
+                                    
                                 </div>
                             }>
                         </CardProject>
@@ -139,29 +117,7 @@ export function Home() {
                             }
                             children2={
                                 <div className='show-project'>
-                                    <article className='float-skill-ring'>
-                                        <div className='skill skill-1 skill-color-3'>
-                                            <img className='skill-image' src='/React.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-2 skill-color-3'>
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-3 skill-color-3'>
-                                            <img className='skill-image' src='/HTML.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-4 skill-color-3'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-5 skill-color-3'>
-                                            <img className='skill-image' src='/React.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-6 skill-color-3'>
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-7 skill-color-3'>
-                                            <img className='skill-image' src='/React.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                    </article>
+                                    
                                 </div>
                             }>
                         </CardProject>
@@ -174,29 +130,7 @@ export function Home() {
                             }
                             children2={
                                 <div className='show-project'>
-                                    <article className='float-skill-ring'>
-                                        <div className='skill skill-1 skill-color-4'>
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-2 skill-color-4'>
-                                            <img className='skill-image' src='/TS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-3 skill-color-4'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-4 skill-color-4'>
-                                            <img className='skill-image' src='/HTML.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-5 skill-color-4'>
-                                            <img className='skill-image' src='/React.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-6 skill-color-4'>
-                                            <img className='skill-image' src='/NET.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-7 skill-color-4'>
-                                            <img className='skill-image' src='/CS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                    </article>
+                                    
                                 </div>
                             }>
                         </CardProject>
@@ -209,29 +143,7 @@ export function Home() {
                             }
                             children2={
                                 <div className='show-project'>
-                                    <article className='float-skill-ring'>
-                                        <div className='skill skill-1 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-2 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-3 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-4 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-5 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-6 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-7 skill-color-5'>
-                                            <img className='skill-image' src='/PY.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                    </article>
+                                    
                                 </div>
                             }>
                         </CardProject>
@@ -245,30 +157,7 @@ export function Home() {
                             }
                             children2={
                                 <div className='show-project'>
-                                    <article className='float-skill-ring'>
-    
-                                        <div className='skill skill-1 skill-color-2'>
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-2 skill-color-2'>
-                                            <img className='skill-image' src='/HTML.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-3 skill-color-2'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-4 skill-color-2'>
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-5 skill-color-2'>
-                                            <img className='skill-image' src='/HTML.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-6 skill-color-2'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-7 skill-color-2'>
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                    </article>
+                                    
                                 </div>
                             }>
                         </CardProject>
@@ -281,29 +170,7 @@ export function Home() {
                             }
                             children2={
                                 <div className='show-project'>
-                                    <article className='float-skill-ring'>
-                                        <div className='skill skill-1 skill-color-6'>
-                                            <img className='skill-image' src='/TS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-2 skill-color-6'>    
-                                            <img className='skill-image' src='/React.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-3 skill-color-6'>    
-                                            <img className='skill-image' src='/JS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-4 skill-color-6'>    
-                                            <img className='skill-image' src='/CSS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-5 skill-color-6'>    
-                                            <img className='skill-image' src='/HTML.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-6 skill-color-6'>
-                                            <img className='skill-image' src='/TS.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                        <div className='skill skill-7 skill-color-6'>    
-                                            <img className='skill-image' src='/React.svg' decoding='async' loading='lazy' alt='Skill that show how is built this projetc' />
-                                        </div>
-                                    </article>
+                                    
                                 </div>
                             }>
                         </CardProject>

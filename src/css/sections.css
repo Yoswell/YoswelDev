@@ -38,8 +38,6 @@
                 left: var(--m-15);
                 color: var(--fg-1);
             }
-
-            &:nth-child(2) { width: 100%; }
         }
 
         input, textarea {
@@ -63,16 +61,14 @@
         }
 
         .btn {
+            border: none;
             cursor: pointer;
             white-space: nowrap;
-            border: var(--border-solid-3);
-            height: 40px;
             border-radius: var(--rd-10);
-            color: var(--fg-1);
-            padding: 0 var(--p-15);
-            background-image: url('/Lines.svg');
-            background-size: 100px;
-            background-color: var(--bg-1);
+            color: var(--bg-1);
+            padding: var(--p-8) var(--p-15);
+            background-color: var(--fg-1);
+            position: relative;
             
             &:hover { opacity: 0.8; }
         }

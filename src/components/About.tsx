@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react'
 import { ModalCV } from '@/components/cards/ModalCV'
-import { Download } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
     isOpenModal: false,
@@ -29,8 +28,7 @@ export function About() {
                 <button
                     className='link btn btn-active'
                     onClick={() => handleOpenModal()}>
-                    <Download />
-                    Download CV
+                    Preview CV
                 </button>
             </div>
             <ModalContext value={{isOpenModal, setIsOpenModal}}>

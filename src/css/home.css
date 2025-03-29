@@ -31,7 +31,6 @@ nav {
 
     .active {
         border-radius: var(--rd-6);
-        font-weight: 700;
         color: var(--bg-1);
         background-color: var(--fg-1);
         padding: var(--p-8) var(--p-20);
