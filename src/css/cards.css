@@ -110,14 +110,4 @@
     }
 }
 
-.show-project {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    border-radius: var(--rd-10);
-    background-color: var(--bg-1);
-    outline: 1px solid var(--br-2);
-    z-index: 10;
-}
+.show-project { display: none; }

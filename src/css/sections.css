@@ -64,9 +64,9 @@
             border: none;
             cursor: pointer;
             white-space: nowrap;
-            border-radius: var(--rd-10);
+            border-radius: var(--rd-6);
             color: var(--bg-1);
-            padding: var(--p-8) var(--p-15);
+            padding: var(--p-8) var(--p-20);
             background-color: var(--fg-1);
             position: relative;
             
