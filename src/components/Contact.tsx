@@ -24,8 +24,12 @@ export function Contact() {
                         onChange={(prev) => setTextareaValue(prev.target.value)}>
                     </textarea>
                 </div>
-                <div className="cont-button">
-                    <button type="submit" className="btn btn-active">Send mail</button>
+                <div className='space-button'>
+                    <button
+                        className='btn btn-active'
+                        type="submit">
+                        <span>✈️</span>
+                    </button>
                 </div>
             </form>
         </section>

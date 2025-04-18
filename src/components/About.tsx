@@ -1,5 +1,6 @@
 import { createContext, useState } from 'react'
 import { ModalCV } from '@/components/cards/ModalCV'
+import { Bolt } from '@/components/icons/HeroIcons'
 
 export const ModalContext = createContext({
     isOpenModal: false,
@@ -15,20 +16,17 @@ export function About() {
 
     return (
         <header>
-            <div className='profile-photo'>
-                <img src='/Yo.png' decoding='async' loading='lazy' alt='Profile photo' />
-            </div>
-            <h1 className='title text-gradient-color'>
-                Hey, I'm Yoswel Badilla a Full
-                <br></br>Stack Developer and
-                <br></br>Pentester Junior
+            <h5><Bolt /> Available to work</h5>
+            <h1 className='title'>
+                Yoswel vishok Badilla
+                <br></br>Developer and
+                <br></br>Pentester 
             </h1>
-            <p className='subTitle text-gradient-color'>With experience in web applications, I focus on building efficient, scalable, and secure solutions, leveraging my skills in Cybersecurity.</p>
-            <div className='cont-big-button'>
+            <div className='space-button'>
                 <button
-                    className='link btn btn-active'
+                    className='btn btn-active'
                     onClick={() => handleOpenModal()}>
-                    Preview CV
+                    <span>📂</span>
                 </button>
             </div>
             <ModalContext value={{isOpenModal, setIsOpenModal}}>
